@@ -19,17 +19,17 @@
 # IN THE SOFTWARE.
 
 # Project information
-site_name: Material for MkDocs
-site_description: A Material Design theme for MkDocs
-site_author: Martin Donath
-site_url: http://squidfunk.github.io/mkdocs-material/
+site_name: SFM Developer Center
+site_description: SFM Developer Center
+site_author: Suprema inc.
+site_url: https://github.com/supremainc/sfmdev
 
 # Repository
-repo_name: squidfunk/mkdocs-material
-repo_url: https://github.com/squidfunk/mkdocs-material
+repo_name: supremainc/sfmdev
+repo_url: https://github.com/supremainc/sfmdev
 
 # Copyright
-copyright: 'Copyright &copy; 2016 - 2017 Martin Donath'
+copyright: 'Copyright &copy; 2017 Suprema inc.'
 
 # Theme directory
 theme_dir: material
@@ -50,6 +50,7 @@ extra:
       link: https://twitter.com/squidfunk
     - type: linkedin
       link: https://de.linkedin.com/in/martin-donath-20a95039
+  logo: 'images/suprema.png'
 
 # Extensions
 markdown_extensions:
@@ -75,20 +76,39 @@ markdown_extensions:
 
 # Page tree
 pages:
-  - Material: index.md
-  - Getting started: getting-started.md
-  - Extensions:
-    - Admonition: extensions/admonition.md
-    - CodeHilite: extensions/codehilite.md
-    - Footnotes: extensions/footnotes.md
-    - Metadata: extensions/metadata.md
-    - Permalinks: extensions/permalinks.md
-    - PyMdown: extensions/pymdown.md
-  - Specimen: specimen.md
-  - Customization: customization.md
-  - Release notes: release-notes.md
-  - Contributing: contributing.md
-  - License: license.md
+  - About : index.md
+  - Products: 
+      - SFM3000 Series: products/SFM3000.md
+      - SFM4000 Series: products/SFM4000.md
+      - SFM5000 Series: products/SFM5000.md
+      - SFM5500 Series: products/SFM5500.md
+      - SFM6000 Series: products/SFM6000.md
+        
+  - Technical Documents:
+    - SFM SDK Manual : 
+      - Introduction : documents/Introduction.md
+      - API Compatability : documents/API_Compatibility.md
+      - API Specification : documents/API_Specification.md
+    - UF Protocol Manual : documents/UF_Protocol_Manual.md
+  
+  - SDK :
+    - SFM SDK:
+      - C/C++ : sdk/c_cpp.md
+      - .NET : sdk/c_sharp.md
+      - android : sdk/android.md
+      - python : sdk/python.md
+
+  - Community : community/community.md
+  - Open Source Projects:
+    - SFM Open EVK : projects/SFM_OPEN_EVK.md
+
+#Customization
+extra_css:
+  - 'stylesheets/extra.css'
+
+extra_javascript:
+  - 'javascripts/extra.js'
+  - 'https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML'
 
 # Google Analytics
 google_analytics:

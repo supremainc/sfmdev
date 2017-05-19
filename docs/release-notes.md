@@ -12,106 +12,10 @@ To determine the currently installed version, use the following command:
 
 ``` sh
 pip show mkdocs-material | grep -E ^Version
-# Version 1.6.3
+# Version 1.3.0
 ```
 
 ## Changelog
-
-### 1.6.3 <small> _ May 16, 2017</small>
-
-* Fixed [#329][329]: Broken source stats for private or unknown GitHub repos
-
-  [329]: https://github.com/squidfunk/mkdocs-material/issues/329
-
-### 1.6.2 <small> _ May 15, 2017</small>
-
-* Fixed [#316][316]: Fatal error for git clone on Windows
-* Fixed [#320][320]: Chrome 58 creates double underline for `abbr` tags
-* Fixed [#323][323]: Ligatures rendered inside code blocks
-* Fixed miscalculated sidebar height due to missing margin collapse
-* Changed deprecated MathJax CDN to Cloudflare
-
-  [316]: https://github.com/squidfunk/mkdocs-material/issues/316
-  [320]: https://github.com/squidfunk/mkdocs-material/issues/320
-  [323]: https://github.com/squidfunk/mkdocs-material/issues/323
-
-### 1.6.1 <small> _ April 23, 2017</small>
-
-* Fixed following of active/focused element if search input is focused
-* Fixed layer order of search component elements
-
-### 1.6.0 <small> _ April 22, 2017</small>
-
-* Added build test for Docker image on Travis
-* Added search overlay for better user experience (focus)
-* Added language from localizations to `html` tag
-* Fixed [#270][270]: source links broken for absolute URLs
-* Fixed missing top spacing for first targeted element in content
-* Fixed too small footnote divider when using larger font sizes
-
-  [270]: https://github.com/squidfunk/mkdocs-material/issues/270
-
-### 1.5.5 <small> _ April 20, 2017</small>
-
-* Fixed [#282][282]: Browser search (<kbd>Meta</kbd>+<kbd>F</kbd>) is hijacked
-
-  [282]: https://github.com/squidfunk/mkdocs-material/issues/282
-
-### 1.5.4 <small> _ April 8, 2017</small>
-
-* Fixed broken highlighting for two or more search terms
-* Fixed missing search results when only a `h1` is present
-* Fixed unresponsive overlay on Android
-
-### 1.5.3 <small> _ April 7, 2017</small>
-
-* Fixed deprecated calls for template variables
-* Fixed wrong palette color for focused search result
-* Fixed JavaScript errors on 404 page
-* Fixed missing top spacing on 404 page
-* Fixed missing right spacing on overflow of source container
-
-### 1.5.2 <small> _ April 5, 2017</small>
-
-* Added requirements as explicit dependencies in `setup.py`
-* Fixed non-synchronized transitions in search form
-
-### 1.5.1 <small> _ March 30, 2017</small>
-
-* Fixed rendering and offset of targetted footnotes
-* Fixed [#238][238]: Link on logo is not set to `site_url`
-
-  [238]: https://github.com/squidfunk/mkdocs-material/issues/238
-
-### 1.5.0 <small> _ March 24, 2017</small>
-
-* Added support for localization of search placeholder
-* Added keyboard events for quick access of search
-* Added keyboard events for search control
-* Added opacity on hover for search buttons
-* Added git hook to skip CI build on non-src changes
-* Fixed non-resetting search placeholder when input is cleared
-* Fixed error for unescaped parentheses in search term
-* Fixed [#229][229]: Button to clear search missing
-* Fixed [#231][231]: Escape key doesn't exit search
-* Removed old-style figures from font feature settings
-
-  [229]: https://github.com/squidfunk/mkdocs-material/issues/229
-  [231]: https://github.com/squidfunk/mkdocs-material/issues/231
-
-### 1.4.1 <small> _ March 16, 2017</small>
-
-* Fixed invalid destructuring attempt on NodeList (in Safari, Edge, IE)
-
-### 1.4.0 <small> _ March 16, 2017</small>
-
-* Added support for grouping searched sections by documents
-* Added support for highlighting of search terms
-* Added support for localization of search results
-* Fixed [#216][216]: table of contents icon doesn't show if `h1` is not present
-* Reworked style and layout of search results for better usability
-
-  [216]: https://github.com/squidfunk/mkdocs-material/issues/216
 
 ### 1.3.0 <small> _ March 11, 2017</small>
 
@@ -119,7 +23,7 @@ pip show mkdocs-material | grep -E ^Version
 * Added support for linking source files to documentation
 * Fixed jitter and offset of sidebar when zooming browser
 * Fixed incorrectly initialized tablet sidebar height
-* Fixed regression for [#1][1]: GitHub stars break if `repo_url` ends with a `/`
+* Fixed regression for [#1][1]: GitHub stars break if repo_url ends with a `/`
 * Fixed undesired white line below copyright footer due to base font scaling
 * Fixed issue with whitespace in path for scripts
 * Fixed [#205][205]: support non-fixed (static) header
@@ -127,7 +31,7 @@ pip show mkdocs-material | grep -E ^Version
 * Reduced repaints to a minimum for non-tabs configuration
 * Reduced contrast of edit button (slightly)
 
-  [205]: https://github.com/squidfunk/mkdocs-material/issues/205
+  [205]: https://github.com/squidfunk/mkdocs-material/issues/197
 
 ### 1.2.0 <small> _ March 3, 2017</small>
 

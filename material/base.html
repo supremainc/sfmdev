@@ -97,6 +97,9 @@
               <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
+                    <a href="{{ nav.homepage.url }}" title="{{ config.site_name }}" class="md-logo md-header-nav__button">
+                      <img src="{{ base_url }}/{{ config.extra.logo }}" width="150" height="69" >
+                    </a>
                     {% include "partials/nav.html" %}
                   </div>
                 </div>

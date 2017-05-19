@@ -10,7 +10,7 @@ you do, please read the following guidelines.
 For quick questions there's no need to open an issue as you can reach us on
 [gitter.im][1].
 
-  [1]: https://gitter.im/squidfunk/mkdocs-material
+  [1]: https://gitter.im/mkdocs-material/general
 
 ### Found a bug?
 
@@ -78,4 +78,4 @@ go ahead.
 After your PR is merged, you can safely delete your branch and pull the changes
 from the main (upstream) repository.
 
-  [4]: http://squidfunk.github.io/mkdocs-material/customization/#theme-development
+  [4]: http://localhost:8000/customization/#theme-development
