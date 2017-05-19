@@ -9,3 +9,32 @@ td{
     padding: 0 20px 0px 20px;
     border: 1px solid #EEEEEE;
 }
+ol,li{
+    line-height:100%;
+}
+
+.md-typeset h2{
+    color: #3F51B5;
+    font-weight: 300;
+}
+
+.md-typeset h2{
+    margin-left: 5px;
+}
+.md-typeset h3{
+    margin-left: 10px;
+}
+.md-typeset h4{
+    margin-left: 15px;
+}
+.md-typeset h5{
+    margin-left: 20px;
+}
+.md-typeset h6{
+    margin-left: 25px;
+}
+
+.md-typeset code {
+    color: #E91E63;
+    font-weight: bold;
+}
