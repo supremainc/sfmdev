@@ -27,6 +27,7 @@ site_url: https://github.com/supremainc/sfmdev
 # Repository
 repo_name: supremainc/sfmdev
 repo_url: https://github.com/supremainc/sfmdev
+edit_uri: tree/master/docs
 
 # Copyright
 copyright: 'Copyright &copy; 2017 Suprema inc.'
