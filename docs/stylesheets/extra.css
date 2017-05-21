@@ -35,6 +35,7 @@ ol,li{
 }
 
 .md-typeset code {
+    background-color: #fff2f8;
     color: #E91E63;
-    font-weight: bold;
+    
 }

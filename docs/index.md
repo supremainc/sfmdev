@@ -40,5 +40,5 @@ Suprema Developer Center is an online space that provides technical information 
 
 **Suprema inc.**  
 Suprema is a global leader in biometrics and securities technology. By combining world renowned biometric algorithms with superior engineering,Suprema is able to continually develop and manufacture reliable industry leading products. Suprema’s extensive portfolio of products include biometric access control systems, time & attendance devices, fingerprint/live scanners and embedded fingerprint modules.
-Suprema supports world wide sales network that spans across more than 133 countries around the world and was the first biometrics company listed on Korea's stock market (KOSDAQ 094840)
+Suprema supports world wide sales network that spans across more than 133 countries around the world and was the first biometrics company listed on Korea's stock market (`KOSDAQ 094840`)
 

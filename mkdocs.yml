@@ -35,6 +35,9 @@ copyright: 'Copyright &copy; 2017 Suprema inc.'
 # Theme directory
 theme_dir: material
 
+# favicon
+site_favicon: 'images/supremainc.png'
+
 # Options
 extra:
   feature:
@@ -44,13 +47,10 @@ extra:
     accent: indigo
   social:
     - type: globe
-      link: http://struct.cc
+      link: http://www.supremainc.com
     - type: github-alt
-      link: https://github.com/squidfunk
-    - type: twitter
-      link: https://twitter.com/squidfunk
-    - type: linkedin
-      link: https://de.linkedin.com/in/martin-donath-20a95039
+      link: https://github.com/supremainc
+
   logo: 'images/suprema.png'
 
 # Extensions
