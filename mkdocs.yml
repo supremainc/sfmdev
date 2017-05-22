@@ -113,5 +113,5 @@ extra_javascript:
 
 # Google Analytics
 google_analytics:
-  - !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_KEY"]
+  - 'UA-99598070-1'
   - auto
