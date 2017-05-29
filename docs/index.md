@@ -33,7 +33,7 @@ For detailed instructions see the [getting started guide][3].
 
 
 ## What is SFM?
-SFM (Suprema Fingerprint Module) is the world's most widely used fingerprint module manufactured by Suprema inc. It provides the most powerful fingerprint recognition performance than other competitors. 
+SFM (Suprema Fingerprint Module) is the world's most widely used fingerprint module manufactured by [Suprema inc](http://www.supremain.com). It provides the most powerful fingerprint recognition performance than other competitors. 
 
 ## What is SFM Developer Center?
 SFM Developer Center is an online space that provides technical information and technical communication with customers. In SFM Developer Center, We will open various open source projects using SFM to provide the opportunity to utilize fingerprint recognition technology not only for fingerprint recognition experts but also for those interested in hobbies such as start-up companies or DIY. 
