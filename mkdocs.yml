@@ -78,6 +78,7 @@ markdown_extensions:
 # Page tree
 pages:
   - About : index.md
+  - Blog : blog.md
   - Products: 
       - SFM3000 Series: products/SFM3000.md
       - SFM4000 Series: products/SFM4000.md
