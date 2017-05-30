@@ -1,7 +1,10 @@
-- Ask Question with the tag as [biometrics](https://stackoverflow.com/questions/tagged/biometrics) on Stack Overflow
+- Ask a question with the tag as [biometrics](https://stackoverflow.com/questions/tagged/biometrics) at Stack Overflow
 <!--- Tagged as SFM in [Instructables](https://www.instructables.com/community/sfm/)-->
-- Ask Question with the topic as [Suprema-Inc-Company](https://www.quora.com/topic/Suprema-Inc-Company) or [Biometrics](https://www.quora.com/topic/Biometrics) on Quora
+- Ask a question with the topic as [Suprema-Inc-Company](https://www.quora.com/topic/Suprema-Inc-Company) or [Biometrics](https://www.quora.com/topic/Biometrics) at Quora
 <!--- [Reddit](https://www.reddit.com/r/sfm) of suprema inc.-->
+- Ask a question at [proposed Q&A site on Stack Exchange AREA 51 named as SFM](https://area51.stackexchange.com/proposals/110158/sfm).
+
+<a href="https://area51.stackexchange.com/proposals/110158/sfm?referrer=4tOlE5EM1ZTj2qdIrbEr0g2"><img src="https://area51.stackexchange.com/ads/proposal/110158.png" width="300" height="250" alt="Stack Exchange Q&A site proposal: SFM" /></a>
 
 <div id="disqus_thread"></div>
 <script>
