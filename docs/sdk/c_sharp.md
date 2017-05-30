@@ -1,1 +1,1 @@
-page_type: products
+Preparing contents

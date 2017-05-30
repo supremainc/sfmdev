@@ -1,6 +1,6 @@
-- Ask Question with tagged as biometrics on [Stack Overflow](https://stackoverflow.com/questions/tagged/biometrics).
+- Ask Question with the tag as [biometrics](https://stackoverflow.com/questions/tagged/biometrics) on Stack Overflow
 <!--- Tagged as SFM in [Instructables](https://www.instructables.com/community/sfm/)-->
-- Ask Question with tagged as Suprema-Inc-Company or biometrics on [Quora](https://www.quora.com/topic/Suprema-Inc-Company).
+- Ask Question with the topic as [Suprema-Inc-Company](https://www.quora.com/topic/Suprema-Inc-Company) or [Biometrics](https://www.quora.com/topic/Biometrics) on Quora
 <!--- [Reddit](https://www.reddit.com/r/sfm) of suprema inc.-->
 
 <div id="disqus_thread"></div>
