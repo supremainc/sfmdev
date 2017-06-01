@@ -96,7 +96,7 @@ pages:
   - SDK :
     - SFM SDK:
       - C/C++ : sdk/c_cpp.md
-      - .NET : sdk/c_sharp.md
+      - .NET : sdk/NET.md
       - android : sdk/android.md
       - python : sdk/python.md
 
