@@ -33,7 +33,7 @@ using Suprema.SFM_SDK_NET;
 
 ![](/images/sdk/NET/import_reference.png)
 
-Now, Write your source code using [SDK Manual](/documents/introduction/)
+Now, Write your source code using [SDK Manual](../documents/Introduction/)
 
 **Step 5**  
 Build your program. Then run.
