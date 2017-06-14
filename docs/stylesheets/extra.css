@@ -40,8 +40,13 @@ ol,li{
 }
 
 .md-typeset code {
-    background-color: #fff2f8;
-    color: #E91E63;
+    border: 1px solid #E7E7E7;
+    border-radius: 2px;
+    /*background-color: #fff2f8;*/
+    background-color: #F7F7F7;
+    color: #EE407A;
+    font-weight: bold;
+    padding: 4px;
     
 }
 

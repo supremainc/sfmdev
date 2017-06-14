@@ -4,9 +4,9 @@
 
 **Step 1**  
 Download these files.  
-[`SFM_SDK.dll`]()  
-[`SFM_SDK_NET.dll`]()  
-[`SFM_SDK_NET.XML`]()  
+[SFM_SDK.dll]()  
+[SFM_SDK_NET.dll]()  
+[SFM_SDK_NET.XML]()  
 
 !!! note
     **SFM_SDK.dll** is a library file for C/C++.  
