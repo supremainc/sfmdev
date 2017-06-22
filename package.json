@@ -1,26 +1,26 @@
 {
-  "name": "mkdocs-material",
-  "version": "1.7.4",
-  "description": "A Material Design theme for MkDocs",
+  "name": "sfmdev",
+  "version": "0.1.0",
+  "description": "SFM Developer Center",
   "keywords": [
-    "mkdocs",
-    "documentation",
-    "theme"
+    "sfm",
+    "fingerprint",
+    "fingerprint module"
   ],
-  "homepage": "http://squidfunk.github.io/mkdocs-material/",
+  "homepage": "http://supremainc.github.io/sfmdev/",
   "bugs": {
-    "url": "https://github.com/squidfunk/mkdocs-material/issues",
-    "email": "martin.donath@squidfunk.com"
+    "url": "http://supremainc.github.io/sfmdev/",
+    "email": "hclee@suprema.co.kr"
   },
   "license": "MIT",
   "author": {
-    "name": "Martin Donath",
-    "email": "martin.donath@squidfunk.com"
+    "name": "hyeonchang",
+    "email": "hclee@suprema.co.kr"
   },
   "contributors": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/squidfunk/mkdocs-material.git"
+    "url": "https://github.com/supremainc/sfmdev.git"
   },
   "scripts": {
     "build": "scripts/build",

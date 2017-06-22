@@ -152,7 +152,7 @@ pip show mkdocs-material | grep -E ^Version
 * Added support for linking source files to documentation
 * Fixed jitter and offset of sidebar when zooming browser
 * Fixed incorrectly initialized tablet sidebar height
-* Fixed regression for [#1][1]: GitHub stars break if `repo_url` ends with a `/`
+* Fixed regression for [#1][1]: GitHub stars break if repo_url ends with a `/`
 * Fixed undesired white line below copyright footer due to base font scaling
 * Fixed issue with whitespace in path for scripts
 * Fixed [#205][205]: support non-fixed (static) header
@@ -160,7 +160,7 @@ pip show mkdocs-material | grep -E ^Version
 * Reduced repaints to a minimum for non-tabs configuration
 * Reduced contrast of edit button (slightly)
 
-  [205]: https://github.com/squidfunk/mkdocs-material/issues/205
+  [205]: https://github.com/squidfunk/mkdocs-material/issues/197
 
 ### 1.2.0 <small> _ March 3, 2017</small>
 
