@@ -1,14 +1,19 @@
 # Android
+***You have to connect the SDK callback function to the communication function on Android for using android SFM_SDK.(See the below for details). Android sfm-sdk was made by C language and compiled using NDK. We currently provide SFM_SDK beta version 1.0.***
+
+!!!Tip
+    You can download all about android SFM_SDK(library, example project, document) through below github URL.
+    **https://github.com/supremainc/android_sdk**
 
 ## Quick start
 
 **Step 1**  
 Download these files.  
-[arm64-v8a_libSFM_SDK_android.so](https://github.com/supremainc/android_sdk/raw/master/arm64-v8a_libSFM_SDK_android.so)  
-[armeabi-v7a_libSFM_SDK_android.so](https://github.com/supremainc/android_sdk/raw/master/armeabi-v7a_libSFM_SDK_android.so)  
-[armeabi_libSFM_SDK_android.so](https://github.com/supremainc/android_sdk/raw/master/armeabi_libSFM_SDK_android.so)  
-[JNI_Header.zip](https://github.com/supremainc/android_sdk/raw/master/JNI_Header.zip)  
-[UnifingerUI for Android.docx](https://github.com/supremainc/android_sdk/raw/master/UnifingerUI%20for%20Android.docx) 
+[arm64-v8a_libSFM_SDK_android.so](https://github.com/supremainc/android_sdk/raw/master/Library/Android_SDK_Beta_v1.0/arm64-v8a/arm64-v8a_libSFM_SDK_android_Beta_v1.0.so)  
+[armeabi-v7a_libSFM_SDK_android.so](https://github.com/supremainc/android_sdk/raw/master/Library/Android_SDK_Beta_v1.0/armeabi-v7a/armeabi-v7a_libSFM_SDK_android_Beta_v1.0.so)  
+[armeabi_libSFM_SDK_android.so](https://github.com/supremainc/android_sdk/raw/master/Library/Android_SDK_Beta_v1.0/armeabi/armeabi_libSFM_SDK_android_Beta_v1.0.so)  
+[JNI_Header.zip](https://github.com/supremainc/android_sdk/raw/master/Library/Android_SDK_Beta_v1.0/JNI_Header_Beta_v1.0.zip)  
+[UnifingerUI for Android.docx](https://github.com/supremainc/android_sdk/raw/master/Document/UnifingerUI%20for%20Android(App_Beta_v1.2%2CSDK_Beta_v1.0).docx) 
 
 !!! note
     **arm64-v8a_libSFM_SDK_android.so** is a library file for 64bits arm processor.  
@@ -104,6 +109,10 @@ Callable<Integer> readTask = new Callable<Integer>() {
 };
 
 ```
+!!! tip
+    Write/Read callback funciotn is used in SFM_SDK. It means SFM_SDK calls these function to communication with module.
+    So you have to create proper Write/Read callback funciotn(Keep parameter type and return type). 
+    And then connect these functions using setting functions like step 7.
 
 **Step 7**  
 Connect to communication function(write/read callback) with SDK using JNI.
