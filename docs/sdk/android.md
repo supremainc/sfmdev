@@ -4,11 +4,11 @@
 
 **Step 1**  
 Download these files.  
-[arm64-v8a_libSFM_SDK_android.so]()  
-[armeabi-v7a_libSFM_SDK_android.so]()  
-[armeabi_libSFM_SDK_android.so]()  
-[JNI_Header.zip]()  
-[UnifingerUI for Android.docx]() 
+[arm64-v8a_libSFM_SDK_android.so](https://github.com/supremainc/android_sdk/raw/master/arm64-v8a_libSFM_SDK_android.so)  
+[armeabi-v7a_libSFM_SDK_android.so](https://github.com/supremainc/android_sdk/raw/master/armeabi-v7a_libSFM_SDK_android.so)  
+[armeabi_libSFM_SDK_android.so](https://github.com/supremainc/android_sdk/raw/master/armeabi_libSFM_SDK_android.so)  
+[JNI_Header.zip](https://github.com/supremainc/android_sdk/raw/master/JNI_Header.zip)  
+[UnifingerUI for Android.docx](https://github.com/supremainc/android_sdk/raw/master/UnifingerUI%20for%20Android.docx) 
 
 !!! note
     **arm64-v8a_libSFM_SDK_android.so** is a library file for 64bits arm processor.  
