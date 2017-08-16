@@ -12,10 +12,35 @@ To determine the currently installed version, use the following command:
 
 ``` sh
 pip show mkdocs-material | grep -E ^Version
-# Version 1.7.4
+# Version 1.8.1
 ```
 
 ## Changelog
+
+### 1.8.1 <small> _ August 7, 2017</small>
+
+* Fixed [#429][429]: Missing pagination for GitHub API
+
+  [429]: https://github.com/squidfunk/mkdocs-material/issues/429
+
+### 1.8.0 <small> _ August 2, 2017</small>
+
+* Added support for lazy-loading of search results for better performance
+* Added support for customization of search tokenizer/separator
+* Fixed [#424][424]: Search doesn't handle capital letters anymore
+* Fixed [#419][419]: Search doesn't work on whole words
+
+  [419]: https://github.com/squidfunk/mkdocs-material/issues/419
+  [424]: https://github.com/squidfunk/mkdocs-material/issues/424
+
+### 1.7.5 <small> _ July 25, 2017</small>
+
+* Fixed [#398][398]: Forms broken due to search shortcuts
+* Improved search overall user experience
+* Improved search matching and highlighting
+* Improved search accessibility
+
+  [398]: https://github.com/squidfunk/mkdocs-material/issues/398
 
 ### 1.7.4 <small> _ June 21, 2017</small>
 
