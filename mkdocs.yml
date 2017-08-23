@@ -99,7 +99,9 @@ pages:
       - .NET : sdk/NET.md
       - android : sdk/android.md
       - python : sdk/python.md
-
+  - Tutorials : 
+    - pysfm : tutorials/pysfm/tutorials.md
+        
   - Community : community/community.md
   - Open Source Projects:
     - SFM Open EVK : projects/SFM_OPEN_EVK.md
