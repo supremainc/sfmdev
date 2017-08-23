@@ -80,6 +80,7 @@ pages:
   - About : index.md
   - Blog : blog.md
   - Products: 
+      - SFM Slim Series: products/SFMSlim.md
       - SFM6000 Series: products/SFM6000.md
       - SFM5500 Series: products/SFM5500.md
       - SFM5000 Series: products/SFM5000.md
@@ -100,7 +101,8 @@ pages:
       - android : sdk/android.md
       - python : sdk/python.md
   - Tutorials : 
-    - pysfm : tutorials/pysfm/tutorials.md
+    - pysfm :
+      - tutorial: tutorials/pysfm/tutorial.md
         
   - Community : community/community.md
   - Open Source Projects:

@@ -31,6 +31,14 @@ For detailed instructions see the [getting started guide][3].
 
 # SFM Developer Center
 
+!!! summary "News"
+    + [2017-08-23] Supports SFM SDK for python called as [**pysfm**](sdk/python).
+    + [2017-08-23] [**SFM Slim**](products/SFMSlim) is coming up soon. 
+
+## Quick Access
+
+SFM SDK : [C/C++](sdk/c_cpp), [.NET](sdk/NET), [android](sdk/android), [python](sdk/python)  
+Tutorials : [pysfm](tutorials/pysfm/tutorial)
 
 ## What is SFM?
 SFM (Suprema Fingerprint Module) is the world's most widely used fingerprint module manufactured by [Suprema Inc](http://www.supremain.com). It provides the most powerful fingerprint recognition performance than other competitors. 
