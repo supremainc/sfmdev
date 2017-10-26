@@ -93,6 +93,7 @@ pages:
       - API Compatability : documents/API_Compatibility.md
       - API Specification : documents/API_Specification.md
     - UF Protocol Manual : documents/UF_Protocol_Manual.md
+    - Training : documents/training.md
   
   - SDK :
     - SFM SDK:
@@ -100,10 +101,11 @@ pages:
       - .NET : sdk/NET.md
       - android : sdk/android.md
       - python : sdk/python.md
+  
   - Tutorials : 
     - pysfm :
       - tutorial: tutorials/pysfm/tutorial.md
-        
+  
   - Community : community/community.md
   - Open Source Projects:
     - SFM Open EVK : projects/SFM_OPEN_EVK.md
