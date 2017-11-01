@@ -62,6 +62,8 @@ theme:
 # Options
 extra:
   social:
+    - type: facebook
+      link: https://www.facebook.com/supremaglobal/
     - type: globe
       link: http://www.supremainc.com
     - type: github-alt
@@ -106,7 +108,7 @@ pages:
       - SFM5000 Series: products/SFM5000.md
       - SFM4000 Series: products/SFM4000.md
       - SFM3000 Series: products/SFM3000.md
-        
+
   - Technical Documents:
     - SFM SDK Manual : 
       - Introduction : documents/Introduction.md
