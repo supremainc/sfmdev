@@ -57,7 +57,7 @@ theme:
     text: Roboto
     code: Roboto Mono
   logo:
-    icon: 
+    icon: fingerprint
 
 # Options
 extra:
