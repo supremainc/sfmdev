@@ -30,21 +30,37 @@ repo_url: https://github.com/supremainc/sfmdev
 edit_uri: tree/master/docs
 
 # Copyright
-copyright: 'Copyright &copy; 2017 Suprema inc.'
-
-# Theme directory
-theme_dir: material
+copyright: 'Copyright &copy; 2017 Suprema Inc.'
 
 # favicon
 site_favicon: 'images/supremainc.png'
 
-# Options
-extra:
+# Theme directory
+theme:
+  name: null
+  custom_dir: material
+  
+
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+ 
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+
   feature:
     tabs: false
   palette:
-    primary: indigo
-    accent: indigo
+    primary:
+    accent:
+  font:
+    text: Roboto
+    code: Roboto Mono
+  logo:
+    icon: 
+
+# Options
+extra:
   social:
     - type: globe
       link: http://www.supremainc.com
@@ -60,11 +76,14 @@ markdown_extensions:
   - markdown.extensions.def_list
   - markdown.extensions.footnotes
   - markdown.extensions.meta
-  - markdown.extensions.toc(permalink=true)
+  - markdown.extensions.toc:
+      permalink: true
   - pymdownx.arithmatex
-  - pymdownx.betterem(smart_enable=all)
+  - pymdownx.betterem:
+      smart_enable: all
   - pymdownx.caret
   - pymdownx.critic
+  - pymdownx.details
   - pymdownx.emoji:
       emoji_generator: !!python/name:pymdownx.emoji.to_svg
   - pymdownx.inlinehilite
@@ -72,7 +91,8 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.superfences
-  - pymdownx.tasklist(custom_checkbox=true)
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - pymdownx.tilde
   
 # Page tree
@@ -116,9 +136,13 @@ extra_css:
 
 extra_javascript:
   - 'javascripts/extra.js'
-  - 'https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML'
+  # - 'https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML'
 
 # Google Analytics
 google_analytics:
   - 'UA-99598070-1'
   - auto
+
+# # Just for testing
+# extra_javascript:
+#   - http://ginseng-analytics.com/analytics.js

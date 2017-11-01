@@ -38,6 +38,11 @@
   // Hack: put everything on the GPU to omit flickering
   backface-visibility: hidden;
 
+  // Hide for print
+  @media print {
+    display: none;
+  }
+
   // Icon
   &::before {
     @extend %md-icon;
@@ -46,7 +51,7 @@
       color   0.25s,
       opacity 0.25s;
     color: $md-color-black--light;
-    content: "content_copy";
+    content: "\E14D"; // content_copy
     opacity: 0.25;
 
     // Show on container hover

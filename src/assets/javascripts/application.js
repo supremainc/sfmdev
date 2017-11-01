@@ -26,6 +26,25 @@ import FastClick from "fastclick"
 import Material from "./components/Material"
 
 /* ----------------------------------------------------------------------------
+ * Functions
+ * ------------------------------------------------------------------------- */
+
+/**
+ * Return the meta tag value for the given key
+ *
+ * @param {string} key - Meta name
+ * @param {string} [_] - Stop Flow complaining (TODO)
+ *
+ * @return {string} Meta content value
+ */
+const translate = (key, _) => { // eslint-disable-line no-unused-vars
+  const meta = document.getElementsByName(`lang:${key}`)[0]
+  if (!(meta instanceof HTMLMetaElement))
+    throw new ReferenceError
+  return meta.content
+}
+
+/* ----------------------------------------------------------------------------
  * Application
  * ------------------------------------------------------------------------- */
 
@@ -73,7 +92,7 @@ function initialize(config) { // eslint-disable-line func-style
 
         /* Create button with message container */
         const button = (
-          <button class="md-clipboard" title="Copy to clipboard"
+          <button class="md-clipboard" title={translate("clipboard.copy")}
             data-clipboard-target={`#${id} pre, #${id} code`}>
             <span class="md-clipboard__message"></span>
           </button>
@@ -101,13 +120,28 @@ function initialize(config) { // eslint-disable-line func-style
 
         /* Set message indicating success and show it */
         message.classList.add("md-clipboard__message--active")
-        message.innerHTML = "Copied to clipboard"
+        message.innerHTML = translate("clipboard.copied")
 
         /* Hide message after two seconds */
         message.dataset.mdTimer = setTimeout(() => {
           message.classList.remove("md-clipboard__message--active")
           message.dataset.mdTimer = ""
         }, 2000).toString()
+      })
+    }
+
+    /* Polyfill details/summary functionality */
+    if (!Modernizr.details) {
+      const blocks = document.querySelectorAll("details > summary")
+      Array.prototype.forEach.call(blocks, summary => {
+        summary.addEventListener("click", ev => {
+          const details = ev.target.parentNode
+          if (details.hasAttribute("open")) {
+            details.removeAttribute("open")
+          } else {
+            details.setAttribute("open", "")
+          }
+        })
       })
     }
 
@@ -191,7 +225,9 @@ function initialize(config) { // eslint-disable-line func-style
   new Material.Event.Listener("[data-md-component=query]", [
     "focus", "keyup", "change"
   ], new Material.Search.Result("[data-md-component=result]", () => {
-    return fetch(`${config.url.base}/mkdocs/search_index.json`, {
+    return fetch(`${config.url.base}/${
+      config.version < "0.17" ? "mkdocs" : "search"
+    }/search_index.json`, {
       credentials: "same-origin"
     }).then(response => response.json())
       .then(data => {
@@ -275,13 +311,14 @@ function initialize(config) { // eslint-disable-line func-style
           /* Go to current active/focused link */
           const focus = document.querySelector(
             "[data-md-component=search] [href][data-md-state=active]")
-          if (focus instanceof HTMLLinkElement)
+          if (focus instanceof HTMLLinkElement) {
             window.location = focus.getAttribute("href")
 
-          /* Close search */
-          toggle.checked = false
-          toggle.dispatchEvent(new CustomEvent("change"))
-          query.blur()
+            /* Close search */
+            toggle.checked = false
+            toggle.dispatchEvent(new CustomEvent("change"))
+            query.blur()
+          }
         }
 
       /* Escape: close search */

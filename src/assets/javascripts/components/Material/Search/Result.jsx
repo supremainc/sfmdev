@@ -47,6 +47,21 @@ const truncate = (string, n) => {
   return string
 }
 
+/**
+ * Return the meta tag value for the given key
+ *
+ * @param {string} key - Meta name
+ * @param {string} [_] - Stop Flow complaining (TODO)
+ *
+ * @return {string} Meta content value
+ */
+const translate = (key, _) => { // eslint-disable-line no-unused-vars
+  const meta = document.getElementsByName(`lang:${key}`)[0]
+  if (!(meta instanceof HTMLMetaElement))
+    throw new ReferenceError
+  return meta.content
+}
+
 /* ----------------------------------------------------------------------------
  * Class
  * ------------------------------------------------------------------------- */
@@ -91,17 +106,18 @@ export default class Result {
     /* Load messages for metadata display */
     this.message_ = {
       placeholder: this.meta_.textContent,
-      none: this.meta_.dataset.mdLangResultNone,
-      one: this.meta_.dataset.mdLangResultOne,
-      other: this.meta_.dataset.mdLangResultOther
+      none: translate("search.result.none"),
+      one: translate("search.result.one"),
+      other: translate("search.result.other")
     }
 
     /* Override tokenizer separator, if given */
-    if (this.el_.dataset.mdLangTokenizer.length)
-      lunr.tokenizer.separator = this.el_.dataset.mdLangTokenizer
+    const tokenizer = translate("search.tokenizer")
+    if (tokenizer.length)
+      lunr.tokenizer.separator = tokenizer
 
     /* Load search languages */
-    this.lang_ = this.el_.dataset.mdLangSearch.split(",")
+    this.lang_ = translate("search.language").split(",")
       .filter(Boolean)
       .map(lang => lang.trim())
   }
@@ -164,7 +180,7 @@ export default class Result {
           )
 
           /* Set up alternate search languages */
-          if (lang.length === 1) {
+          if (lang.length === 1 && lang[0] !== "en") {
             this.use(lunr[lang[0]])
           } else if (lang.length > 1) {
             this.use(lunr.multiLanguage(...lang))

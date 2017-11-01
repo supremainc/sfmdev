@@ -1,6 +1,80 @@
+mkdocs-material-2.0.1 (2017-10-31)
+
+  * Fixed error when initializing search
+  * Fixed styles for link to edit the current page
+  * Fixed styles on nested admonition in details
+
+mkdocs-material-2.0.0 (2017-10-31)
+
+  * Added support for MkDocs 0.17.1 theme configuration options
+  * Added support for easier configuration of search tokenizer
+  * Added support to disable search
+  * Added Korean translations
+  * Removed support for MkDocs 0.16.x
+
+mkdocs-material-1.12.2 (2017-10-26)
+
+  * Added Italian, Norwegian, French and Chinese translations
+
+mkdocs-material-1.12.1 (2017-10-22)
+
+  * Added Polish, Swedish and Spanish translations
+  * Improved downward compatibility with custom partials
+  * Temporarily pinned MkDocs version within Docker image to 0.16.3
+  * Fixed #519: Missing theme configuration file
+
+mkdocs-material-1.12.0 (2017-10-20)
+
+  * Added support for setting language(s) via mkdocs.yml
+  * Added support for default localization
+  * Added German and Danish translations
+  * Fixed #374: Search bar misalignment on big screens
+
+mkdocs-material-1.11.0 (2017-10-19)
+
+  * Added localization to clipboard
+  * Refactored localization logic
+
+mkdocs-material-1.10.4 (2017-10-18)
+
+  * Improved print styles of code blocks
+  * Improved search UX (don't close on enter if no selection)
+  * Fixed #495: Vertical scrollbar on short pages
+
+mkdocs-material-1.10.3 (2017-10-11)
+
+  * Fixed #484: Vertical scrollbar on some MathJax formulas
+  * Fixed #483: Footnote backref target offset regression
+
+mkdocs-material-1.10.2 (2017-10-06)
+
+  * Fixed #468: Sidebar shows scrollbar if content is shorter (in Safari)
+
+mkdocs-material-1.10.1 (2017-09-14)
+
+  * Fixed #455: Bold code blocks rendered with normal font weight
+
+mkdocs-material-1.10.0 (2017-09-01)
+
+  * Added support to make logo default icon configurable
+  * Fixed uninitialized overflow scrolling on main pane for iOS
+  * Fixed error in mobile navigation in case JavaScript is not available
+  * Fixed incorrect color transition for nested panes in mobile navigation
+  * Improved checkbox styles for Tasklist from PyMdown Extension package
+
+mkdocs-material-1.9.0 (2017-08-29)
+
+  * Added info (synonym: todo) style for Admonition
+  * Added question (synonym: help, faq) style for Admonition
+  * Added support for Details from PyMdown Extensions package
+  * Improved Admonition styles to match Details
+  * Improved styles for social links in footer
+  * Replaced ligatures with Unicode code points to avoid broken layout
+  * Upgraded PyMdown Extensions package dependency to >= 3.4
+
 mkdocs-material-1.8.1 (2017-08-07)
 
-  * Fixed #429: Missing pagination for GitHub API
+  * Fixed #421: Missing pagination for GitHub API
 
 mkdocs-material-1.8.0 (2017-08-02)
 
@@ -213,7 +287,7 @@ mkdocs-material-1.0.0 (2017-01-13)
   * Restructured templates into base templates and partials
   * Added build and watch scripts in package.json
   * Added support for Metadata and Footnotes Markdown extensions
-  * Added support for pymdownx.* Markdown extensions
+  * Added support for PyMdown Extensions package
   * Added support for collapsible sections in navigation
   * Added support for separate table of contents
   * Added support for better accessibility through REM-based layout
