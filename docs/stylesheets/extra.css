@@ -16,38 +16,40 @@ ol,li{
 .md-typeset h2{
     color: #3F51B5;
     font-weight: 300;
-    margin-left: 5px;
+    margin-left: 0px;
     
 }
 .md-typeset h3{
     color: #666666;
-    margin-left: 10px;
+    margin-left: 0px;
     font-weight: 700;
     
 }
 .md-typeset h4{
     color: #666666;
-    margin-left: 15px;
+    margin-left: 0px;
 }
 .md-typeset h5{
     color: #666666;
-    margin-left: 20px;
+    margin-left: 0px;
     font-size: 1.4rem;
 }
 .md-typeset h6{
-    margin-left: 25px;
-    
+    color: #666666;
+    margin-left: 0px;
+    font-size: 1.4rem;
 }
 
 .md-typeset code {
     border: 1px solid #E7E7E7;
     border-radius: 2px;
     /*background-color: #fff2f8;*/
-    background-color: #F7F7F7;
-    color: #EE407A;
-    font-weight: bold;
-    padding: 4px;
-    
+    background-color: #f7f7F7;
+    color: #666666;
+    /* font-weight: bold; */
+    padding: 2px;
+    font-weight: 600;
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body{
@@ -59,3 +61,77 @@ a.md-nav__link[data-md-state=blur]
 {
     color: rgba(0,0,0,.4);
 }
+
+/* remove left border of the admonition, Brian lee*/
+.md-typeset .admonition, .md-typeset details
+{
+    border-left: .0rem solid #EEEEEE !important;
+}   
+
+/* custom style of the admonition, Brian Lee */
+.md-typeset .admonition > p > strong > em
+{
+    font-size: 1.2rem;
+    background: #EBF8FB;
+    padding: .3rem ;
+    color:#666666;
+    border-radius: 2px;
+}
+
+.md-typeset .admonition > p > strong 
+{
+    font-size: 1.4rem;
+    margin-left: -0.8rem;
+}
+
+.md-typeset .admonition > p 
+{
+    margin-left: .8rem;
+}
+
+/* custom style of the admonition (only for cite), Brian Lee*/
+.md-typeset .admonition.cite>.admonition-title::before
+{
+    content: none !important;
+}
+
+.md-typeset .admonition.cite>.admonition-title
+{
+    padding: .8rem .8rem .8rem .8rem;
+    font-size: 1.4rem;
+}
+
+
+@media only screen and (min-width: 92.25em)
+{
+    .md-grid 
+    {
+        max-width:138rem;
+    }
+
+    
+    .md-sidebar--secondary
+    {
+        margin-left: 138rem;
+    }
+}
+
+md-typeset table:not([class]) th{
+    min-width:4rem;
+    padding:0.5rem 0.5rem;
+}
+/* 
+.md-typeset table:not([class]) th:not([align]){
+    text-align: center;
+}
+
+.md-typeset .md-typeset__t{
+    width: 98%;
+    margin: auto;
+    padding: 1rem;
+    
+}
+
+.md-typeset__scrollwrap{
+    margin: 1rem;
+}  */
