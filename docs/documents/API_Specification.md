@@ -4912,13 +4912,15 @@ Scans a fingerprint on the sensor and retrieves the image data.
 	If the function succeeds, return `UF_RET_SUCCESS`. Otherwise, return the corresponding error code.
 
 ---
-###  UF_ReadImageEx
-Retrieves the last scanned fingerprint image.
+
+###  UF_ReadImageEx  
+Retrieves the last scanned fingerprint image.  
+
 !!!info "Description"
 	```cpp
 	UF_RET_CODE UF_ReadImageEx( UFImage* image, UF_IMAGE_TYPE type,	int wsqBitRate )
 	```
-	**Parameters**  
+	**Parameters**   
 	***image***  
 	Pointer to the UFImage structure.  
 	***type***  
@@ -4970,12 +4972,13 @@ Decode the compressed WSQ fingerprint image which is read or scaned by the modul
 ---
 ##  Contact Info
 
-- Headquarters
+!!!info ""
+	**Headquarters**  
 
-Suprema, Inc. (http://www.supremainc.com)
-16F Parkview Office Tower,
-Joengja-dong, Bundang-gu,
-Seongnam, Gyeonggi, 463-863 Korea
-Tel: +82-31-783-4505
-Fax:+82-31-783-4506
-Email: sales@supremainc.com, support@supremainc.com
+	Suprema, Inc. (http://www.supremainc.com)  
+	16F Parkview Office Tower,  
+	Joengja-dong, Bundang-gu,  
+	Seongnam, Gyeonggi, 463-863 Korea  
+	Tel: +82-31-783-4505  
+	Fax:+82-31-783-4506  
+	Email: sales@supremainc.com, support@supremainc.com  
