@@ -1,10 +1,13 @@
 # .NET
 
 [![Join the chat at https://gitter.im/supremainc/.NET_sdk](https://badges.gitter.im/supremainc/.NET_sdk.svg)](https://gitter.im/supremainc/.NET_sdk?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Github release](https://img.shields.io/github/release/supremainc/.NET_sdk.svg)](https://github.com/supremainc/.NET_sdk/releases)
+![Github all releases (download)](https://img.shields.io/github/downloads/supremainc/.NET_sdk/total.svg) 
+
 ## Quick start
 
 **Step 1**  
-Download these files.  
+Download these files (latest version).  
 [SFM_SDK.dll](https://github.com/supremainc/.NET_sdk/raw/master/Sample/SFM_SDK_NET/SFM_SDK.dll)  
 [SFM_SDK_NET.dll](https://github.com/supremainc/.NET_sdk/raw/master/Sample/SFM_SDK_NET/SFM_SDK_NET.dll)  
 [SFM_SDK_NET.XML](https://github.com/supremainc/.NET_sdk/raw/master/Sample/SFM_SDK_NET/SFM_SDK_NET.XML)  
