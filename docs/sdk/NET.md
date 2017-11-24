@@ -1,5 +1,6 @@
 # .NET
 
+[![Join the chat at https://gitter.im/supremainc/.NET_sdk](https://badges.gitter.im/supremainc/.NET_sdk.svg)](https://gitter.im/supremainc/.NET_sdk?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 ## Quick start
 
 **Step 1**  
