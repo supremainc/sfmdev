@@ -1,5 +1,8 @@
 # python
 
+[![pysfm](https://img.shields.io/pypi/v/pysfm.svg)](https://pypi.python.org/pypi/pysfm/)
+[![PyPI](https://img.shields.io/pypi/format/pysfm.svg)](https://pypi.python.org/pypi/pysfm/)
+
 ## Quick start
 
 SFM SDK for python is called as **pysfm**. Also, it is hosted on https://pypi.python.org/.

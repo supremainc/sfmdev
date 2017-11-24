@@ -44,7 +44,9 @@ For detailed instructions see the [getting started guide][3].
 
   [3]: getting-started.md-->
 
-# SFM Developer Center ![](https://travis-ci.org/supremainc/sfmdev.svg?branch=master)
+# SFM Developer Center 
+
+![](https://travis-ci.org/supremainc/sfmdev.svg?branch=master)
 
 !!! summary "News"
     + [2017-08-23] Supports SFM SDK for python called as [**pysfm**](sdk/python).
