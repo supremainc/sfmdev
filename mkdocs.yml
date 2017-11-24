@@ -69,6 +69,8 @@ extra:
       link: http://www.supremainc.com
     - type: github-alt
       link: https://github.com/supremainc
+    - type: slack
+      link: https://sfmdev.slack.com
 
   logo: 'images/suprema.png'
 
@@ -118,16 +120,14 @@ pages:
     - UF Protocol Manual : documents/UF_Protocol_Manual.md
     - Training : documents/training.md
   
-  - SDK :
-    - SFM SDK:
-      - C/C++ : sdk/c_cpp.md
-      - .NET : sdk/NET.md
-      - android : sdk/android.md
-      - python : sdk/python.md
+  - SDK:
+    - C/C++ : sdk/c_cpp.md
+    - .NET : sdk/NET.md
+    - android : sdk/android.md
+    - python : sdk/python.md
   
   - Tutorials : 
-    - pysfm :
-      - tutorial: tutorials/pysfm/tutorial.md
+    - pysfm : tutorials/pysfm/tutorial.md
   
   - Community : community/community.md
   - Open Source Projects:

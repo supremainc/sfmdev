@@ -46,8 +46,6 @@ For detailed instructions see the [getting started guide][3].
 
 # SFM Developer Center 
 
-![](https://travis-ci.org/supremainc/sfmdev.svg?branch=master)
-
 !!! summary "News"
     + [2017-08-23] Supports SFM SDK for python called as [**pysfm**](sdk/python).
     + [2017-08-23] [**SFM Slim**](products/SFMSlim) is coming up soon. 
@@ -58,7 +56,7 @@ SFM SDK : [C/C++](sdk/c_cpp), [.NET](sdk/NET), [android](sdk/android), [python](
 Tutorials : [pysfm](tutorials/pysfm/tutorial)
 
 
-<button class="slack-join-btn" onClick="window.open('https://publicslack.com/slacks/https-sfmdev-slack-com/invites/new');"><img class="slack-join-btn-img" src="images/join_slack.png"></button>
+<!-- <button class="slack-join-btn" onClick="window.open('https://publicslack.com/slacks/https-sfmdev-slack-com/invites/new');"><img class="slack-join-btn-img" src="images/join_slack.png"></button> -->
 
 ---
 

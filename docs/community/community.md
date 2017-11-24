@@ -13,9 +13,18 @@
 
 ##### Sub reddit
 
-###### [**/r/supremainc/**](https://www.reddit.com/r/supremainc/) - The official subreddit of Suprema Inc.
-###### [**/r/sfmdev/**](https://www.reddit.com/r/sfmdev/) - Subreddit of SFM Developer Center.
+[**/r/supremainc/**](https://www.reddit.com/r/supremainc/) - The official subreddit of Suprema Inc.  
+[**/r/sfmdev/**](https://www.reddit.com/r/sfmdev/) - Subreddit of SFM Developer Center.
 
+##### Slack
+[**SFM Developer Center on Slack**](https://sfmdev.slack.com)  
+
+
+<!-- <button class="slack-join-btn" onClick="window.open('https://publicslack.com/slacks/https-sfmdev-slack-com/invites/new');"><img class="slack-join-btn-img" src="../../images/join_slack.png"></button> -->
+
+##### Gitter
+**SFM SDK for .NET :**
+[![Join the chat at https://gitter.im/supremainc/.NET_sdk](https://badges.gitter.im/supremainc/.NET_sdk.svg)](https://gitter.im/supremainc/.NET_sdk?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ---
 
