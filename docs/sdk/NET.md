@@ -7,12 +7,9 @@
 ## Quick start
 
 **Step 1**  
-Download these files (latest version).  
-[SFM_SDK.dll](https://github.com/supremainc/.NET_sdk/raw/master/Sample/SFM_SDK_NET/SFM_SDK.dll)  
-[SFM_SDK_NET.dll](https://github.com/supremainc/.NET_sdk/raw/master/Sample/SFM_SDK_NET/SFM_SDK_NET.dll)  
-[SFM_SDK_NET.XML](https://github.com/supremainc/.NET_sdk/raw/master/Sample/SFM_SDK_NET/SFM_SDK_NET.XML)  
+[Download the latest version of SDK](https://github.com/supremainc/.NET_sdk/releases).  
 
-!!! note
+!!!note "The SDK includes these files"  
     **SFM_SDK.dll** is a library file for C/C++.  
     **SFM_SDK.dll** is a native library file for .NET  
     **SFM_SDK_NET.XML** is a file for documentation of .NET library.  
