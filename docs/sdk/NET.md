@@ -1,13 +1,13 @@
 # .NET
 
-[![Join the chat at https://gitter.im/supremainc/.NET_sdk](https://badges.gitter.im/supremainc/.NET_sdk.svg)](https://gitter.im/supremainc/.NET_sdk?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![Github release](https://img.shields.io/github/release/supremainc/.NET_sdk.svg)](https://github.com/supremainc/.NET_sdk/releases)
-![Github all releases (download)](https://img.shields.io/github/downloads/supremainc/.NET_sdk/total.svg) 
+[![Join the chat at https://gitter.im/supremainc/sfm-sdk-dotnet](https://badges.gitter.im/supremainc/sfm-sdk-dotnet.svg)](https://gitter.im/supremainc/sfm-sdk-dotnet?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Github release](https://img.shields.io/github/release/supremainc/sfm-sdk-dotnet.svg)](https://github.com/supremainc/sfm-sdk-dotnet/releases)
+![Github all releases (download)](https://img.shields.io/github/downloads/supremainc/sfm-sdk-dotnet/total.svg) 
 
 ## Quick start
 
 **Step 1**  
-[Download the latest version of SDK](https://github.com/supremainc/.NET_sdk/releases).  
+[Download the latest version of SDK](https://github.com/supremainc/sfm-sdk-dotnet/releases).  
 
 !!!note "The SDK includes these files"  
     **SFM_SDK.dll** is a library file for C/C++.  

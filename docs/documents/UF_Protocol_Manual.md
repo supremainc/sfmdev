@@ -233,7 +233,7 @@ Three types of packet protocol can be summarized as follows:
 
 
 !!!note "Contact us"
-    If you need more detail information about this documents (UF_Protocol_Manual), please contact at sales_sol@suprema.co.kr
+    If you need more detail information about this document (UF_Protocol_Manual), please contact at sales_sol@suprema.co.kr
 
 
 [^1]:SFM3000/3500/4000/5000 only

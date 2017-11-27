@@ -19,12 +19,12 @@
 ##### Slack
 [**SFM Developer Center on Slack**](https://sfmdev.slack.com)  
 
-
+s
 <!-- <button class="slack-join-btn" onClick="window.open('https://publicslack.com/slacks/https-sfmdev-slack-com/invites/new');"><img class="slack-join-btn-img" src="../../images/join_slack.png"></button> -->
 
 ##### Gitter
 **SFM SDK for .NET :**
-[![Join the chat at https://gitter.im/supremainc/.NET_sdk](https://badges.gitter.im/supremainc/.NET_sdk.svg)](https://gitter.im/supremainc/.NET_sdk?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join the chat at https://gitter.im/supremainc/sfm-sdk-dotnet](https://badges.gitter.im/supremainc/sfm-sdk-dotnet.svg)](https://gitter.im/supremainc/sfm-sdk-dotnet?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ---
 
