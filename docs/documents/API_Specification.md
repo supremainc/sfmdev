@@ -247,7 +247,7 @@ Sends a 13 byte packet to the module. The packet is composed as follows;
 	UF_RET_CODE UF_SendPacket( BYTE command, UINT32 param, UINT32 size, BYTE flag, int timeout )
 	```
 
-	**Parameters** 
+	**Parameters**  
 	***command***  
 	Command field of a packet. Refer to the Packet Protocol Manual for available commands.  
 	***param***  
@@ -2470,7 +2470,7 @@ Identifies the fingerprint input on the sensor.
 	```
 
 	**Parameters**  
-	***userID***
+	***userID***  
 	Pointer to the user ID to be returned.  
 	***subID***  
 	Pointer to the index of the template to be returned.  
@@ -3056,18 +3056,18 @@ Gets the signal data of an output event on the specified output/LED port.
 Sets the status of an output/LED port.
 
 !!!info "Description"
-```cpp
-UF_RET_CODE UF_SetOutputStatus( UF_OUTPUT_PORT port, BOOL status )
-```
+	```cpp
+	UF_RET_CODE UF_SetOutputStatus( UF_OUTPUT_PORT port, BOOL status )
+	```
 
-**Parameters**  
-***port***  
-Output/LED port.  
-***status***  
-TRUE for active and FALSE for inactive status.  
+	**Parameters**  
+	***port***  
+	Output/LED port.  
+	***status***  
+	TRUE for active and FALSE for inactive status.  
 
-**Return Values**  
-If the function succeeds, return `UF_RET_SUCCESS`. Otherwise, return the corresponding error code.
+	**Return Values**  
+	If the function succeeds, return `UF_RET_SUCCESS`. Otherwise, return the corresponding error code.
 
 ---
 ###  UF_SetLegacyWiegandConfig(Deprecated)
@@ -3132,7 +3132,7 @@ Makes IO configuration data to be saved into a file. See the example of `UF_Save
 	If the function succeeds, return `UF_RET_SUCCESS`. Otherwise, return the corresponding error code.
 
 ---
-##  3.15. GPIO API for SFM3000/4000/5000
+##  3.15. GPIO API for SFM3000/4000/5000/6000
 
 SFM3000 series modules have 8 GPIO ports, which are configurable for specific functions. The function of each GPIO can be read and programmed via these APIs. . GPIO port can be configured as input, output, shared I/O, Wiegand input, or Wiegand output. In the input mode, enroll, identify, and delete functions are supported. In the output mode, the port can send output patterns corresponding to the various events such as match success, enroll fail, and so on.
 
@@ -4901,12 +4901,11 @@ Scans a fingerprint on the sensor and retrieves the image data.
 	***wsqBitRate***  
 	WSQ is compressed by input of wsqBitRate in the module. The value of
 	wsqBitRate is recommended as below.  
-	1. High quality compressing (compressing rate approx. 1:5)  
-	`wsqBitRate = 225`,  
-	2. Midium quality compressing (compressing rate approx. 1:10)  
-	`wsqBitRate = 150`,  
-	3. Low quality compressing (compressing rate approx. 1:15)  
-	`wsqBitRate = 75`,  
+
+	  - `wsqBitRate = 225`, High quality compressing (compressing rate approx. 1:5)  
+	  - `wsqBitRate = 150`, Midium quality compressing (compressing rate approx. 1:10)  
+	  - `wsqBitRate = 75`, Low quality compressing (compressing rate approx. 1:15)  
+	
 
 	**Return Values**  
 	If the function succeeds, return `UF_RET_SUCCESS`. Otherwise, return the corresponding error code.
@@ -4927,12 +4926,11 @@ Retrieves the last scanned fingerprint image.
 	Type of an image to read or scan.  
 	***wsqBitRate***  
 	WSQ is compressed by input of wsqBitRate in the module. The value of wsqBitRate is recommended as below.  
-	4. High quality compressing (compressing rate approx. 1:5)  
-	`wsqBitRate = 225`,  
-	5. Midium quality compressing (compressing rate approx. 1:10)  
-	`wsqBitRate = 150`,  
-	6. Low quality compressing (compressing rate approx. 1:15)  
-	`wsqBitRate = 75`,  
+	
+	  - `wsqBitRate = 225`, High quality compressing (compressing rate approx. 1:5)  
+	  - `wsqBitRate = 150`, Midium quality compressing (compressing rate approx. 1:10)  
+	  - `wsqBitRate = 75`, Low quality compressing (compressing rate approx. 1:15)  
+	 
 	
 	**Return Values**
 	If the function succeeds, return `UF_RET_SUCCESS`. Otherwise, return the corresponding error code.
