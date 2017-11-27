@@ -118,7 +118,7 @@ pages:
       - API Compatability : documents/API_Compatibility.md
       - API Specification : documents/API_Specification.md
     - UF Protocol Manual : documents/UF_Protocol_Manual.md
-    - Training : documents/training.md
+    
   
   - SDK:
     - C/C++ : sdk/c_cpp.md
@@ -128,6 +128,7 @@ pages:
   
   - Tutorials : 
     - pysfm : tutorials/pysfm/tutorial.md
+    - Training : tutorials/training.md
   
   - Community : community/community.md
   - Open Source Projects:
