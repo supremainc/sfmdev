@@ -3,17 +3,17 @@
 
 !!!Tip
     You can download all about android SFM_SDK(library, example project, document) through below github URL.
-    **https://github.com/supremainc/android_sdk**
+    **https://github.com/supremainc/sfm-sdk-android**
 
 ## Quick start
 
 **Step 1**  
 Download these files.  
-[arm64-v8a_libSFM_SDK_android.so](https://github.com/supremainc/android_sdk/raw/master/Library/Android_SDK_Beta_v1.0/arm64-v8a/arm64-v8a_libSFM_SDK_android_Beta_v1.0.so)  
-[armeabi-v7a_libSFM_SDK_android.so](https://github.com/supremainc/android_sdk/raw/master/Library/Android_SDK_Beta_v1.0/armeabi-v7a/armeabi-v7a_libSFM_SDK_android_Beta_v1.0.so)  
-[armeabi_libSFM_SDK_android.so](https://github.com/supremainc/android_sdk/raw/master/Library/Android_SDK_Beta_v1.0/armeabi/armeabi_libSFM_SDK_android_Beta_v1.0.so)  
-[JNI_Header.zip](https://github.com/supremainc/android_sdk/raw/master/Library/Android_SDK_Beta_v1.0/JNI_Header_Beta_v1.0.zip)  
-[UnifingerUI for Android.docx](https://github.com/supremainc/android_sdk/raw/master/Document/UnifingerUI%20for%20Android(App_Beta_v1.2%2CSDK_Beta_v1.0).docx) 
+[arm64-v8a_libSFM_SDK_android.so](https://github.com/supremainc/sfm-sdk-android/raw/master/Library/Android_SDK_Beta_v1.0/arm64-v8a/arm64-v8a_libSFM_SDK_android_Beta_v1.0.so)  
+[armeabi-v7a_libSFM_SDK_android.so](https://github.com/supremainc/sfm-sdk-android/raw/master/Library/Android_SDK_Beta_v1.0/armeabi-v7a/armeabi-v7a_libSFM_SDK_android_Beta_v1.0.so)  
+[armeabi_libSFM_SDK_android.so](https://github.com/supremainc/sfm-sdk-android/raw/master/Library/Android_SDK_Beta_v1.0/armeabi/armeabi_libSFM_SDK_android_Beta_v1.0.so)  
+[JNI_Header.zip](https://github.com/supremainc/sfm-sdk-android/raw/master/Library/Android_SDK_Beta_v1.0/JNI_Header_Beta_v1.0.zip)  
+[UnifingerUI for Android.docx](https://github.com/supremainc/sfm-sdk-android/raw/master/Document/UnifingerUI%20for%20Android(App_Beta_v1.2%2CSDK_Beta_v1.0).docx) 
 
 !!! note
     **arm64-v8a_libSFM_SDK_android.so** is a library file for 64bits arm processor.  
