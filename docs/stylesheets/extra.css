@@ -102,17 +102,17 @@ a.md-nav__link[data-md-state=blur]
 }
 
 
-@media only screen and (min-width: 92.25em)
+@media only screen and (min-width: 102.25em)
 {
     .md-grid 
     {
-        max-width:138rem;
+        max-width:148rem;
     }
 
     
     .md-sidebar--secondary
     {
-        margin-left: 138rem;
+        margin-left: 148rem;
     }
 }
 
@@ -135,3 +135,18 @@ md-typeset table:not([class]) th{
 .md-typeset__scrollwrap{
     margin: 1rem;
 }  */
+
+button img.slack-join-btn-img{
+    border-radius: 5px;
+    width: 272px;
+    height: 45px;
+
+}
+
+button img.slack-join-btn-img:active{
+    transform: translateY(4px);
+}
+
+button img.slack-join-btn-img:hover{
+    box-shadow: 5px 5px #CCC;
+}

@@ -7,11 +7,13 @@
 
 <!--- [Reddit](https://www.reddit.com/r/sfm) of suprema inc.-->
 
-##### Notice
+<!-- ##### Notice
 <blockquote class="reddit-card" data-card-created="1498713868"><a href="https://www.reddit.com/r/supremainc/comments/6jhsiz/the_official_subreddit_of_suprema_inc/?ref=share&ref_source=embed">The official subreddit of Suprema Inc.</a> from <a href="http://www.reddit.com/r/supremainc">supremainc</a></blockquote>
-<script async src="//embed.redditmedia.com/widgets/platform.js" charset="UTF-8"></script>
+<script async src="//embed.redditmedia.com/widgets/platform.js" charset="UTF-8"></script> -->
 
-##### Sub reddit
+![](https://ci5.googleusercontent.com/proxy/5x9_Vyd0RjfcPuMoNmj89JJi7u7Tc7cbXKoAQFmKgrirUjwnFrI04S0RXMo_4aJblrRxKR40EV-1604mCq0bzLwpEjgTuaoH-_W6QlrozVO8eXWkwzAgv-gQ91Oz6Gb0tix8hmB-aHIE-C1sWuWyUdFx0Bb-h-mhv1EyYL4DPWOm4TBTXyV7vw=s0-d-e1-ft#https://i.redditmedia.com/17ieOEmIkPZEHYiSUitV4apf80O6CYc0OpUTtXrwRbE.png?w=530&s=46b271556247d39be5a61f027b9438ba)
+
+##### Reddit
 
 [**/r/supremainc/**](https://www.reddit.com/r/supremainc/) - The official subreddit of Suprema Inc.  
 [**/r/sfmdev/**](https://www.reddit.com/r/sfmdev/) - Subreddit of SFM Developer Center.
@@ -19,11 +21,10 @@
 ##### Slack
 [**SFM Developer Center on Slack**](https://sfmdev.slack.com)  
 
-s
 <!-- <button class="slack-join-btn" onClick="window.open('https://publicslack.com/slacks/https-sfmdev-slack-com/invites/new');"><img class="slack-join-btn-img" src="../../images/join_slack.png"></button> -->
 
 ##### Gitter
-**SFM SDK for .NET :**
+  - SFM SDK for .NET :
 [![Join the chat at https://gitter.im/supremainc/sfm-sdk-dotnet](https://badges.gitter.im/supremainc/sfm-sdk-dotnet.svg)](https://gitter.im/supremainc/sfm-sdk-dotnet?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ---
