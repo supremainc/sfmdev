@@ -56,8 +56,6 @@ For detailed instructions see the [getting started guide][3].
 SFM SDK : [C/C++](sdk/c_cpp), [.NET](sdk/NET), [android](sdk/android), [python](sdk/python)  
 Tutorials : [pysfm](tutorials/pysfm/tutorial)
 
-<!-- <button class="slack-join-btn" onClick="window.open('https://publicslack.com/slacks/https-sfmdev-slack-com/invites/new');"><img class="slack-join-btn-img" src="images/join_slack.png"></button> -->
-
 ---
 
 ##What is SFM?  
@@ -66,7 +64,7 @@ SFM (Suprema Fingerprint Module) is the world's most widely used fingerprint mod
 ##What is SFM Developer Center?  
 SFM Developer Center is an online space that provides technical information and technical communication with customers. In SFM Developer Center, We will open various open source projects using SFM to provide the opportunity to utilize fingerprint recognition technology not only for fingerprint recognition experts but also for those interested in hobbies such as start-up companies or DIY. 
 <!-- <script type="text/javascript" src="//static.mailerlite.com/data/webforms/421957/q7h4f5.js?v1"></script> -->
- <script type="text/javascript" src="https://static.mailerlite.com/data/webforms/668538/y2n1l7.js?v4"></script>
+ <!-- <script type="text/javascript" src="https://static.mailerlite.com/data/webforms/668538/y2n1l7.js?v4"></script> -->
  
 !!! summary "About Suprema Inc."  
     

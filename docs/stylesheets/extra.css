@@ -137,16 +137,92 @@ md-typeset table:not([class]) th{
 }  */
 
 button img.slack-join-btn-img{
-    border-radius: 5px;
-    width: 272px;
-    height: 45px;
-
+    width:auto;
+    height: 35px;
+    margin: 5px;
+    position: fixed;
+    top : 0;
+    right : 0;
 }
 
 button img.slack-join-btn-img:active{
-    transform: translateY(4px);
+  
 }
 
-button img.slack-join-btn-img:hover{
-    box-shadow: 5px 5px #CCC;
+button img.slack-join-btn:hover{
+    transform: translateX(5);
+}
+
+
+header {
+    margin-top: 45px;
+}
+
+div .slack-join {
+    
+    width: 100%;
+    height: 45px;
+    position: fixed;
+    top:0;
+    left:0;
+    background: #FFFFFF;
+    color: #777777;
+    font-size: 1.6rem;
+    padding: 10px;
+    
+    
+}
+
+/* mailerlite */
+
+.ml-button-iframe {
+    background-color: transparent !important;
+    border: 0px none transparent !important;
+    overflow: hidden !important;
+    position: fixed !important;
+    visibility: visible !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    left: 0px !important;
+    top: 0px !important;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: 999999 !important;
+    display: none;
+}
+
+#mlb2-7008558 button.ml-subscribe-button {
+    cursor: pointer;
+    font-family: Open Sans!important;
+    font-size: 16px!important;
+    height: 40px;
+    width: 100%;
+    /* background: #A12641!important;
+    background-color: #A12641!important; */
+    color: #ffffff!important;
+    border: none;
+    border-radius: 0px;
+    padding: 0px 16px;
+}
+
+#mlb2-7008558 button.gradient-on {
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+    background: linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+}
+
+#mlb2-7008558 button.gradient-on:hover {
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+    background: linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+}
+
+@media (max-width: 768px) {
+    #mlb2-7008558 button.ml-subscribe-button {
+        height: auto;
+        line-height: 26px;
+        padding: 5px 16px;
+    }
 }
