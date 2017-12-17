@@ -1,5 +1,6 @@
 # python
 
+[![Gitter](https://badges.gitter.im/supremainc/sfm-sdk-python.svg)](https://gitter.im/supremainc/sfm-sdk-python?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![pysfm](https://img.shields.io/pypi/v/pysfm.svg)](https://pypi.python.org/pypi/pysfm/)
 [![PyPI](https://img.shields.io/pypi/format/pysfm.svg)](https://pypi.python.org/pypi/pysfm/)
 
