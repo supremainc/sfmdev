@@ -11,7 +11,7 @@
 
 !!!note "The SDK includes these files"  
     **SFM_SDK.dll** is a library file for C/C++.  
-    **SFM_SDK.dll** is a native library file for .NET  
+    **SFM_SDK_NET.dll** is a native library file for .NET  
     **SFM_SDK_NET.XML** is a file for documentation of .NET library.  
 
 **Step 2**  
