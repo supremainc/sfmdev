@@ -3,6 +3,7 @@
 [![Gitter](https://badges.gitter.im/supremainc/sfm-sdk-python.svg)](https://gitter.im/supremainc/sfm-sdk-python?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![pysfm](https://img.shields.io/pypi/v/pysfm.svg)](https://pypi.python.org/pypi/pysfm/)
 [![PyPI](https://img.shields.io/pypi/format/pysfm.svg)](https://pypi.python.org/pypi/pysfm/)
+![Github all releases (download)](https://img.shields.io/github/downloads/supremainc/sfm-sdk-python/total.svg) 
 
 ## Quick start
 
@@ -26,5 +27,8 @@ To upgrade **pysfm** to the latest version, use **pip**:
 pip install --upgrade pysfm
 ```
 
+### Examples
 
-For detailed instructions see the [tutorial of pysfm](../../tutorials/pysfm/tutorial)
+Some examples are shared at https://github.com/supremainc/sfm-sdk-python
+
+For detailed instructions, see the [tutorial of pysfm](../../tutorials/pysfm/tutorial)
