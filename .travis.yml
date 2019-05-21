@@ -1,4 +1,4 @@
-# Copyright (c) 2016-2017 Martin Donath <martin.donath@squidfunk.com>
+# Copyright (c) 2016-2019 Martin Donath <martin.donath@squidfunk.com>
 
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to
@@ -18,15 +18,12 @@
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 # IN THE SOFTWARE.
 
-language: node_js
+language: python
 sudo: false
 
-# -----------------------------------------------------------------------------
-# Regular builds
-# -----------------------------------------------------------------------------
-
-# Node.js version and necessary services
-node_js: 5
+# Python, Node.js version and necessary services
+python: "3.6"
+node_js: "8"
 services:
   - docker
 
@@ -37,19 +34,19 @@ git:
 # Cache dependencies
 cache:
   pip: true
-  yarn: true
   directories:
     - node_modules
 
-# Install yarn as Travis doesn't support it out of the box
-before_install:
-  - npm install -g yarn@v0.22.0
-
 # Install dependencies
 install:
-  - yarn install --ignore-optional
-  - pip install --user -r requirements.txt
+  - npm install
+  - pip install -r requirements.txt
 
 # Perform build and release
 script:
-  - yarn run travis
+  - npm run lint
+  - npm run build
+
+# Deploy artifacts
+after_success:
+  - ./.travis.sh
