@@ -77,7 +77,8 @@ extra:
 # Extensions
 markdown_extensions:
   - markdown.extensions.admonition
-  - markdown.extensions.codehilite(guess_lang=false)
+  - markdown.extensions.codehilite:
+      guess_lang: false
   - markdown.extensions.def_list
   - markdown.extensions.footnotes
   - markdown.extensions.meta
@@ -92,7 +93,11 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_generator: !!python/name:pymdownx.emoji.to_svg
   - pymdownx.inlinehilite
-  - pymdownx.magiclink
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.superfences
