@@ -5,11 +5,6 @@ Powered by a state-of-the-art 1GHz CPU, MINEX-certified algorithm and 256-bit AE
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7PMOzV-_T0k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="
-https://www.youtube.com/embed/He09LObJZYI
-" frameborder="0" allowfullscreen></iframe>
-
-
 ## Features
 - World’s Slimmest 13.5 mm FAP 20-certified Optical Fingerprint Module
 - Ultra performance with 1.0GHz CPU
