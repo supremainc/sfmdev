@@ -8,28 +8,29 @@ Powered by a state-of-the-art 1GHz CPU, MINEX-certified algorithm and 256-bit AE
 ## Features
 - World’s Slimmest 13.5 mm FAP 20-certified Optical Fingerprint Module
 - Ultra performance with 1.0GHz CPU
-  - 5,000 templates matching per second
+    - 5,000 templates matching per second
+
   
 - Class-leading User Capacity
-  - Store Max 22,000 templates (in One Template Mode)
+    - Store Max 22,000 templates (in One Template Mode)
   
 - FBI PIV and FBI Mobile ID FAP20 certificates
-  - NIST certified interoperable image & template format standards (ANSI-378, ISO19794-2)
-  - Image compression standard: WSQ
+    - NIST certified interoperable image & template format standards (ANSI-378, ISO19794-2)
+    - Image compression standard: WSQ
   
 - Live Fingerprint Detection (LFD) Technology
-  - Distinguish fake fingerprints made from various materials including clay, rubber, silicon, glue, paper, film and more
+    - Distinguish fake fingerprints made from various materials including clay, rubber, silicon, glue, paper, film and more
   
 - Advanced Data Protection
-  - 256-bit AES Fingerprint Data Encryption of fingerprint templates
-  - Protect template data with Secure IC
+    - 256-bit AES Fingerprint Data Encryption of fingerprint templates
+    - Protect template data with Secure IC
   
 - Easy Integration
-  - SFM SDK for easy application development
-  - Android, Windows & Linux compatible
+    - SFM SDK for easy application development
+    - Android, Windows & Linux compatible
   
 - Smart Sensor Control by Conformance Decision Engine(CDE)
-  - Optimize the fingerprint sensor and algorithm
-  - Provide a fast feedback when the fingerprint is input incorrectly
+    - Optimize the fingerprint sensor and algorithm
+    - Provide a fast feedback when the fingerprint is input incorrectly
 
-[Specification](https://www.supremainc.com/embedded-modules/en/modules/sfm-slim.asp)
+[More...](https://www.supremainc.com/embedded-modules/en/modules/sfm-slim.asp)
