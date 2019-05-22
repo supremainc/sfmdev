@@ -61,6 +61,10 @@ SFM Developer Center is an online space that provides technical information and 
 <!-- <script type="text/javascript" src="//static.mailerlite.com/data/webforms/421957/q7h4f5.js?v1"></script> -->
  <!-- <script type="text/javascript" src="https://static.mailerlite.com/data/webforms/668538/y2n1l7.js?v4"></script> -->
  
+<div class="slack-join">
+                  <a href="https://join.slack.com/t/sfmdev/shared_invite/enQtNjQyNTE3NjY4MTY1LWQxNmMyMjQ1MWZkM2Q5YjdhYmUwZTViZTVmM2RlZGViZDA3NDQwZDI2YzY5Yzk2YzcxYjZiYTNlNDM2ZmVjOGI" title="Join our Slack" target="_blank"><img class=slack src="../../images/slack-logo-icon.png">      Join our Slack</a>
+</div>
+
 !!! summary "About Suprema Inc."  
     
     Suprema is a leading global provider of biometrics and security technology. By combining world renowned biometric algorithms with superior engineering, Suprema continually designs and develops industry leading products and solutions. Suprema's extensive range of portfolio includes biometric access control systems, time & attendance solutions, fingerprint live scanners, mobile authentication solutions and embedded fingerprint modules. Suprema has worldwide sales network in over 130 countries and is one of the world's Top 50 security company in its turnover (ranked in A&S's Security 50, 2010-2016). For more information, please visit [www.supremainc.com](http://www.supremainc.com)

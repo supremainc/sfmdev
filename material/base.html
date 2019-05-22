@@ -55,9 +55,7 @@
 {% if palette.primary or palette.accent %} {% set primary = palette.primary | replace(" ", "-") | lower %} {% set accent = palette.accent | replace(" ", "-") | lower %} {% if palette.primary and palette.accent %}
 
 <body data-md-color-primary="{{ primary }}" data-md-color-accent="{{ accent }}">
-    <div class="slack-join">
-        <a href="https://join.slack.com/t/sfmdev/shared_invite/enQtNjQyNTE3NjY4MTY1LWQxNmMyMjQ1MWZkM2Q5YjdhYmUwZTViZTVmM2RlZGViZDA3NDQwZDI2YzY5Yzk2YzcxYjZiYTNlNDM2ZmVjOGI" title="Join our Slack" target="_blank"><img class=slack src="../../images/slack-logo-icon.png"></a>
-    </div>
+
     {% elif palette.primary %}
 
     <body data-md-color-primary="{{ primary }}">

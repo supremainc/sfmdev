@@ -166,12 +166,12 @@
         } */
     
     div.slack-join {
-        position: fixed;
-        top: 60px;
+        position: relative;
         padding: 10px;
     }
     
     div.slack-join img {
+        margin-top: 10px;
         width: 32px;
         height: 32px;
     }
