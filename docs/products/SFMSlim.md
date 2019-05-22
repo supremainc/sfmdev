@@ -3,7 +3,11 @@ SFM Slim is the slimmest FAP20-certified optical fingerprint module featuring an
 Along with its 13.5mm-slim optical sensor and Suprema’s Conformance Decision Engine (CDE) technology that captures an optimal fingerprint image for all the finger types, SFM Slim offers you flexibility to create a new and innovative system design with its reduced form factor at a whole new level of performance that will distinguish you from your competitors.
 Powered by a state-of-the-art 1GHz CPU, MINEX-certified algorithm and 256-bit AES fingerprint data encryption, SFM Slim also features best-in-class performance (5,000 match/ sec) and FBI PIV-compliance with the highest level security.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7PMOzV-_T0k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="youtube_container">
+<iframe src="https://www.youtube.com/embed/7PMOzV-_T0k?version=3&autoplay=1&mute=1&enablejsapi=1&loop=1&controls=0&modestbranding=1&playlist=1BR5ncQYsrY&showinfo=0" frameborder="0" allowfullscreen class="youtube_video"></iframe>
+</div>
+
+
 
 ## Features
 - World’s Slimmest 13.5 mm FAP 20-certified Optical Fingerprint Module
