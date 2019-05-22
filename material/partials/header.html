@@ -1,61 +1,41 @@
 <header class="md-header" data-md-component="header">
-  <nav class="md-header-nav md-grid">
-    <div class="md-flex">
-      <div class="md-flex__cell md-flex__cell--shrink">
-        <div class="slack-join">
-          <div> SFM Developer Center</div>
+    <nav class="md-header-nav md-grid">
+        <div class="md-flex">
+            <div class="md-flex__cell md-flex__cell--shrink">
 
-          <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet" type="text/css">
-          <form id="mlb2-7008558" action="https://app.mailerlite.com/webforms/popup/y2n1l7" data-code="y2n1l7" data-id="668538" target="_blank">
-              <div class="button-preview">
-                  <button class="ml-subscribe-button" title="Join Us on Slack"><img class="slack-join-btn-img" src="/images/slack_join_button_default.png" ></button>
-              </div>
-          </form>
-          <script type="text/javascript" src="https://static.mailerlite.com/js/w/button.min.js?v1f0baea18b848a8ab8e485e9a1acc285"></script>
-
-          <!-- <button class="slack-join-btn" onClick="window.open('https://publicslack.com/slacks/https-sfmdev-slack-com/invites/new');"><img class="slack-join-btn-img" src="/images/slack_join_button_default.png" ></button> -->
-        </div>
-        {% if config.extra.logo %}
-          <!--<a href="{{ config.site_url | default(nav.homepage.url, true) }}" title="{{ config.site_name }}" class="md-logo md-header-nav__button">
+                {% if config.extra.logo %}
+                <!--<a href="{{ config.site_url | default(nav.homepage.url, true) }}" title="{{ config.site_name }}" class="md-logo md-header-nav__button">
             <img src="{{ base_url }}/{{ config.extra.logo }}" width="24" height="24">
           </a>-->
-        {% else %}
-          <a href="{{ config.site_url | default(nav.homepage.url, true) }}" title="{{ config.site_name }}" class="md-icon md-icon--home md-header-nav__button">
-          </a>
-        {% endif %}
-      </div>
-      <div class="md-flex__cell md-flex__cell--shrink">
-        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
-      </div>
-      <div class="md-flex__cell md-flex__cell--stretch">
-        <span class="md-flex__ellipsis md-header-nav__title">
+                {% else %}
+                <a href="{{ config.site_url | default(nav.homepage.url, true) }}" title="{{ config.site_name }}" class="md-icon md-icon--home md-header-nav__button">
+                </a>
+                {% endif %}
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+                <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch">
+                <span class="md-flex__ellipsis md-header-nav__title">
           {% block site_name %}
             {% if page %}
               {% for parent in page.ancestors %}
                 <span class="md-header-nav__parent">
                   {{ parent.title }}
+                </span> {% endfor %} {% endif %} {{ page.title | default(config.site_name, true) }} {% endblock %}
                 </span>
-              {% endfor %}
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+                {% block search_box %} {% if "search" in config["plugins"] %}
+                <label class="md-icon md-icon--search md-header-nav__button" for="search"></label> {% include "partials/search.html" %} {% endif %} {% endblock %}
+            </div>
+            {% if config.repo_url %}
+            <div class="md-flex__cell md-flex__cell--shrink">
+                <div class="md-header-nav__source">
+                    {% include "partials/source.html" %}
+                </div>
+            </div>
             {% endif %}
-            {{ page.title | default(config.site_name, true) }}
-          {% endblock %}
-        </span>
-      </div>
-      <div class="md-flex__cell md-flex__cell--shrink">
-        {% block search_box %}
-          {% if "search" in config["plugins"] %}
-            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
-            {% include "partials/search.html" %}
-          {% endif %}
-        {% endblock %}
-      </div>
-      {% if config.repo_url %}
-        <div class="md-flex__cell md-flex__cell--shrink">
-          <div class="md-header-nav__source">
-            {% include "partials/source.html" %}
-          </div>
         </div>
-      {% endif %}
-    </div>
-  </nav>
+    </nav>
 </header>

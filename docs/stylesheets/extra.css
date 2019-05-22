@@ -1,126 +1,137 @@
-table.product-table{
-    padding:10px;
-    font-size: 0.8em;
-    width: 90%;
-    text-align: center;
-}
-td{
-    padding: 0 20px 0px 20px;
-    border: 1px solid #EEEEEE;
-}
-ol,li{
-    line-height:120%;
-}
-
-
-.md-typeset h2{
-    color: #3F51B5;
-    font-weight: 300;
-    margin-left: 0px;
-    
-}
-.md-typeset h3{
-    color: #666666;
-    margin-left: 0px;
-    font-weight: 700;
-    
-}
-.md-typeset h4{
-    color: #666666;
-    margin-left: 0px;
-}
-.md-typeset h5{
-    color: #666666;
-    margin-left: 0px;
-    font-size: 1.4rem;
-}
-.md-typeset h6{
-    color: #666666;
-    margin-left: 0px;
-    font-size: 1.4rem;
-}
-
-.md-typeset code {
-    border: 1px solid #E7E7E7;
-    border-radius: 2px;
-    /*background-color: #fff2f8;*/
-    background-color: #f7f7F7;
-    color: #666666;
-    /* font-weight: bold; */
-    padding: 2px;
-    font-weight: 600;
-    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-body{
-    color: #777777;
-    
-}
-
-a.md-nav__link[data-md-state=blur]
-{
-    color: rgba(0,0,0,.4);
-}
-
-/* remove left border of the admonition, Brian lee*/
-.md-typeset .admonition, .md-typeset details
-{
-    border-left: .0rem solid #EEEEEE !important;
-}   
-
-/* custom style of the admonition, Brian Lee */
-.md-typeset .admonition > p > strong > em
-{
-    font-size: 1.2rem;
-    background: #EBF8FB;
-    padding: .3rem ;
-    color:#666666;
-    border-radius: 2px;
-}
-
-.md-typeset .admonition > p > strong 
-{
-    font-size: 1.4rem;
-    margin-left: -0.8rem;
-}
-
-.md-typeset .admonition > p 
-{
-    margin-left: .8rem;
-}
-
-/* custom style of the admonition (only for cite), Brian Lee*/
-.md-typeset .admonition.cite>.admonition-title::before
-{
-    content: none !important;
-}
-
-.md-typeset .admonition.cite>.admonition-title
-{
-    padding: .8rem .8rem .8rem .8rem;
-    font-size: 1.4rem;
-}
-
-
-@media only screen and (min-width: 102.25em)
-{
-    .md-grid 
-    {
-        max-width:148rem;
-    }
-
-    
-    .md-sidebar--secondary
-    {
-        margin-left: 148rem;
-    }
-}
-
-md-typeset table:not([class]) th{
-    min-width:4rem;
-    padding:0.5rem 0.5rem;
-}
-/* 
+        table.product-table {
+            padding: 10px;
+            font-size: 0.8em;
+            width: 90%;
+            text-align: center;
+        }
+        
+        td {
+            padding: 0 20px 0px 20px;
+            border: 1px solid #EEEEEE;
+        }
+        
+        ol,
+        li {
+            line-height: 120%;
+        }
+        
+        .md-typeset h1 {
+            color: #A12642;
+            margin-left: 0px;
+        }
+        
+        .md-typeset h2 {
+            color: #A12642;
+            font-weight: 300;
+            margin-left: 0px;
+        }
+        
+        .md-typeset h3 {
+            color: #666666;
+            margin-left: 0px;
+            font-weight: 700;
+        }
+        
+        .md-typeset h4 {
+            color: #666666;
+            margin-left: 0px;
+        }
+        
+        .md-typeset h5 {
+            color: #666666;
+            margin-left: 0px;
+            font-size: 1.4rem;
+        }
+        
+        .md-typeset h6 {
+            color: #666666;
+            margin-left: 0px;
+            font-size: 1.4rem;
+        }
+        
+        .md-typeset code {
+            border: 1px solid #E7E7E7;
+            border-radius: 2px;
+            /*background-color: #fff2f8;*/
+            background-color: #f7f7F7;
+            color: #666666;
+            /* font-weight: bold; */
+            padding: 2px;
+            font-weight: 600;
+            font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            color: #777777;
+        }
+        
+        a.md-nav__link[data-md-state=blur] {
+            color: rgba(0, 0, 0, .4);
+        }
+        /* remove left border of the admonition, Brian lee*/
+        
+        .md-typeset .admonition,
+        .md-typeset details {
+            border-left: .0rem solid #EEEEEE !important;
+        }
+        /* custom style of the admonition, Brian Lee */
+        
+        .md-typeset .admonition>p>strong>em {
+            font-size: 1.2rem;
+            background: #EBF8FB;
+            padding: .3rem;
+            color: #666666;
+            border-radius: 2px;
+        }
+        
+        .md-typeset .admonition>p>strong {
+            font-size: 1.4rem;
+            margin-left: -0.8rem;
+        }
+        
+        .md-typeset .admonition>p {
+            margin-left: .8rem;
+        }
+        /* custom style of the admonition (only for cite), Brian Lee*/
+        
+        .md-typeset .admonition.cite>.admonition-title::before {
+            content: none !important;
+        }
+        
+        .md-typeset .admonition.cite>.admonition-title {
+            padding: .8rem .8rem .8rem .8rem;
+            font-size: 1.4rem;
+        }
+        
+        @media only screen and (min-width: 102.25em) {
+            .md-grid {
+                max-width: 148rem;
+            }
+            .md-sidebar--secondary {
+                margin-left: 148rem;
+            }
+        }
+        
+        .md-typeset table:not([class]) th {
+            min-width: 4rem;
+            padding: 0.5rem 0.5rem;
+            background-color: #999;
+            vertical-align: middle;
+        }
+        
+        .md-typeset table:not([class]) td {
+            min-width: 4rem;
+            padding: 0.5rem 0.5rem;
+            vertical-align: middle;
+        }
+        
+        .md-typeset table:not([class]) td:not([align]),
+        .md-typeset table:not([class]) th:not([align]) {
+            min-width: 4rem;
+            padding: 0.5rem 0.5rem;
+            vertical-align: middle;
+        }
+        /* 
 .md-typeset table:not([class]) th:not([align]){
     text-align: center;
 }
@@ -135,94 +146,148 @@ md-typeset table:not([class]) th{
 .md-typeset__scrollwrap{
     margin: 1rem;
 }  */
-
-button img.slack-join-btn-img{
-    width:auto;
-    height: 35px;
-    margin: 5px;
-    position: fixed;
-    top : 0;
-    right : 0;
-}
-
-button img.slack-join-btn-img:active{
-  
-}
-
-button img.slack-join-btn:hover{
-    transform: translateX(5);
-}
-
-
-header {
-    margin-top: 45px;
-}
-
-div .slack-join {
-    
-    width: 100%;
-    height: 45px;
-    position: fixed;
-    top:0;
-    left:0;
-    background: #FFFFFF;
-    color: #777777;
-    font-size: 1.6rem;
-    padding: 10px;
-    
-    
-}
-
-/* mailerlite */
-
-.ml-button-iframe {
-    background-color: transparent !important;
-    border: 0px none transparent !important;
-    overflow: hidden !important;
-    position: fixed !important;
-    visibility: visible !important;
-    margin: 0px !important;
-    padding: 0px !important;
-    left: 0px !important;
-    top: 0px !important;
-    width: 100% !important;
-    height: 100% !important;
-    z-index: 999999 !important;
-    display: none;
-}
-
-#mlb2-7008558 button.ml-subscribe-button {
-    cursor: pointer;
-    font-family: Open Sans!important;
-    font-size: 16px!important;
-    height: 40px;
-    width: 100%;
-    /* background: #A12641!important;
+        
+        button img.slack-join-btn-img {
+            width: auto;
+            height: 35px;
+            margin: 5px;
+            position: fixed;
+            top: 0;
+            right: 0;
+        }
+        
+        button img.slack-join-btn-img:active {}
+        
+        button img.slack-join-btn:hover {
+            transform: translateX(5);
+        }
+        /* header {
+            margin-top: 45px;
+        } */
+        
+        div.slack-join {
+            position: fixed;
+            top: 60px;
+            padding: 10px;
+        }
+        
+        div.slack-join img {
+            width: 32px;
+            height: 32px;
+        }
+        /* mailerlite */
+        
+        .ml-button-iframe {
+            background-color: transparent !important;
+            border: 0px none transparent !important;
+            overflow: hidden !important;
+            position: fixed !important;
+            visibility: visible !important;
+            margin: 0px !important;
+            padding: 0px !important;
+            left: 0px !important;
+            top: 0px !important;
+            width: 100% !important;
+            height: 100% !important;
+            z-index: 999999 !important;
+            display: none;
+        }
+        
+        #mlb2-7008558 button.ml-subscribe-button {
+            cursor: pointer;
+            font-family: Open Sans!important;
+            font-size: 16px!important;
+            height: 40px;
+            width: 100%;
+            /* background: #A12641!important;
     background-color: #A12641!important; */
-    color: #ffffff!important;
-    border: none;
-    border-radius: 0px;
-    padding: 0px 16px;
-}
-
-#mlb2-7008558 button.gradient-on {
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
-    background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
-    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
-    background: linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
-}
-
-#mlb2-7008558 button.gradient-on:hover {
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
-    background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
-    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
-    background: linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
-}
-
-@media (max-width: 768px) {
-    #mlb2-7008558 button.ml-subscribe-button {
-        height: auto;
-        line-height: 26px;
-        padding: 5px 16px;
-    }
-}
+            color: #ffffff!important;
+            border: none;
+            border-radius: 0px;
+            padding: 0px 16px;
+        }
+        
+        #mlb2-7008558 button.gradient-on {
+            background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+            background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+            background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+            background: linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+        }
+        
+        #mlb2-7008558 button.gradient-on:hover {
+            background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+            background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+            background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+            background: linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+        }
+        
+        @media (max-width: 768px) {
+            #mlb2-7008558 button.ml-subscribe-button {
+                height: auto;
+                line-height: 26px;
+                padding: 5px 16px;
+            }
+        }
+        
+        .md-typeset .admonition.summary>.admonition-title,
+        .md-typeset .admonition.summary>summary,
+        .md-typeset .admonition.tldr>.admonition-title,
+        .md-typeset .admonition.tldr>summary,
+        .md-typeset details.summary>.admonition-title,
+        .md-typeset details.summary>summary,
+        .md-typeset details.tldr>.admonition-title,
+        .md-typeset details.tldr>summary {
+            background: #F1F1F1;
+            border-bottom: .1rem solid #F1F1F1;
+        }
+        
+        .md-typeset .admonition.info>.admonition-title,
+        .md-typeset .admonition.info>summary,
+        .md-typeset .admonition.todo>.admonition-title,
+        .md-typeset .admonition.todo>summary,
+        .md-typeset details.info>.admonition-title,
+        .md-typeset details.info>summary,
+        .md-typeset details.todo>.admonition-title,
+        .md-typeset details.todo>summary {
+            background: #F1F1F1;
+            border-bottom: .1rem solid #F1F1F1;
+        }
+        /* .md-typeset .admonition>.admonition-title,
+        .md-typeset .admonition>summary,
+        .md-typeset details>.admonition-title,
+        .md-typeset details>summary {
+            background: #FFFFE0;
+            border-bottom: .1rem solid #FFFFE0;
+        } */
+        
+        .md-typeset .codehilite,
+        .md-typeset .highlight {
+            background-color: #fafafa;
+        }
+        
+        .md-typeset .admonition.summary>.admonition-title:before,
+        .md-typeset .admonition.summary>summary:before,
+        .md-typeset .admonition.tldr>.admonition-title:before,
+        .md-typeset .admonition.tldr>summary:before,
+        .md-typeset details.summary>.admonition-title:before,
+        .md-typeset details.summary>summary:before,
+        .md-typeset details.tldr>.admonition-title:before,
+        .md-typeset details.tldr>summary:before {
+            color: #CCC;
+        }
+        
+        .md-typeset .admonition.info>.admonition-title:before,
+        .md-typeset .admonition.info>summary:before,
+        .md-typeset .admonition.todo>.admonition-title:before,
+        .md-typeset .admonition.todo>summary:before,
+        .md-typeset details.info>.admonition-title:before,
+        .md-typeset details.info>summary:before,
+        .md-typeset details.todo>.admonition-title:before,
+        .md-typeset details.todo>summary:before {
+            color: #CCC;
+        }
+        
+        .md-header-nav__button.md-logo * {
+            width: 160px;
+            height: 66px;
+        }

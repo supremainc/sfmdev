@@ -33,4 +33,5 @@ Powered by a state-of-the-art 1GHz CPU, MINEX-certified algorithm and 256-bit AE
     - Optimize the fingerprint sensor and algorithm
     - Provide a fast feedback when the fingerprint is input incorrectly
 
-[More...](https://www.supremainc.com/embedded-modules/en/modules/sfm-slim.asp)
+!!! info
+	<a href="https://www.supremainc.com/embedded-modules/en/modules/sfm-slim.asp" target="_blank">Click here to get detailed information of SFMSlim.</a>

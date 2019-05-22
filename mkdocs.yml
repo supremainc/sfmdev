@@ -51,11 +51,11 @@ theme:
   feature:
     tabs: false
   palette:
-    primary:
-    accent:
+    primary: burgundy
+    accent: burgundy
   font:
-    text: Roboto
-    code: Roboto Mono
+    text: Montserrat
+    code: 
   favicon: assets/images/favicon.png
   logo:
     icon: fingerprint
@@ -108,7 +108,7 @@ markdown_extensions:
 # Page tree
 pages:
   - About : index.md
-  - Blog : blog.md
+  # - Blog : blog.md
   - Products: 
       - SFM Slim Series: products/SFMSlim.md
       - SFM6000 Series: products/SFM6000.md
