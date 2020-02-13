@@ -39,3 +39,17 @@ Powered by a state-of-the-art 1GHz CPU, MINEX-certified algorithm and 256-bit AE
 
 !!! info
 	<a href="https://www.supremainc.com/embedded-modules/en/modules/sfm-slim.asp" target="_blank">Click here to get detailed information of SFMSlim.</a>
+
+
+## Related links
+##### Datasheets
+- [SFMSlim]()
+
+##### Firmware
+- [Download link]()
+
+##### Documents
+- [UF Protocol Manual](../documents/UF_Protocol_Manual/)
+
+##### Software
+- [UnifingerUI](https://github.com/supremainc/sfm-unifingerui/releases)
