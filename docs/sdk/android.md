@@ -34,11 +34,100 @@ dependencies {
 }
 ```
 
+If you are using the Java8, you need to insert the below over the dependency.
+
+```gradle
+compileOptions{
+    sourceCompatibility JavaVersion.VERSION_1_8
+    targetCompatibility JavaVersion.VERSION_1_8
+}
+
+dependencies {
+    ...
+    implementation 'com.github.supremainc:sfm-sdk-android:v0.4.0'
+    ...
+}
+```
+
+
+**Step 3.** Include scripts for using the USB service and changing user-permission to access the storage in your device.
+
+The SFM SDK for Android includes USB Library by default. You don't need to implement codes related to the USB controls. The USB Library
+is used from https://github.com/felHR85/UsbSerial in the SFM SDK for Android. Also, it's version is `v6.1.0`.
+
+Basically, you should insert the below script to `/your_project_root_path/app/src/main/AndroidManifest.xml` for proper working with the USB Library.
+
+**<service>**
+
+```xml
+     
+    <service
+        android:name="com.supremainc.sfm_sdk.UsbService"
+        android:enabled="true">
+    </service>
+```
+
+Also, you need to insert the below script for using storage in your device.
+
+**<user-permission>**
+
+```xml
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>   
+
+```
+
+Please refer to https://github.com/supremainc/sfm-sdk-android/blob/master/app/src/main/AndroidManifest.xml
+
+**AndroidManifest.xml**
+
+```xml
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2001 - 2019. Suprema Inc. All rights reserved.
+  ~ Licensed under the MIT license. See LICENSE file in the project root for details.
+  -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.supremainc.sfm_sdk_android">
+
+    <uses-feature android:name="android.hardware.usb.host"
+        android:required="true"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+     
+        <service
+            android:name="com.supremainc.sfm_sdk.UsbService"
+            android:enabled="true">
+        </service>
+
+    </application>
+    
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+</manifest>
+```
 
 
 ---
 
 ## [DEPRECATED] SFM SDK for Android (beta)
+
+!!!info
+    The previous version of the SFM SDK for Android (beta) was deprecated.
+    the repository moved to https://github.com/supremainc/sfm-sdk-android/tree/sfm-sdk-android-beta
 
 ***You have to connect the SDK callback function to the communication function on Android for using android SFM_SDK.(See the below for details). Android sfm-sdk was made by C language and compiled using NDK. We currently provide SFM_SDK beta version 1.0.***
 

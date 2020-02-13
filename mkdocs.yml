@@ -128,7 +128,7 @@ pages:
   - SDK:
     - C/C++ : sdk/c_cpp.md
     - .NET : sdk/NET.md
-    - android : sdk/android.md
+    - Android : sdk/android.md
     - python : sdk/python.md
   
   - Tutorials : 
