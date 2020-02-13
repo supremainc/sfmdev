@@ -2,7 +2,7 @@
 
 It is assumed as below:  
 
-+ Serial port of the SFM is connected with "COM8". (Tested on Windows)
++ The serial port of the SFM is connected with "COM8". (Tested on Windows)
 + All settings of the SFM are set as factory default.
 
 
@@ -27,7 +27,7 @@ It is assumed as below:
 True  # Return value of module.connect()
 >>>
 ```
-As shown in above, packet trace information is printed as default. If you want to disable this feature, you should call a function `deactivate_packet_trace()` before connect. (In opposite case, you should use `activate_packet_trace()` to enable.)
+As shown in the above, packet trace information is printed by default. If you want to disable this feature, you should call a function deactivate_packet_trace() before connect. (In the opposite case, you should use activate_packet_trace() to enable.)
 
 ```console
 >>> import pysfm

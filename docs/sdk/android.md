@@ -1,11 +1,52 @@
 # Android
+
+New SFM SDK for Android has been released. ( 2020.2.13 )
+
+From now on, you can easily use the SFM SDK for Android using JitPack.
+
+[![](https://jitpack.io/v/supremainc/sfm-sdk-android.svg)](https://jitpack.io/#supremainc/sfm-sdk-android)
+
+
+## How to use the SFM SDK for Android?
+
+To get a Git project into your build:
+
+**Step 1.** Add the JitPack repository to your build file
+
+Add it in your root build.gradle at the end of repositories. (`/your_project_root_path/build.gradle`)
+
+```gradle
+allprojects {
+    repositories {
+    ...
+    maven { url 'https://jitpack.io' }
+    }
+}
+```
+
+**Step 2.** Add the dependency in your app build.gradle (`/your_project_root_path/app/build.gradle`)
+
+```gradle
+dependencies {
+    ...
+    implementation 'com.github.supremainc:sfm-sdk-android:v0.4.0'
+    ...
+}
+```
+
+
+
+---
+
+## [DEPRECATED] SFM SDK for Android (beta)
+
 ***You have to connect the SDK callback function to the communication function on Android for using android SFM_SDK.(See the below for details). Android sfm-sdk was made by C language and compiled using NDK. We currently provide SFM_SDK beta version 1.0.***
 
 !!!Tip
     You can download all about android SFM_SDK(library, example project, document) through below github URL.
     **https://github.com/supremainc/sfm-sdk-android**
 
-## Quick start
+### Quick start
 
 **Step 1**  
 Download these files.  
