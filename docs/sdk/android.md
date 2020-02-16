@@ -6,6 +6,9 @@ From now on, you can easily use the SFM SDK for Android using JitPack.
 
 [![](https://jitpack.io/v/supremainc/sfm-sdk-android.svg)](https://jitpack.io/#supremainc/sfm-sdk-android)
 
+Or, you can download the SFM SDK for android manually in Github repository
+
+https://github.com/supremainc/sfm-sdk-android
 
 ## How to use the SFM SDK for Android?
 

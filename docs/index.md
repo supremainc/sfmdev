@@ -48,7 +48,7 @@ For detailed instructions see the [getting started guide][3].
       
 ## Quick Access 
 
-SFM SDK : [C/C++](sdk/c_cpp), [.NET](sdk/NET), [android](sdk/android), [python](sdk/python)  
+SFM SDK : [C/C++](sdk/c_cpp), [.NET](sdk/NET), [Android](sdk/android), [python](sdk/python)  
 Tutorials : [pysfm](tutorials/pysfm/tutorial)
 
 ---
