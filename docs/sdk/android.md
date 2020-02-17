@@ -4,7 +4,10 @@ New SFM SDK for Android has been released. ( 2020.2.13 )
 
 From now on, you can easily use the SFM SDK for Android using JitPack.
 
+[![](https://img.shields.io/github/v/tag/supremainc/sfm-sdk-android)](https://github.com/supremainc/sfm-sdk-android)
+[![](https://img.shields.io/github/downloads/supremainc/sfm-sdk-android/total?label=Github%20downloads)](https://github.com/supremainc/sfm-sdk-android)
 [![](https://jitpack.io/v/supremainc/sfm-sdk-android.svg)](https://jitpack.io/#supremainc/sfm-sdk-android)
+[![](https://img.shields.io/jitpack/dm/github/supremainc/sfm-sdk-android?label=JitPack%20downloads)](https://jitpack.io/#supremainc/sfm-sdk-android)
 
 Or, you can download the SFM SDK for android manually in Github repository
 
