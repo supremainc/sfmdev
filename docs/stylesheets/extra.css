@@ -176,9 +176,10 @@
     }
     
     div.slack-join img {
-        margin-top: 10px;
+        margin: 10px;
         width: 32px;
         height: 32px;
+        vertical-align: middle;
     }
     /* mailerlite */
     

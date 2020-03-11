@@ -62,7 +62,7 @@ SFM Developer Center is an online space that provides technical information and 
  <!-- <script type="text/javascript" src="https://static.mailerlite.com/data/webforms/668538/y2n1l7.js?v4"></script> -->
  
 <div class="slack-join">
-                  <a href="https://join.slack.com/t/sfmdev/shared_invite/enQtNjQyNTE3NjY4MTY1LWQxNmMyMjQ1MWZkM2Q5YjdhYmUwZTViZTVmM2RlZGViZDA3NDQwZDI2YzY5Yzk2YzcxYjZiYTNlNDM2ZmVjOGI" title="Join our Slack" target="_blank"><img class=slack src="../../images/slack-logo-icon.png">      Join our Slack</a>
+                  <a href="https://join.slack.com/t/sfmdev/shared_invite/enQtNjQyNTE3NjY4MTY1LWQxNmMyMjQ1MWZkM2Q5YjdhYmUwZTViZTVmM2RlZGViZDA3NDQwZDI2YzY5Yzk2YzcxYjZiYTNlNDM2ZmVjOGI" title="Join our Slack" target="_blank"><img class=slack src="https://cdn.brandfolder.io/5H442O3W/as/pl546j-7le8zk-199wkt/Slack_Mark.png?width=32&height=32"> Join our Slack</a>
 </div>
 
 !!! summary "About Suprema Inc."  

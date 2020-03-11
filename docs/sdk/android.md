@@ -1,19 +1,40 @@
 # Android
 
-New SFM SDK for Android has been released. ( 2020.2.13 )
-
-From now on, you can easily use the SFM SDK for Android using JitPack.
-
 [![](https://img.shields.io/github/v/tag/supremainc/sfm-sdk-android)](https://github.com/supremainc/sfm-sdk-android)
 [![](https://img.shields.io/github/downloads/supremainc/sfm-sdk-android/total?label=Github%20downloads)](https://github.com/supremainc/sfm-sdk-android)
 [![](https://jitpack.io/v/supremainc/sfm-sdk-android.svg)](https://jitpack.io/#supremainc/sfm-sdk-android)
 [![](https://img.shields.io/jitpack/dm/github/supremainc/sfm-sdk-android?label=JitPack%20downloads)](https://jitpack.io/#supremainc/sfm-sdk-android)
+![](https://img.shields.io/badge/latest%20SFM%20SDK-v3.1.0-blueviolet)
 
-Or, you can download the SFM SDK for android manually in Github repository
+SFM SDK for Android is a library wrapping a Java library with SFM SDK based on C/C++ using JNI. You can easily use the SFM SDK for Android using JitPack. Also, you can download the source code of the SFM SDK for Android on our Github repository. 
+
+Meanwhile, some functions are not supported. If you want to use that of functions, please modify the source code. And, If you want to share your modified codes, we are always welcome to your contributions.
+
+
+
+
+## Release notes
+
+### v0.5.0 - March 10, 2020
+![](https://img.shields.io/badge/SFM%20SDK-v3.1.0-blueviolet)  
+- UART is supported for rooted Android devices.  
+- Added native callback functions in JNI for using SFM SDK.  
+ 
+### v0.4.0 - Feburary 13, 2020
+![](https://img.shields.io/badge/SFM%20SDK-v3.0.0-blueviolet)
+
+New SFM SDK for Android has been released. 
+From now on, you can easily use the SFM SDK for Android using JitPack. Or, you can download the SFM SDK for android manually in Github repository
 
 https://github.com/supremainc/sfm-sdk-android
 
-## How to use the SFM SDK for Android?
+---
+
+## Usage
+
+### Installation
+
+#### How to use using JitPack
 
 To get a Git project into your build:
 
@@ -35,7 +56,7 @@ allprojects {
 ```gradle
 dependencies {
     ...
-    implementation 'com.github.supremainc:sfm-sdk-android:v0.4.0'
+    implementation 'com.github.supremainc:sfm-sdk-android:0.5.0'
     ...
 }
 ```
@@ -50,7 +71,7 @@ compileOptions{
 
 dependencies {
     ...
-    implementation 'com.github.supremainc:sfm-sdk-android:v0.4.0'
+    implementation 'com.github.supremainc:sfm-sdk-android:0.5.0'
     ...
 }
 ```
@@ -125,11 +146,22 @@ Please refer to https://github.com/supremainc/sfm-sdk-android/blob/master/app/sr
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
 </manifest>
 ```
+#### How to upgrade using JitPack 
 
+To upgrade SFM SDK for Android, change the JitPack version in your root build.gradle at the end of repositories. (`/your_project_root_path/build.gradle`)
 
+In the root build.gradle file, you should just change the JitPack version from `0.5.0` to `JitPack version to upgrade`.
+```gradle
+dependencies {
+    ...
+    implementation 'com.github.supremainc:sfm-sdk-android:0.5.0'
+    ...
+}
+```
 ---
 
-## [DEPRECATED] SFM SDK for Android (beta)
+# [DEPRECATED]
+## SFM SDK for Android (beta)
 
 !!!info
     The previous version of the SFM SDK for Android (beta) was deprecated.
