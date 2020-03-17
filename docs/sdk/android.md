@@ -4,7 +4,7 @@
 [![](https://img.shields.io/github/downloads/supremainc/sfm-sdk-android/total?label=Github%20downloads)](https://github.com/supremainc/sfm-sdk-android)
 [![](https://jitpack.io/v/supremainc/sfm-sdk-android.svg)](https://jitpack.io/#supremainc/sfm-sdk-android)
 [![](https://img.shields.io/jitpack/dm/github/supremainc/sfm-sdk-android?label=JitPack%20downloads)](https://jitpack.io/#supremainc/sfm-sdk-android)
-![](https://img.shields.io/badge/latest%20SFM%20SDK-v3.1.0-blueviolet)
+![](https://img.shields.io/badge/latest%20SFM%20SDK-v3.1.1-blueviolet)
 
 SFM SDK for Android is a library wrapping a Java library with SFM SDK based on C/C++ using JNI. You can easily use the SFM SDK for Android using JitPack. Also, you can download the source code of the SFM SDK for Android on our Github repository. 
 
@@ -14,6 +14,11 @@ Meanwhile, some functions are not supported. If you want to use that of function
 
 
 ## Release notes
+
+### v0.5.1 - March 17, 2020
+![](https://img.shields.io/badge/SFM%20SDK-v3.1.1-blueviolet)  
+- UART has become more stable.
+There was a problem that the UART connection is disconnected with an error message of `UF_ERR_READ_SERIAL_TIMEOUT` when you receive data from the SFM on the Android app. This problem has been resolved at this release. 
 
 ### v0.5.0 - March 10, 2020
 ![](https://img.shields.io/badge/SFM%20SDK-v3.1.0-blueviolet)  
