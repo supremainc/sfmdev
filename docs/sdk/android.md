@@ -3,7 +3,6 @@
 [![](https://img.shields.io/github/v/tag/supremainc/sfm-sdk-android)](https://github.com/supremainc/sfm-sdk-android)
 [![](https://img.shields.io/github/downloads/supremainc/sfm-sdk-android/total?label=Github%20downloads)](https://github.com/supremainc/sfm-sdk-android)
 [![](https://jitpack.io/v/supremainc/sfm-sdk-android.svg)](https://jitpack.io/#supremainc/sfm-sdk-android)
-[![](https://img.shields.io/jitpack/dm/github/supremainc/sfm-sdk-android?label=JitPack%20downloads)](https://jitpack.io/#supremainc/sfm-sdk-android)
 ![](https://img.shields.io/badge/latest%20SFM%20SDK-v3.1.2-blueviolet)
 
 SFM SDK for Android is a library wrapping a Java library with SFM SDK based on C/C++ using JNI. You can easily use the SFM SDK for Android using JitPack. Also, you can download the source code of the SFM SDK for Android on our Github repository. 
