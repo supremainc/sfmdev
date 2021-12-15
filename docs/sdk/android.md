@@ -3,7 +3,7 @@
 [![](https://img.shields.io/github/v/tag/supremainc/sfm-sdk-android)](https://github.com/supremainc/sfm-sdk-android)
 [![](https://img.shields.io/github/downloads/supremainc/sfm-sdk-android/total?label=Github%20downloads)](https://github.com/supremainc/sfm-sdk-android)
 [![](https://jitpack.io/v/supremainc/sfm-sdk-android.svg)](https://jitpack.io/#supremainc/sfm-sdk-android)
-![](https://img.shields.io/badge/latest%20SFM%20SDK-v3.1.2-blueviolet)
+![](https://img.shields.io/badge/latest%20SFM%20SDK-v3.3.0-blueviolet)
 
 SFM SDK for Android is a library wrapping a Java library with SFM SDK based on C/C++ using JNI. You can easily use the SFM SDK for Android using JitPack. Also, you can download the source code of the SFM SDK for Android on our Github repository. 
 
@@ -13,6 +13,15 @@ Meanwhile, some functions are not supported. If you want to use that of function
 
 
 ## Release notes
+
+### v0.6.0 - November 16, 2021
+![](https://img.shields.io/badge/SFM%20SDK-v3.3.0-blueviolet)  
+- SFM SDK version has been updated. 
+  - Added secure packet protocol APIs.
+  - Added key management APIs.
+  - See details in [SFM SDK Manual v3.3.0](https://github.com/supremainc/sfm-sdk/blob/master/doc/SFM_SDK_Manual_v3.3.0.pdf)
+- Firmware version information has been added.   
+
 
 ### v0.5.2 - March 31, 2020
 ![](https://img.shields.io/badge/SFM%20SDK-v3.1.2-blueviolet)  
