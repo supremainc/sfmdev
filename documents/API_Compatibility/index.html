@@ -1,0 +1,2566 @@
+   
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge"> 
+    <meta name="description" content="SFM Developer Center">  
+    <link rel="canonical" href="https://github.com/supremainc/sfmdev/documents/API_Compatibility/">  
+    <meta name="author" content="Suprema inc.">  
+    <meta name="lang:clipboard.copy" content="Copy to clipboard"> 
+    <meta name="lang:clipboard.copied" content="Copied to clipboard"> 
+    <meta name="lang:search.language" content="en"> 
+    <meta name="lang:search.result.none" content="No matching documents"> 
+    <meta name="lang:search.result.one" content="1 matching document"> 
+    <meta name="lang:search.result.other" content="# matching documents"> 
+    <meta name="lang:search.tokenizer" content="[\s\-]+"> 
+    <link rel="shortcut icon" href="../../assets/images/favicon.png">
+    <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.0.2">   
+    <title>API Compatability - SFM Developer Center</title>
+      
+    <link rel="stylesheet" href="../../assets/stylesheets/application-5b1b46901f.css"> 
+    <link rel="stylesheet" href="../../assets/stylesheets/application-23f75ab9c7.palette.css">   
+    <script src="../../assets/javascripts/modernizr-e826f8942a.js"></script>
+      
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,700|None">
+    <style>
+        body,
+        input {
+            font-family:"Montserrat",
+            "Helvetica Neue",
+            Helvetica,
+            Arial,
+            sans-serif
+        }
+        
+        code,
+        kbd,
+        pre {
+            font-family:"None",
+            "Courier New",
+            Courier,
+            monospace
+        }
+    </style>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">  
+    <link rel="stylesheet" href="../../stylesheets/extra.css">  
+</head>
+   
+
+<body data-md-color-primary="burgundy" data-md-color-accent="burgundy">
+
+     
+                <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" id="github"><path fill="currentColor" d="M409.132,114.573c-19.608-33.596-46.205-60.194-79.798-79.8C295.736,15.166,259.057,5.365,219.271,5.365
+		c-39.781,0-76.472,9.804-110.063,29.408c-33.596,19.605-60.192,46.204-79.8,79.8C9.803,148.168,0,184.854,0,224.63
+		c0,47.78,13.94,90.745,41.827,128.906c27.884,38.164,63.906,64.572,108.063,79.227c5.14,0.954,8.945,0.283,11.419-1.996
+		c2.475-2.282,3.711-5.14,3.711-8.562c0-0.571-0.049-5.708-0.144-15.417c-0.098-9.709-0.144-18.179-0.144-25.406l-6.567,1.136
+		c-4.187,0.767-9.469,1.092-15.846,1c-6.374-0.089-12.991-0.757-19.842-1.999c-6.854-1.231-13.229-4.086-19.13-8.559
+		c-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559
+		c-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-0.951-2.568-2.098-3.711-3.429c-1.142-1.331-1.997-2.663-2.568-3.997
+		c-0.572-1.335-0.098-2.43,1.427-3.289c1.525-0.859,4.281-1.276,8.28-1.276l5.708,0.853c3.807,0.763,8.516,3.042,14.133,6.851
+		c5.614,3.806,10.229,8.754,13.846,14.842c4.38,7.806,9.657,13.754,15.846,17.847c6.184,4.093,12.419,6.136,18.699,6.136
+		c6.28,0,11.704-0.476,16.274-1.423c4.565-0.952,8.848-2.383,12.847-4.285c1.713-12.758,6.377-22.559,13.988-29.41
+		c-10.848-1.14-20.601-2.857-29.264-5.14c-8.658-2.286-17.605-5.996-26.835-11.14c-9.235-5.137-16.896-11.516-22.985-19.126
+		c-6.09-7.614-11.088-17.61-14.987-29.979c-3.901-12.374-5.852-26.648-5.852-42.826c0-23.035,7.52-42.637,22.557-58.817
+		c-7.044-17.318-6.379-36.732,1.997-58.24c5.52-1.715,13.706-0.428,24.554,3.853c10.85,4.283,18.794,7.952,23.84,10.994
+		c5.046,3.041,9.089,5.618,12.135,7.708c17.705-4.947,35.976-7.421,54.818-7.421s37.117,2.474,54.823,7.421l10.849-6.849
+		c7.419-4.57,16.18-8.758,26.262-12.565c10.088-3.805,17.802-4.853,23.134-3.138c8.562,21.509,9.325,40.922,2.279,58.24
+		c15.036,16.18,22.559,35.787,22.559,58.817c0,16.178-1.958,30.497-5.853,42.966c-3.9,12.471-8.941,22.457-15.125,29.979
+		c-6.191,7.521-13.901,13.85-23.131,18.986c-9.232,5.14-18.182,8.85-26.84,11.136c-8.662,2.286-18.415,4.004-29.263,5.146
+		c9.894,8.562,14.842,22.077,14.842,40.539v60.237c0,3.422,1.19,6.279,3.572,8.562c2.379,2.279,6.136,2.95,11.276,1.995
+		c44.163-14.653,80.185-41.062,108.068-79.226c27.88-38.161,41.825-81.126,41.825-128.906
+		C438.536,184.851,428.728,148.168,409.132,114.573z"/></svg>
+        
+      </defs>
+    </svg>
+                <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+                <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+                <label class="md-overlay" data-md-component="overlay" for="drawer"></label>  <header class="md-header" data-md-component="header">
+    <nav class="md-header-nav md-grid">
+        <div class="md-flex">
+            <div class="md-flex__cell md-flex__cell--shrink">
+
+                
+                <!--<a href="https://github.com/supremainc/sfmdev" title="SFM Developer Center" class="md-logo md-header-nav__button">
+            <img src="../../images/suprema.png" width="24" height="24">
+          </a>-->
+                
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+                <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch">
+                <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
+              
+                <span class="md-header-nav__parent">
+                  Technical Documents
+                </span> 
+                <span class="md-header-nav__parent">
+                  SFM SDK Manual
+                </span>   API Compatability 
+                </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+                 
+                <label class="md-icon md-icon--search md-header-nav__button" for="search"></label> 
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">&#xE5CD;</button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>  
+            </div>
+            
+            <div class="md-flex__cell md-flex__cell--shrink">
+                <div class="md-header-nav__source">
+                    
+
+
+  
+
+
+  <a href="https://github.com/supremainc/sfmdev/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      supremainc/sfmdev
+    </div>
+  </a>
+
+                </div>
+            </div>
+            
+        </div>
+    </nav>
+</header> 
+                <div class="md-container">
+                    
+                    <main class="md-main">
+                        <div class="md-main__inner md-grid" data-md-component="container">
+                             
+                            <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                                <div class="md-sidebar__scrollwrap">
+                                    <div class="md-sidebar__inner">
+                                        <a href="../.." title="SFM Developer Center" class="md-logo md-header-nav__button">
+                                            <img src="../../images/suprema.png" width="160" height="66">
+                                        </a>
+                                        <nav class="md-nav md-nav--primary" data-md-level="0">
+    <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon">fingerprint</i>
+      
+    </span>
+    SFM Developer Center
+  </label> 
+    <div class="md-nav__source">
+        
+
+
+  
+
+
+  <a href="https://github.com/supremainc/sfmdev/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      supremainc/sfmdev
+    </div>
+  </a>
+
+    </div>
+    
+    <ul class="md-nav__list" data-md-scrollfix>
+           
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="About" class="md-nav__link">
+      About
+    </a>
+  </li>
+    
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Products
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Products
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../products/SFMSlim/" title="SFM Slim Series" class="md-nav__link">
+      SFM Slim Series
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../products/SFM6000/" title="SFM6000 Series" class="md-nav__link">
+      SFM6000 Series
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../products/SFM5500/" title="SFM5500 Series" class="md-nav__link">
+      SFM5500 Series
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../products/SFM5000/" title="SFM5000 Series" class="md-nav__link">
+      SFM5000 Series
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../products/SFM4000/" title="SFM4000 Series" class="md-nav__link">
+      SFM4000 Series
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../products/SFM3000/" title="SFM3000 Series" class="md-nav__link">
+      SFM3000 Series
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../products/hardware-privacy-notice/" title="Hardware Privacy Notice" class="md-nav__link">
+      Hardware Privacy Notice
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../products/product-disclaimer/" title="Product Disclaimer" class="md-nav__link">
+      Product Disclaimer
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+    
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Technical Documents
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Technical Documents
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1" checked>
+    
+    <label class="md-nav__link" for="nav-3-1">
+      SFM SDK Manual
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-1">
+        SFM SDK Manual
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        API Compatability
+      </label>
+    
+    <a href="./" title="API Compatability" class="md-nav__link md-nav__link--active">
+      API Compatability
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#2-api-compatibility" title="2. API Compatibility" class="md-nav__link">
+    2. API Compatibility
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../API_Specification/" title="API Specification" class="md-nav__link">
+      API Specification
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../UF_Protocol_Manual/" title="UF Protocol Manual" class="md-nav__link">
+      UF Protocol Manual
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+    
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      SDK
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        SDK
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../sdk/c_cpp/" title="C/C++" class="md-nav__link">
+      C/C++
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../sdk/NET/" title=".NET" class="md-nav__link">
+      .NET
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../sdk/android/" title="Android" class="md-nav__link">
+      Android
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../sdk/python/" title="python" class="md-nav__link">
+      python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../sdk/sdk-license-agreement/" title="SDK License Agreement" class="md-nav__link">
+      SDK License Agreement
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+    
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Tutorials
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Tutorials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/pysfm/tutorial/" title="pysfm" class="md-nav__link">
+      pysfm
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+ 
+    </ul>
+</nav>
+                                    </div>
+                                </div>
+                            </div>
+                             
+                            <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                                <div class="md-sidebar__scrollwrap">
+                                    <div class="md-sidebar__inner">
+                                        
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#2-api-compatibility" title="2. API Compatibility" class="md-nav__link">
+    2. API Compatibility
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                                    </div>
+                                </div>
+                            </div>
+                             
+                            <div class="md-content">
+                                <article class="md-content__inner md-typeset">
+                                     
+                                    <a href="https://github.com/supremainc/sfmdev/tree/master/docs/documents/API_Compatibility.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>  
+                                    <h1>API Compatability</h1>
+                                     <h2 id="2-api-compatibility">2. API Compatibility<a class="headerlink" href="#2-api-compatibility" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th align="center">Category</th>
+<th>Function</th>
+<th align="center">SFM 3000/5000</th>
+<th align="center">SFM 4000</th>
+<th align="center">SFM 3500</th>
+<th align="center">SFM 5500</th>
+<th align="center">SFM 6000</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Serial Comm. API</td>
+<td>UF_InitCommPort</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_CloseCommPort</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_Reconnect</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_SetBaudrate</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_SetAsciiMode</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center">Socket API</td>
+<td>UF_InitSocket</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_CloseSocket</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center">Low-Level Packet API</td>
+<td>UF_SendPacket</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_ReceivePacket</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_SendNetworkPacket</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_ReceiveNetworkPacket</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_SendRawData</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_ReceiveRawData</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_SendDataPacket</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_SetSendPacketCallback</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_SetReceivePacketCallback</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_SetSendDataPacketCallback</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_SetReceiveDataPacketCallback</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_SetSendRawDataCallback</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_SetReceiveRawDataCallback</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_SetDefaultPacketSize</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_GetDefaultPacketSize</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center">General Command API</td>
+<td>UF_Command</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_CommandEx</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_CommandSendData</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_CommandSendDataEx</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_Cancel</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_SetProtocol</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_GetProtocol</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_GetModuleID</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_SetGenericCommandTimeout</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_SetInputCommandTimeout</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_GetGenericCommandTimeout</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_GetInputCommandTimeout</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_SetNetworkDelay</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_GetNetworkDelay</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center">Module API</td>
+<td>UF_GetModuleInfo</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_GetModuleString</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_SearchModule</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_SearchModuleID</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_SearchModuleBySocket</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_SearchModuleIDEx</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_CalibrateSensor</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_Upgrade</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_Reset</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_ PowerOff</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_Lock</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_Unlock</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_ChangePassword</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center">System Parameters API</td>
+<td>UF_InitSysParameter</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_GetSysParameter</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_SetSysParameter</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_GetMultiSysParameter</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_SetMultiSysParameter</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_Save</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_SaveConfiguration</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_ReadConfigurationHeader</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_LoadConfiguration</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_MakeParameterConfiguration</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center">Template Mgmt. API</td>
+<td>UF_GetNumOfTemplate</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_GetMaxNumOfTemplate</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_GetAllUserInfo</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_GetAllUserInfoEx</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_SortUserInfo</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_SetUserInfoCallback</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_SetAdminLevel</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_GetAdminLevel</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_ClearAllAdminLevel</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_SaveDB</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_LoadDB</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_CheckTemplate</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_ReadTemplate</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_ReadOneTemplate</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_SetScanCallback</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_ScanTemplate</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_FixProvisionalTemplate</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_SetSecurityLevel</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_GetSecurityLevel</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_SetAuthType*</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_GetAuthType*</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_GetUserIDByAuthType*</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_ResetAllAuthType*</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_SetEntranceLimit*</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_GetEntranceLimit*</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_ClearAllEntranceLimit*</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center">Image API</td>
+<td>UF_ConvertToBitmap</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_SaveImage</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_LoadImage</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_ReadImage</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_ScanImage</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center">Enroll API</td>
+<td>UF_Enroll</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_EnrollContinue</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_EnrollAfterVerification</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_EnrollTemplate</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_EnrollMultipleTemplates</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_EnrollImage</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_SetEnrollCallback</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center">Identify API</td>
+<td>UF_Identify</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_IdentifyTemplate</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_IdentifyImage</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_SetIdentifyCallback</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center">Verify API</td>
+<td>UF_Verify</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_VerifyTemplate</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_VerifyHostTemplate</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_VerifyImage</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_SetVerifyCallback</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center">Delete API</td>
+<td>UF_Delete</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_DeleteOneTemplate</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_DeleteMultipleTemplates</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_DeleteAll</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_DeleteByScan</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_SetDeleteCallback</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center">I/O API</td>
+<td>UF_InitIO</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_SetInputFunction</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_GetInputFunction</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_GetInputStatus</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_GetOutputEventList</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_ClearAllOutputEvent</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_ClearOutputEvent</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_SetOutputEvent</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_GetOutputEvent</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_SetOutputStatus</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_SetLegacyWiegandConfig</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_GetLegacyWiegandConfig</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_MakeIOConfiguration</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center">GPIO API</td>
+<td>UF_GetGPIOConfiguration</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_SetInputGPIO</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_SetOutputGPIO</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_SetSharedGPIO</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_DisableGPIO</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_ClearAllGPIO</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_SetDefaultGPIO</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_EnableWiegandInput</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_EnableWiegandOutput</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_DisableWiegandInput</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_DisableWiegandOutput</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_MakeGPIOConfiguration</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center">User Memory API</td>
+<td>UF_WriteUserMemory</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_ReadUserMemory</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center">Log and Time Mgmt. API</td>
+<td>UF_SetTime</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_GetTime</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_GetNumOfLog</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_ReadLog</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_ReadLatestLog</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_DeleteOldestLog</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_DeleteAllLog</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_ClearLogCache</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_ReadLogCache</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_SetCustomLogField</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_GetCustomLogField</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center">Extended Wiegand API</td>
+<td>UF_SetWiegandFormat</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_GetWiegandFormat</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_SetWiegandIO</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_GetWiegandIO</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_SetWiegandOption</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_GetWiegandOption</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_SetAltValue</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_ClearAltValue</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_GetAltValue</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_MakeWiegandConfiguration</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center">Wiegand Command Card API</td>
+<td>UF_AddWiegandCommandCard</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_GetWiegandCommandCardList</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_ClearAllWiegandCommandCard</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center">SmartCard API</td>
+<td>UF_ReadSmartCard</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_ReadSmartCardWithAG</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_WriteSmartCard</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_WriteSmartCardWithAG</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_WriteSmartCardWithEntranceLimit*</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_FormatSmartCard</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_SetSmartCardMode</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_GetSmartCardMode</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_ChangePrimaryKey</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_ChangeSecondaryKey</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_SetKeyOption</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_GetKeyOption</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_SetCardLayout</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_GetCardLayout</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_SetSmartCardCallback</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center">Access Control API</td>
+<td>UF_AddTimeSchedule</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_GetTimeSchedule</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_DeleteTimeSchedule</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_DeleteAllTimeSchedule</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_AddHoliday</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_GetHoliday</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_DeleteHoliday</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_DeleteAllHoliday</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_AddAccessGroup</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_GetAccessGroup</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_DeleteAccessGroup</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_DeleteAllAccessGroup</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_SetUserAccessGroup</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_GetUserAccessGroup</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center">Blacklist API</td>
+<td>UF_AddBlacklist</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_DeleteBlacklist</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_GetBlacklist</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_DeleteAllBlacklist</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center">WSQ API</td>
+<td>UF_ScanImageEx</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_ReadImageEx</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_WSQ_Decode</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center">File System API</td>
+<td>UF_ResetSystemConfiguration</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td>UF_FormatUserDatabase</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+</tr>
+</tbody>
+</table>       
+                                </article>
+                            </div>
+                        </div>
+                    </main>
+                     
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../Introduction/" title="Introduction" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Introduction
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../API_Specification/" title="API Specification" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                API Specification
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2020 Suprema Inc.
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://www.facebook.com/supremaglobal/" class="md-footer-social__link fa fa-facebook"></a>
+    
+      <a href="http://www.supremainc.com" class="md-footer-social__link fa fa-globe"></a>
+    
+      <a href="https://github.com/supremainc" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://sfmdev.slack.com" class="md-footer-social__link fa fa-slack"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer> 
+                </div>
+                
+                <script src="../../assets/javascripts/application-84693e5e49.js"></script>
+                
+                <script>
+                    app.initialize({
+                        version: "0.17.3",
+                        url: {
+                            base: "../.."
+                        }
+                    })
+                </script>
+                
+                <script src="../../javascripts/extra.js"></script>
+                   
+                <script>
+                    ! function(e, t, a, n, o, c, i) {
+                        e.GoogleAnalyticsObject = o, e[o] = e[o] || function() {
+                            (e[o].q = e[o].q || []).push(arguments)
+                        }, e[o].l = 1 * new Date, c = t.createElement(a), i = t.getElementsByTagName(a)[0], c.async = 1, c.src = n, i.parentNode.insertBefore(c, i)
+                    }(window, document, "script", "https://www.google-analytics.com/analytics.js", "ga"), ga("create", "UA-99598070-1", "auto"), ga("set", "anonymizeIp", !0), ga("send", "pageview");
+                    var links = document.getElementsByTagName("a");
+                    Array.prototype.map.call(links, function(e) {
+                        e.host != document.location.host && e.addEventListener("click", function() {
+                            var t = e.getAttribute("data-md-action") || "follow";
+                            ga("send", "event", "outbound", t, e.href)
+                        })
+                    });
+                    var query = document.forms.search.query;
+                    query.addEventListener("blur", function() {
+                        if (this.value) {
+                            var e = document.location.pathname;
+                            ga("send", "pageview", e + "?q=" + this.value)
+                        }
+                    })
+                </script>
+                 
+                <!--Start of Tawk.to Script-->
+                <script type="text/javascript">
+                    var Tawk_API = Tawk_API || {},
+                        Tawk_LoadStart = new Date();
+                    (function() {
+                        var s1 = document.createElement("script"),
+                            s0 = document.getElementsByTagName("script")[0];
+                        s1.async = true;
+                        s1.src = 'https://embed.tawk.to/59f828224854b82732ff90e3/default';
+                        s1.charset = 'UTF-8';
+                        s1.setAttribute('crossorigin', '*');
+                        s0.parentNode.insertBefore(s1, s0);
+                    })();
+                </script>
+                <!--End of Tawk.to Script-->
+            </body>
+
+</html>

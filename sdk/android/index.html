@@ -1,0 +1,1180 @@
+   
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge"> 
+    <meta name="description" content="SFM Developer Center">  
+    <link rel="canonical" href="https://github.com/supremainc/sfmdev/sdk/android/">  
+    <meta name="author" content="Suprema inc.">  
+    <meta name="lang:clipboard.copy" content="Copy to clipboard"> 
+    <meta name="lang:clipboard.copied" content="Copied to clipboard"> 
+    <meta name="lang:search.language" content="en"> 
+    <meta name="lang:search.result.none" content="No matching documents"> 
+    <meta name="lang:search.result.one" content="1 matching document"> 
+    <meta name="lang:search.result.other" content="# matching documents"> 
+    <meta name="lang:search.tokenizer" content="[\s\-]+"> 
+    <link rel="shortcut icon" href="../../assets/images/favicon.png">
+    <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.0.2">   
+    <title>Android - SFM Developer Center</title>
+      
+    <link rel="stylesheet" href="../../assets/stylesheets/application-5b1b46901f.css"> 
+    <link rel="stylesheet" href="../../assets/stylesheets/application-23f75ab9c7.palette.css">   
+    <script src="../../assets/javascripts/modernizr-e826f8942a.js"></script>
+      
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,700|None">
+    <style>
+        body,
+        input {
+            font-family:"Montserrat",
+            "Helvetica Neue",
+            Helvetica,
+            Arial,
+            sans-serif
+        }
+        
+        code,
+        kbd,
+        pre {
+            font-family:"None",
+            "Courier New",
+            Courier,
+            monospace
+        }
+    </style>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">  
+    <link rel="stylesheet" href="../../stylesheets/extra.css">  
+</head>
+   
+
+<body data-md-color-primary="burgundy" data-md-color-accent="burgundy">
+
+     
+                <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" id="github"><path fill="currentColor" d="M409.132,114.573c-19.608-33.596-46.205-60.194-79.798-79.8C295.736,15.166,259.057,5.365,219.271,5.365
+		c-39.781,0-76.472,9.804-110.063,29.408c-33.596,19.605-60.192,46.204-79.8,79.8C9.803,148.168,0,184.854,0,224.63
+		c0,47.78,13.94,90.745,41.827,128.906c27.884,38.164,63.906,64.572,108.063,79.227c5.14,0.954,8.945,0.283,11.419-1.996
+		c2.475-2.282,3.711-5.14,3.711-8.562c0-0.571-0.049-5.708-0.144-15.417c-0.098-9.709-0.144-18.179-0.144-25.406l-6.567,1.136
+		c-4.187,0.767-9.469,1.092-15.846,1c-6.374-0.089-12.991-0.757-19.842-1.999c-6.854-1.231-13.229-4.086-19.13-8.559
+		c-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559
+		c-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-0.951-2.568-2.098-3.711-3.429c-1.142-1.331-1.997-2.663-2.568-3.997
+		c-0.572-1.335-0.098-2.43,1.427-3.289c1.525-0.859,4.281-1.276,8.28-1.276l5.708,0.853c3.807,0.763,8.516,3.042,14.133,6.851
+		c5.614,3.806,10.229,8.754,13.846,14.842c4.38,7.806,9.657,13.754,15.846,17.847c6.184,4.093,12.419,6.136,18.699,6.136
+		c6.28,0,11.704-0.476,16.274-1.423c4.565-0.952,8.848-2.383,12.847-4.285c1.713-12.758,6.377-22.559,13.988-29.41
+		c-10.848-1.14-20.601-2.857-29.264-5.14c-8.658-2.286-17.605-5.996-26.835-11.14c-9.235-5.137-16.896-11.516-22.985-19.126
+		c-6.09-7.614-11.088-17.61-14.987-29.979c-3.901-12.374-5.852-26.648-5.852-42.826c0-23.035,7.52-42.637,22.557-58.817
+		c-7.044-17.318-6.379-36.732,1.997-58.24c5.52-1.715,13.706-0.428,24.554,3.853c10.85,4.283,18.794,7.952,23.84,10.994
+		c5.046,3.041,9.089,5.618,12.135,7.708c17.705-4.947,35.976-7.421,54.818-7.421s37.117,2.474,54.823,7.421l10.849-6.849
+		c7.419-4.57,16.18-8.758,26.262-12.565c10.088-3.805,17.802-4.853,23.134-3.138c8.562,21.509,9.325,40.922,2.279,58.24
+		c15.036,16.18,22.559,35.787,22.559,58.817c0,16.178-1.958,30.497-5.853,42.966c-3.9,12.471-8.941,22.457-15.125,29.979
+		c-6.191,7.521-13.901,13.85-23.131,18.986c-9.232,5.14-18.182,8.85-26.84,11.136c-8.662,2.286-18.415,4.004-29.263,5.146
+		c9.894,8.562,14.842,22.077,14.842,40.539v60.237c0,3.422,1.19,6.279,3.572,8.562c2.379,2.279,6.136,2.95,11.276,1.995
+		c44.163-14.653,80.185-41.062,108.068-79.226c27.88-38.161,41.825-81.126,41.825-128.906
+		C438.536,184.851,428.728,148.168,409.132,114.573z"/></svg>
+        
+      </defs>
+    </svg>
+                <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+                <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+                <label class="md-overlay" data-md-component="overlay" for="drawer"></label>  <header class="md-header" data-md-component="header">
+    <nav class="md-header-nav md-grid">
+        <div class="md-flex">
+            <div class="md-flex__cell md-flex__cell--shrink">
+
+                
+                <!--<a href="https://github.com/supremainc/sfmdev" title="SFM Developer Center" class="md-logo md-header-nav__button">
+            <img src="../../images/suprema.png" width="24" height="24">
+          </a>-->
+                
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+                <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch">
+                <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
+              
+                <span class="md-header-nav__parent">
+                  SDK
+                </span>   Android 
+                </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+                 
+                <label class="md-icon md-icon--search md-header-nav__button" for="search"></label> 
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">&#xE5CD;</button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>  
+            </div>
+            
+            <div class="md-flex__cell md-flex__cell--shrink">
+                <div class="md-header-nav__source">
+                    
+
+
+  
+
+
+  <a href="https://github.com/supremainc/sfmdev/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      supremainc/sfmdev
+    </div>
+  </a>
+
+                </div>
+            </div>
+            
+        </div>
+    </nav>
+</header> 
+                <div class="md-container">
+                    
+                    <main class="md-main">
+                        <div class="md-main__inner md-grid" data-md-component="container">
+                             
+                            <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                                <div class="md-sidebar__scrollwrap">
+                                    <div class="md-sidebar__inner">
+                                        <a href="../.." title="SFM Developer Center" class="md-logo md-header-nav__button">
+                                            <img src="../../images/suprema.png" width="160" height="66">
+                                        </a>
+                                        <nav class="md-nav md-nav--primary" data-md-level="0">
+    <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon">fingerprint</i>
+      
+    </span>
+    SFM Developer Center
+  </label> 
+    <div class="md-nav__source">
+        
+
+
+  
+
+
+  <a href="https://github.com/supremainc/sfmdev/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      supremainc/sfmdev
+    </div>
+  </a>
+
+    </div>
+    
+    <ul class="md-nav__list" data-md-scrollfix>
+           
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="About" class="md-nav__link">
+      About
+    </a>
+  </li>
+    
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Products
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Products
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../products/SFMSlim/" title="SFM Slim Series" class="md-nav__link">
+      SFM Slim Series
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../products/SFM6000/" title="SFM6000 Series" class="md-nav__link">
+      SFM6000 Series
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../products/SFM5500/" title="SFM5500 Series" class="md-nav__link">
+      SFM5500 Series
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../products/SFM5000/" title="SFM5000 Series" class="md-nav__link">
+      SFM5000 Series
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../products/SFM4000/" title="SFM4000 Series" class="md-nav__link">
+      SFM4000 Series
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../products/SFM3000/" title="SFM3000 Series" class="md-nav__link">
+      SFM3000 Series
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../products/hardware-privacy-notice/" title="Hardware Privacy Notice" class="md-nav__link">
+      Hardware Privacy Notice
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../products/product-disclaimer/" title="Product Disclaimer" class="md-nav__link">
+      Product Disclaimer
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+    
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Technical Documents
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Technical Documents
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
+    
+    <label class="md-nav__link" for="nav-3-1">
+      SFM SDK Manual
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-1">
+        SFM SDK Manual
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../documents/Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../documents/API_Compatibility/" title="API Compatability" class="md-nav__link">
+      API Compatability
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../documents/API_Specification/" title="API Specification" class="md-nav__link">
+      API Specification
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../documents/UF_Protocol_Manual/" title="UF Protocol Manual" class="md-nav__link">
+      UF Protocol Manual
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+    
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      SDK
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        SDK
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../c_cpp/" title="C/C++" class="md-nav__link">
+      C/C++
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../NET/" title=".NET" class="md-nav__link">
+      .NET
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Android
+      </label>
+    
+    <a href="./" title="Android" class="md-nav__link md-nav__link--active">
+      Android
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#release-notes" title="Release notes" class="md-nav__link">
+    Release notes
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#v060-november-16-2021" title="v0.6.0 - November 16, 2021" class="md-nav__link">
+    v0.6.0 - November 16, 2021
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v052-march-31-2020" title="v0.5.2 - March 31, 2020" class="md-nav__link">
+    v0.5.2 - March 31, 2020
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v051-march-17-2020" title="v0.5.1 - March 17, 2020" class="md-nav__link">
+    v0.5.1 - March 17, 2020
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v050-march-10-2020" title="v0.5.0 - March 10, 2020" class="md-nav__link">
+    v0.5.0 - March 10, 2020
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v040-feburary-13-2020" title="v0.4.0 - Feburary 13, 2020" class="md-nav__link">
+    v0.4.0 - Feburary 13, 2020
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage" title="Usage" class="md-nav__link">
+    Usage
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installation" title="Installation" class="md-nav__link">
+    Installation
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-use-using-jitpack" title="How to use using JitPack" class="md-nav__link">
+    How to use using JitPack
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-upgrade-using-jitpack" title="How to upgrade using JitPack" class="md-nav__link">
+    How to upgrade using JitPack
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../python/" title="python" class="md-nav__link">
+      python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sdk-license-agreement/" title="SDK License Agreement" class="md-nav__link">
+      SDK License Agreement
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+    
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Tutorials
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Tutorials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/pysfm/tutorial/" title="pysfm" class="md-nav__link">
+      pysfm
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+ 
+    </ul>
+</nav>
+                                    </div>
+                                </div>
+                            </div>
+                             
+                            <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                                <div class="md-sidebar__scrollwrap">
+                                    <div class="md-sidebar__inner">
+                                        
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#release-notes" title="Release notes" class="md-nav__link">
+    Release notes
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#v060-november-16-2021" title="v0.6.0 - November 16, 2021" class="md-nav__link">
+    v0.6.0 - November 16, 2021
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v052-march-31-2020" title="v0.5.2 - March 31, 2020" class="md-nav__link">
+    v0.5.2 - March 31, 2020
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v051-march-17-2020" title="v0.5.1 - March 17, 2020" class="md-nav__link">
+    v0.5.1 - March 17, 2020
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v050-march-10-2020" title="v0.5.0 - March 10, 2020" class="md-nav__link">
+    v0.5.0 - March 10, 2020
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v040-feburary-13-2020" title="v0.4.0 - Feburary 13, 2020" class="md-nav__link">
+    v0.4.0 - Feburary 13, 2020
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage" title="Usage" class="md-nav__link">
+    Usage
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installation" title="Installation" class="md-nav__link">
+    Installation
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-use-using-jitpack" title="How to use using JitPack" class="md-nav__link">
+    How to use using JitPack
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-upgrade-using-jitpack" title="How to upgrade using JitPack" class="md-nav__link">
+    How to upgrade using JitPack
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                                    </div>
+                                </div>
+                            </div>
+                             
+                            <div class="md-content">
+                                <article class="md-content__inner md-typeset">
+                                     
+                                    <a href="https://github.com/supremainc/sfmdev/tree/master/docs/sdk/android.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>   <h1 id="android">Android<a class="headerlink" href="#android" title="Permanent link">&para;</a></h1>
+<p><a href="https://github.com/supremainc/sfm-sdk-android"><img alt="" src="https://img.shields.io/github/v/tag/supremainc/sfm-sdk-android" /></a>
+<a href="https://github.com/supremainc/sfm-sdk-android"><img alt="" src="https://img.shields.io/github/downloads/supremainc/sfm-sdk-android/total?label=Github%20downloads" /></a>
+<a href="https://jitpack.io/#supremainc/sfm-sdk-android"><img alt="" src="https://jitpack.io/v/supremainc/sfm-sdk-android.svg" /></a>
+<img alt="" src="https://img.shields.io/badge/latest%20SFM%20SDK-v3.3.0-blueviolet" /></p>
+<p>SFM SDK for Android is a library wrapping a Java library with SFM SDK based on C/C++ using JNI. You can easily use the SFM SDK for Android using JitPack. Also, you can download the source code of the SFM SDK for Android on our Github repository. </p>
+<p>Meanwhile, some functions are not supported. If you want to use that of functions, please modify the source code. And, If you want to share your modified codes, we are always welcome to your contributions.</p>
+<h2 id="release-notes">Release notes<a class="headerlink" href="#release-notes" title="Permanent link">&para;</a></h2>
+<h3 id="v060-november-16-2021">v0.6.0 - November 16, 2021<a class="headerlink" href="#v060-november-16-2021" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="https://img.shields.io/badge/SFM%20SDK-v3.3.0-blueviolet" /><br />
+- SFM SDK version has been updated. 
+  - Added secure packet protocol APIs.
+  - Added key management APIs.
+  - See details in <a href="https://github.com/supremainc/sfm-sdk/blob/master/doc/SFM_SDK_Manual_v3.3.0.pdf">SFM SDK Manual v3.3.0</a>
+- Firmware version information has been added.   </p>
+<h3 id="v052-march-31-2020">v0.5.2 - March 31, 2020<a class="headerlink" href="#v052-march-31-2020" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="https://img.shields.io/badge/SFM%20SDK-v3.1.2-blueviolet" /><br />
+- Minor fix. </p>
+<h3 id="v051-march-17-2020">v0.5.1 - March 17, 2020<a class="headerlink" href="#v051-march-17-2020" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="https://img.shields.io/badge/SFM%20SDK-v3.1.1-blueviolet" /><br />
+- UART has become more stable.
+There was a problem that the UART connection is disconnected with an error message of <code>UF_ERR_READ_SERIAL_TIMEOUT</code> when you receive data from the SFM on the Android app. This problem has been resolved at this release. </p>
+<h3 id="v050-march-10-2020">v0.5.0 - March 10, 2020<a class="headerlink" href="#v050-march-10-2020" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="https://img.shields.io/badge/SFM%20SDK-v3.1.0-blueviolet" /><br />
+- UART is supported for rooted Android devices.<br />
+- Added native callback functions in JNI for using SFM SDK.  </p>
+<h3 id="v040-feburary-13-2020">v0.4.0 - Feburary 13, 2020<a class="headerlink" href="#v040-feburary-13-2020" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="https://img.shields.io/badge/SFM%20SDK-v3.0.0-blueviolet" /></p>
+<p>New SFM SDK for Android has been released. 
+From now on, you can easily use the SFM SDK for Android using JitPack. Or, you can download the SFM SDK for android manually in Github repository</p>
+<p><a href="https://github.com/supremainc/sfm-sdk-android">https://github.com/supremainc/sfm-sdk-android</a></p>
+<hr />
+<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
+<h3 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h3>
+<h4 id="how-to-use-using-jitpack">How to use using JitPack<a class="headerlink" href="#how-to-use-using-jitpack" title="Permanent link">&para;</a></h4>
+<p>To get a Git project into your build:</p>
+<p><strong>Step 1.</strong> Add the JitPack repository to your build file</p>
+<p>Add it in your root build.gradle at the end of repositories. (<code>/your_project_root_path/build.gradle</code>)</p>
+<div class="highlight"><pre><span></span><code>allprojects {
+    repositories {
+    ...
+    maven { url &#39;https://jitpack.io&#39; }
+    }
+}
+</code></pre></div>
+<p><strong>Step 2.</strong> Add the dependency in your app build.gradle (<code>/your_project_root_path/app/build.gradle</code>)</p>
+<div class="highlight"><pre><span></span><code>dependencies {
+    ...
+    implementation &#39;com.github.supremainc:sfm-sdk-android:0.5.0&#39;
+    ...
+}
+</code></pre></div>
+<p>If you are using the Java8, you need to insert the below over the dependency.</p>
+<div class="highlight"><pre><span></span><code>compileOptions{
+    sourceCompatibility JavaVersion.VERSION_1_8
+    targetCompatibility JavaVersion.VERSION_1_8
+}
+
+dependencies {
+    ...
+    implementation &#39;com.github.supremainc:sfm-sdk-android:0.5.0&#39;
+    ...
+}
+</code></pre></div>
+<p><strong>Step 3.</strong> Include scripts for using the USB service and changing user-permission to access the storage in your device.</p>
+<p>The SFM SDK for Android includes USB Library by default. You don't need to implement codes related to the USB controls. The USB Library
+is used from <a href="https://github.com/felHR85/UsbSerial">https://github.com/felHR85/UsbSerial</a> in the SFM SDK for Android. Also, it's version is <code>v6.1.0</code>.</p>
+<p>Basically, you should insert the below script to <code>/your_project_root_path/app/src/main/AndroidManifest.xml</code> for proper working with the USB Library.</p>
+<p><strong><service></strong></p>
+<div class="highlight"><pre><span></span><code>    <span class="nt">&lt;service</span>
+        <span class="na">android:name=</span><span class="s">&quot;com.supremainc.sfm_sdk.UsbService&quot;</span>
+        <span class="na">android:enabled=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/service&gt;</span>
+</code></pre></div>
+<p>Also, you need to insert the below script for using storage in your device.</p>
+<p><strong><user-permission></strong></p>
+<div class="highlight"><pre><span></span><code>    <span class="nt">&lt;uses-permission</span> <span class="na">android:name=</span><span class="s">&quot;android.permission.READ_EXTERNAL_STORAGE&quot;</span><span class="nt">&gt;&lt;/uses-permission&gt;</span>
+    <span class="nt">&lt;uses-permission</span> <span class="na">android:name=</span><span class="s">&quot;android.permission.WRITE_EXTERNAL_STORAGE&quot;</span><span class="nt">&gt;&lt;/uses-permission&gt;</span>   
+</code></pre></div>
+<p>Please refer to <a href="https://github.com/supremainc/sfm-sdk-android/blob/master/app/src/main/AndroidManifest.xml">https://github.com/supremainc/sfm-sdk-android/blob/master/app/src/main/AndroidManifest.xml</a></p>
+<p><strong>AndroidManifest.xml</strong></p>
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span><span class="cm">&lt;!--</span>
+<span class="cm">  ~ Copyright (c) 2001 - 2019. Suprema Inc. All rights reserved.</span>
+<span class="cm">  ~ Licensed under the MIT license. See LICENSE file in the project root for details.</span>
+<span class="cm">  --&gt;</span>
+
+<span class="nt">&lt;manifest</span> <span class="na">xmlns:android=</span><span class="s">&quot;http://schemas.android.com/apk/res/android&quot;</span>
+    <span class="na">package=</span><span class="s">&quot;com.supremainc.sfm_sdk_android&quot;</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;uses-feature</span> <span class="na">android:name=</span><span class="s">&quot;android.hardware.usb.host&quot;</span>
+        <span class="na">android:required=</span><span class="s">&quot;true&quot;</span><span class="nt">/&gt;</span>
+
+    <span class="nt">&lt;application</span>
+        <span class="na">android:allowBackup=</span><span class="s">&quot;true&quot;</span>
+        <span class="na">android:icon=</span><span class="s">&quot;@mipmap/ic_launcher&quot;</span>
+        <span class="na">android:label=</span><span class="s">&quot;@string/app_name&quot;</span>
+        <span class="na">android:roundIcon=</span><span class="s">&quot;@mipmap/ic_launcher_round&quot;</span>
+        <span class="na">android:supportsRtl=</span><span class="s">&quot;true&quot;</span>
+        <span class="na">android:theme=</span><span class="s">&quot;@style/AppTheme&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;activity</span> <span class="na">android:name=</span><span class="s">&quot;.MainActivity&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;intent-filter&gt;</span>
+                <span class="nt">&lt;action</span> <span class="na">android:name=</span><span class="s">&quot;android.intent.action.MAIN&quot;</span> <span class="nt">/&gt;</span>
+
+                <span class="nt">&lt;category</span> <span class="na">android:name=</span><span class="s">&quot;android.intent.category.LAUNCHER&quot;</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;/intent-filter&gt;</span>
+        <span class="nt">&lt;/activity&gt;</span>
+
+        <span class="nt">&lt;service</span>
+            <span class="na">android:name=</span><span class="s">&quot;com.supremainc.sfm_sdk.UsbService&quot;</span>
+            <span class="na">android:enabled=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/service&gt;</span>
+
+    <span class="nt">&lt;/application&gt;</span>
+
+    <span class="nt">&lt;uses-permission</span> <span class="na">android:name=</span><span class="s">&quot;android.permission.READ_EXTERNAL_STORAGE&quot;</span><span class="nt">&gt;&lt;/uses-permission&gt;</span>
+    <span class="nt">&lt;uses-permission</span> <span class="na">android:name=</span><span class="s">&quot;android.permission.WRITE_EXTERNAL_STORAGE&quot;</span><span class="nt">&gt;&lt;/uses-permission&gt;</span>
+<span class="nt">&lt;/manifest&gt;</span>
+</code></pre></div>
+<h4 id="how-to-upgrade-using-jitpack">How to upgrade using JitPack<a class="headerlink" href="#how-to-upgrade-using-jitpack" title="Permanent link">&para;</a></h4>
+<p>To upgrade SFM SDK for Android, change the JitPack version in your root build.gradle at the end of repositories. (<code>/your_project_root_path/build.gradle</code>)</p>
+<p>In the root build.gradle file, you should just change the JitPack version from <code>0.5.0</code> to <code>JitPack version to upgrade</code>.
+<div class="highlight"><pre><span></span><code>dependencies {
+    ...
+    implementation &#39;com.github.supremainc:sfm-sdk-android:0.5.0&#39;
+    ...
+}
+</code></pre></div></p>
+<hr />
+<h1 id="deprecated">[DEPRECATED]<a class="headerlink" href="#deprecated" title="Permanent link">&para;</a></h1>
+<h2 id="sfm-sdk-for-android-beta">SFM SDK for Android (beta)<a class="headerlink" href="#sfm-sdk-for-android-beta" title="Permanent link">&para;</a></h2>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>The previous version of the SFM SDK for Android (beta) was deprecated.
+the repository moved to <a href="https://github.com/supremainc/sfm-sdk-android/tree/sfm-sdk-android-beta">https://github.com/supremainc/sfm-sdk-android/tree/sfm-sdk-android-beta</a></p>
+</div>
+<p><strong><em>You have to connect the SDK callback function to the communication function on Android for using android SFM_SDK.(See the below for details). Android sfm-sdk was made by C language and compiled using NDK. We currently provide SFM_SDK beta version 1.0.</em></strong></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can download all about android SFM_SDK(library, example project, document) through below github URL.
+<strong><a href="https://github.com/supremainc/sfm-sdk-android">https://github.com/supremainc/sfm-sdk-android</a></strong></p>
+</div>
+<h3 id="quick-start">Quick start<a class="headerlink" href="#quick-start" title="Permanent link">&para;</a></h3>
+<p><strong>Step 1</strong><br />
+Download these files.<br />
+<a href="https://github.com/supremainc/sfm-sdk-android/raw/master/Library/Android_SDK_Beta_v1.0/arm64-v8a/arm64-v8a_libSFM_SDK_android_Beta_v1.0.so">arm64-v8a_libSFM_SDK_android.so</a><br />
+<a href="https://github.com/supremainc/sfm-sdk-android/raw/master/Library/Android_SDK_Beta_v1.0/armeabi-v7a/armeabi-v7a_libSFM_SDK_android_Beta_v1.0.so">armeabi-v7a_libSFM_SDK_android.so</a><br />
+<a href="https://github.com/supremainc/sfm-sdk-android/raw/master/Library/Android_SDK_Beta_v1.0/armeabi/armeabi_libSFM_SDK_android_Beta_v1.0.so">armeabi_libSFM_SDK_android.so</a><br />
+<a href="https://github.com/supremainc/sfm-sdk-android/raw/master/Library/Android_SDK_Beta_v1.0/JNI_Header_Beta_v1.0.zip">JNI_Header.zip</a><br />
+<a href="https://github.com/supremainc/sfm-sdk-android/raw/master/Document/UnifingerUI%20for%20Android(App_Beta_v1.2%2CSDK_Beta_v1.0).docx">UnifingerUI for Android.docx</a> </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>arm64-v8a_libSFM_SDK_android.so</strong> is a library file for 64bits arm processor.<br />
+<strong>armeabi-v7a_libSFM_SDK_android.so</strong> is a library file for arm processor V7 or more up version.<br />
+<strong>armeabi_libSFM_SDK_android.so</strong> is a library file for arm processor V5 or V6.<br />
+<strong>JNI_Header.zip</strong> is a header files for library.<br />
+<strong>UnifingerUI for Android.docx</strong> is a file for documentation of android library.  </p>
+</div>
+<p><strong>Step 2</strong><br />
+Create a android project.</p>
+<p><strong>Step 3</strong><br />
+Add library files on your project.</p>
+<p><img alt="" src="../../images/sdk/android/add_library_android.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>jnilib folder does not exist. Just make it.(you can use any name).</p>
+</div>
+<p><strong>Step 4</strong><br />
+Unzip JNI_Header.zip. And add header files in jni folder.</p>
+<p><img alt="" src="../../images/sdk/android/add_JNI_Header.png" /></p>
+<p><strong>Step 5</strong><br />
+Implement write call back function in java.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">private</span> <span class="kt">int</span> <span class="nf">SendPacketCallback</span><span class="p">(</span><span class="n">String</span> <span class="n">var</span><span class="p">)</span><span class="kd">throws</span> <span class="n">InterruptedException</span><span class="p">,</span> <span class="n">ExecutionException</span><span class="p">,</span> <span class="n">TimeoutException</span><span class="p">{</span>
+    <span class="kt">int</span> <span class="n">returnSize</span> <span class="o">=</span> <span class="n">SendPacket</span><span class="p">(</span><span class="n">var</span><span class="p">);</span>
+    <span class="k">return</span> <span class="n">returnSize</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kd">public</span> <span class="kt">int</span> <span class="nf">SendPacket</span><span class="p">(</span><span class="n">String</span> <span class="n">var</span><span class="p">)</span> <span class="kd">throws</span> <span class="n">InterruptedException</span><span class="p">,</span> <span class="n">ExecutionException</span><span class="p">,</span> <span class="n">TimeoutException</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">returnSize</span> <span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+    <span class="kt">byte</span><span class="o">[]</span> <span class="n">sendPacket</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BigInteger</span><span class="p">(</span><span class="n">var</span><span class="p">,</span><span class="mi">16</span><span class="p">).</span><span class="na">toByteArray</span><span class="p">();</span>
+    <span class="k">try</span> <span class="p">{</span>
+        <span class="n">mOutputStream</span><span class="p">.</span><span class="na">write</span><span class="p">(</span><span class="n">sendPacket</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">IOException</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">e</span><span class="p">.</span><span class="na">printStackTrace</span><span class="p">();</span>
+    <span class="p">}</span>
+    <span class="n">returnSize</span> <span class="o">=</span> <span class="n">PACKET_INFO</span><span class="p">.</span><span class="na">UF_PACKET_LEN</span><span class="p">;</span>
+
+    <span class="k">return</span> <span class="n">returnSize</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p><strong>Step 6</strong><br />
+Implement read call back function in java.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">private</span> <span class="kt">int</span> <span class="nf">ReadPacketCallback</span><span class="p">(</span><span class="kt">int</span> <span class="n">size</span><span class="p">,</span> <span class="kt">byte</span><span class="o">[]</span> <span class="n">read_buffer</span><span class="p">)</span> <span class="kd">throws</span> <span class="n">InterruptedException</span><span class="p">,</span> <span class="n">TimeoutException</span><span class="p">,</span> <span class="n">ExecutionException</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">readSize</span> <span class="o">=</span> <span class="n">m_SerialConnect</span><span class="p">.</span><span class="na">ReadPacket</span><span class="p">(</span><span class="n">size</span><span class="p">,</span><span class="n">read_buffer</span><span class="p">);</span>
+
+    <span class="k">return</span> <span class="n">readSize</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kd">public</span> <span class="kt">int</span> <span class="nf">ReadPacket</span><span class="p">(</span><span class="kt">int</span> <span class="n">size</span><span class="p">,</span> <span class="kt">byte</span><span class="o">[]</span> <span class="n">read_buffer</span><span class="p">)</span> <span class="kd">throws</span> <span class="n">InterruptedException</span><span class="p">,</span> <span class="n">ExecutionException</span><span class="p">,</span> <span class="n">TimeoutException</span> <span class="p">{</span>
+    <span class="kt">long</span> <span class="n">lnStart</span> <span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">lnEnd</span> <span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">nTime_out</span> <span class="o">=</span> <span class="mi">8000</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">returnSize</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="n">m_nRead_len</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+    <span class="n">lnStart</span> <span class="o">=</span> <span class="n">SystemClock</span><span class="p">.</span><span class="na">currentThreadTimeMillis</span><span class="p">();</span>
+
+    <span class="k">do</span> <span class="p">{</span>
+        <span class="n">tempBuffer</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">byte</span><span class="o">[</span><span class="n">size</span> <span class="o">-</span> <span class="n">returnSize</span><span class="o">]</span><span class="p">;</span>
+
+        <span class="n">Future</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span> <span class="n">future</span> <span class="o">=</span> <span class="n">executor</span><span class="p">.</span><span class="na">submit</span><span class="p">(</span><span class="n">readTask</span><span class="p">);</span>
+        <span class="n">m_nRead_len</span> <span class="o">=</span> <span class="n">future</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">nTime_out</span><span class="p">,</span> <span class="n">TimeUnit</span><span class="p">.</span><span class="na">MILLISECONDS</span><span class="p">);</span>
+
+        <span class="k">if</span> <span class="p">(</span><span class="n">m_nRead_len</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">arraycopy</span><span class="p">(</span><span class="n">tempBuffer</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">read_buffer</span><span class="p">,</span> <span class="n">returnSize</span><span class="p">,</span> <span class="n">m_nRead_len</span><span class="p">);</span>
+            <span class="n">returnSize</span> <span class="o">+=</span> <span class="n">m_nRead_len</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="n">lnEnd</span> <span class="o">=</span> <span class="n">SystemClock</span><span class="p">.</span><span class="na">currentThreadTimeMillis</span><span class="p">();</span>
+    <span class="p">}</span> <span class="k">while</span> <span class="p">(</span><span class="n">returnSize</span> <span class="o">&lt;</span> <span class="n">size</span> <span class="o">&amp;&amp;</span> <span class="p">((</span><span class="n">lnEnd</span> <span class="o">-</span> <span class="n">lnStart</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">nTime_out</span><span class="p">));</span>
+
+<span class="p">}</span>
+
+<span class="n">Callable</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span> <span class="n">readTask</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Callable</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="n">Integer</span> <span class="nf">call</span><span class="p">()</span> <span class="kd">throws</span> <span class="n">Exception</span> <span class="p">{</span>
+        <span class="kt">int</span> <span class="n">retSize</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+        <span class="k">do</span> <span class="p">{</span>
+            <span class="n">retSize</span> <span class="o">=</span> <span class="n">mInputStream</span><span class="p">.</span><span class="na">read</span><span class="p">(</span><span class="n">tempBuffer</span><span class="p">);</span>
+        <span class="p">}</span> <span class="k">while</span> <span class="p">(</span><span class="n">retSize</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">);</span>
+
+        <span class="k">return</span> <span class="n">retSize</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">};</span>
+</code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Write/Read callback funciotn is used in SFM_SDK. It means SFM_SDK calls these function to communication with module.
+So you have to create proper Write/Read callback funciotn(Keep parameter type and return type). 
+And then connect these functions using setting functions like step 7.</p>
+</div>
+<p><strong>Step 7</strong><br />
+Connect to communication function(write/read callback) with SDK using JNI.</p>
+<div class="highlight"><pre><span></span><code><span class="n">SetCommandClassName</span><span class="p">(</span><span class="s">&quot;com/suprema/www/unifingerui/CommandCall&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="n">SetReadCallbackFunctionName</span><span class="p">(</span><span class="s">&quot;ReadPacketCallbakc&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="n">SetWriteCallbackFunctionName</span><span class="p">(</span><span class="s">&quot;SendPacketCallback&quot;</span><span class="p">);</span><span class="w"></span>
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>SetCommandClassName()</strong>'s parameter is JNI class name that is made by you. </p>
+</div>
+<p>Now, You can use SFM library in JNI class that is made by you.</p>
+<p><strong>Step 8</strong><br />
+Build your program. Then run.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>If you want more detail explanation to use library and work environment or about license refer to documentation</strong></p>
+</div>
+<h2 id="example-code">Example code<a class="headerlink" href="#example-code" title="Permanent link">&para;</a></h2>
+<h3 id="how-to-call-identify-function">How to call identify function?<a class="headerlink" href="#how-to-call-identify-function" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="n">JNIEXPORT</span><span class="w"> </span><span class="n">jint</span><span class="w"> </span><span class="n">JNICALL</span><span class="w"> </span><span class="n">Java_com_suprema_www_unifingerui_Command_UF_1Identify</span><span class="w">  </span><span class="p">(</span><span class="n">JNIEnv</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">env</span><span class="p">,</span><span class="w"> </span><span class="n">jobject</span><span class="w"> </span><span class="n">obj</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">gobj</span><span class="o">=</span><span class="n">obj</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">result</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">userID</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="n">subID</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">result</span><span class="o">=</span><span class="n">UF_Identify</span><span class="p">(</span><span class="o">&amp;</span><span class="n">userID</span><span class="p">,</span><span class="o">&amp;</span><span class="n">subID</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">result</span><span class="o">!=</span><span class="n">UF_RET_SUCCESS</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">Update_UI_Result</span><span class="p">(</span><span class="n">result</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">Update_UI_Result</span><span class="p">(</span><span class="n">userID</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">result</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>       
+                                </article>
+                            </div>
+                        </div>
+                    </main>
+                     
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../NET/" title=".NET" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                .NET
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../python/" title="python" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                python
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2020 Suprema Inc.
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://www.facebook.com/supremaglobal/" class="md-footer-social__link fa fa-facebook"></a>
+    
+      <a href="http://www.supremainc.com" class="md-footer-social__link fa fa-globe"></a>
+    
+      <a href="https://github.com/supremainc" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://sfmdev.slack.com" class="md-footer-social__link fa fa-slack"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer> 
+                </div>
+                
+                <script src="../../assets/javascripts/application-84693e5e49.js"></script>
+                
+                <script>
+                    app.initialize({
+                        version: "0.17.3",
+                        url: {
+                            base: "../.."
+                        }
+                    })
+                </script>
+                
+                <script src="../../javascripts/extra.js"></script>
+                   
+                <script>
+                    ! function(e, t, a, n, o, c, i) {
+                        e.GoogleAnalyticsObject = o, e[o] = e[o] || function() {
+                            (e[o].q = e[o].q || []).push(arguments)
+                        }, e[o].l = 1 * new Date, c = t.createElement(a), i = t.getElementsByTagName(a)[0], c.async = 1, c.src = n, i.parentNode.insertBefore(c, i)
+                    }(window, document, "script", "https://www.google-analytics.com/analytics.js", "ga"), ga("create", "UA-99598070-1", "auto"), ga("set", "anonymizeIp", !0), ga("send", "pageview");
+                    var links = document.getElementsByTagName("a");
+                    Array.prototype.map.call(links, function(e) {
+                        e.host != document.location.host && e.addEventListener("click", function() {
+                            var t = e.getAttribute("data-md-action") || "follow";
+                            ga("send", "event", "outbound", t, e.href)
+                        })
+                    });
+                    var query = document.forms.search.query;
+                    query.addEventListener("blur", function() {
+                        if (this.value) {
+                            var e = document.location.pathname;
+                            ga("send", "pageview", e + "?q=" + this.value)
+                        }
+                    })
+                </script>
+                 
+                <!--Start of Tawk.to Script-->
+                <script type="text/javascript">
+                    var Tawk_API = Tawk_API || {},
+                        Tawk_LoadStart = new Date();
+                    (function() {
+                        var s1 = document.createElement("script"),
+                            s0 = document.getElementsByTagName("script")[0];
+                        s1.async = true;
+                        s1.src = 'https://embed.tawk.to/59f828224854b82732ff90e3/default';
+                        s1.charset = 'UTF-8';
+                        s1.setAttribute('crossorigin', '*');
+                        s0.parentNode.insertBefore(s1, s0);
+                    })();
+                </script>
+                <!--End of Tawk.to Script-->
+            </body>
+
+</html>

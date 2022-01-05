@@ -1,0 +1,2171 @@
+   
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge"> 
+    <meta name="description" content="SFM Developer Center">  
+    <link rel="canonical" href="https://github.com/supremainc/sfmdev/documents/UF_Protocol_Manual/">  
+    <meta name="author" content="Suprema inc.">  
+    <meta name="lang:clipboard.copy" content="Copy to clipboard"> 
+    <meta name="lang:clipboard.copied" content="Copied to clipboard"> 
+    <meta name="lang:search.language" content="en"> 
+    <meta name="lang:search.result.none" content="No matching documents"> 
+    <meta name="lang:search.result.one" content="1 matching document"> 
+    <meta name="lang:search.result.other" content="# matching documents"> 
+    <meta name="lang:search.tokenizer" content="[\s\-]+"> 
+    <link rel="shortcut icon" href="../../assets/images/favicon.png">
+    <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.0.2">   
+    <title>UF Protocol Manual - SFM Developer Center</title>
+      
+    <link rel="stylesheet" href="../../assets/stylesheets/application-5b1b46901f.css"> 
+    <link rel="stylesheet" href="../../assets/stylesheets/application-23f75ab9c7.palette.css">   
+    <script src="../../assets/javascripts/modernizr-e826f8942a.js"></script>
+      
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,700|None">
+    <style>
+        body,
+        input {
+            font-family:"Montserrat",
+            "Helvetica Neue",
+            Helvetica,
+            Arial,
+            sans-serif
+        }
+        
+        code,
+        kbd,
+        pre {
+            font-family:"None",
+            "Courier New",
+            Courier,
+            monospace
+        }
+    </style>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">  
+    <link rel="stylesheet" href="../../stylesheets/extra.css">  
+</head>
+   
+
+<body data-md-color-primary="burgundy" data-md-color-accent="burgundy">
+
+     
+                <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" id="github"><path fill="currentColor" d="M409.132,114.573c-19.608-33.596-46.205-60.194-79.798-79.8C295.736,15.166,259.057,5.365,219.271,5.365
+		c-39.781,0-76.472,9.804-110.063,29.408c-33.596,19.605-60.192,46.204-79.8,79.8C9.803,148.168,0,184.854,0,224.63
+		c0,47.78,13.94,90.745,41.827,128.906c27.884,38.164,63.906,64.572,108.063,79.227c5.14,0.954,8.945,0.283,11.419-1.996
+		c2.475-2.282,3.711-5.14,3.711-8.562c0-0.571-0.049-5.708-0.144-15.417c-0.098-9.709-0.144-18.179-0.144-25.406l-6.567,1.136
+		c-4.187,0.767-9.469,1.092-15.846,1c-6.374-0.089-12.991-0.757-19.842-1.999c-6.854-1.231-13.229-4.086-19.13-8.559
+		c-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559
+		c-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-0.951-2.568-2.098-3.711-3.429c-1.142-1.331-1.997-2.663-2.568-3.997
+		c-0.572-1.335-0.098-2.43,1.427-3.289c1.525-0.859,4.281-1.276,8.28-1.276l5.708,0.853c3.807,0.763,8.516,3.042,14.133,6.851
+		c5.614,3.806,10.229,8.754,13.846,14.842c4.38,7.806,9.657,13.754,15.846,17.847c6.184,4.093,12.419,6.136,18.699,6.136
+		c6.28,0,11.704-0.476,16.274-1.423c4.565-0.952,8.848-2.383,12.847-4.285c1.713-12.758,6.377-22.559,13.988-29.41
+		c-10.848-1.14-20.601-2.857-29.264-5.14c-8.658-2.286-17.605-5.996-26.835-11.14c-9.235-5.137-16.896-11.516-22.985-19.126
+		c-6.09-7.614-11.088-17.61-14.987-29.979c-3.901-12.374-5.852-26.648-5.852-42.826c0-23.035,7.52-42.637,22.557-58.817
+		c-7.044-17.318-6.379-36.732,1.997-58.24c5.52-1.715,13.706-0.428,24.554,3.853c10.85,4.283,18.794,7.952,23.84,10.994
+		c5.046,3.041,9.089,5.618,12.135,7.708c17.705-4.947,35.976-7.421,54.818-7.421s37.117,2.474,54.823,7.421l10.849-6.849
+		c7.419-4.57,16.18-8.758,26.262-12.565c10.088-3.805,17.802-4.853,23.134-3.138c8.562,21.509,9.325,40.922,2.279,58.24
+		c15.036,16.18,22.559,35.787,22.559,58.817c0,16.178-1.958,30.497-5.853,42.966c-3.9,12.471-8.941,22.457-15.125,29.979
+		c-6.191,7.521-13.901,13.85-23.131,18.986c-9.232,5.14-18.182,8.85-26.84,11.136c-8.662,2.286-18.415,4.004-29.263,5.146
+		c9.894,8.562,14.842,22.077,14.842,40.539v60.237c0,3.422,1.19,6.279,3.572,8.562c2.379,2.279,6.136,2.95,11.276,1.995
+		c44.163-14.653,80.185-41.062,108.068-79.226c27.88-38.161,41.825-81.126,41.825-128.906
+		C438.536,184.851,428.728,148.168,409.132,114.573z"/></svg>
+        
+      </defs>
+    </svg>
+                <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+                <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+                <label class="md-overlay" data-md-component="overlay" for="drawer"></label>  <header class="md-header" data-md-component="header">
+    <nav class="md-header-nav md-grid">
+        <div class="md-flex">
+            <div class="md-flex__cell md-flex__cell--shrink">
+
+                
+                <!--<a href="https://github.com/supremainc/sfmdev" title="SFM Developer Center" class="md-logo md-header-nav__button">
+            <img src="../../images/suprema.png" width="24" height="24">
+          </a>-->
+                
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+                <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch">
+                <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
+              
+                <span class="md-header-nav__parent">
+                  Technical Documents
+                </span>   UF Protocol Manual 
+                </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+                 
+                <label class="md-icon md-icon--search md-header-nav__button" for="search"></label> 
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">&#xE5CD;</button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>  
+            </div>
+            
+            <div class="md-flex__cell md-flex__cell--shrink">
+                <div class="md-header-nav__source">
+                    
+
+
+  
+
+
+  <a href="https://github.com/supremainc/sfmdev/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      supremainc/sfmdev
+    </div>
+  </a>
+
+                </div>
+            </div>
+            
+        </div>
+    </nav>
+</header> 
+                <div class="md-container">
+                    
+                    <main class="md-main">
+                        <div class="md-main__inner md-grid" data-md-component="container">
+                             
+                            <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                                <div class="md-sidebar__scrollwrap">
+                                    <div class="md-sidebar__inner">
+                                        <a href="../.." title="SFM Developer Center" class="md-logo md-header-nav__button">
+                                            <img src="../../images/suprema.png" width="160" height="66">
+                                        </a>
+                                        <nav class="md-nav md-nav--primary" data-md-level="0">
+    <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon">fingerprint</i>
+      
+    </span>
+    SFM Developer Center
+  </label> 
+    <div class="md-nav__source">
+        
+
+
+  
+
+
+  <a href="https://github.com/supremainc/sfmdev/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      supremainc/sfmdev
+    </div>
+  </a>
+
+    </div>
+    
+    <ul class="md-nav__list" data-md-scrollfix>
+           
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="About" class="md-nav__link">
+      About
+    </a>
+  </li>
+    
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Products
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Products
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../products/SFMSlim/" title="SFM Slim Series" class="md-nav__link">
+      SFM Slim Series
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../products/SFM6000/" title="SFM6000 Series" class="md-nav__link">
+      SFM6000 Series
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../products/SFM5500/" title="SFM5500 Series" class="md-nav__link">
+      SFM5500 Series
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../products/SFM5000/" title="SFM5000 Series" class="md-nav__link">
+      SFM5000 Series
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../products/SFM4000/" title="SFM4000 Series" class="md-nav__link">
+      SFM4000 Series
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../products/SFM3000/" title="SFM3000 Series" class="md-nav__link">
+      SFM3000 Series
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../products/hardware-privacy-notice/" title="Hardware Privacy Notice" class="md-nav__link">
+      Hardware Privacy Notice
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../products/product-disclaimer/" title="Product Disclaimer" class="md-nav__link">
+      Product Disclaimer
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+    
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Technical Documents
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Technical Documents
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
+    
+    <label class="md-nav__link" for="nav-3-1">
+      SFM SDK Manual
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-1">
+        SFM SDK Manual
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../API_Compatibility/" title="API Compatability" class="md-nav__link">
+      API Compatability
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../API_Specification/" title="API Specification" class="md-nav__link">
+      API Specification
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        UF Protocol Manual
+      </label>
+    
+    <a href="./" title="UF Protocol Manual" class="md-nav__link md-nav__link--active">
+      UF Protocol Manual
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#packet-protocol" title="Packet Protocol" class="md-nav__link">
+    Packet Protocol
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#network-packet-protocol" title="Network Packet Protocol" class="md-nav__link">
+    Network Packet Protocol
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#broadcast-packet-protocol" title="Broadcast Packet Protocol" class="md-nav__link">
+    Broadcast Packet Protocol
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-parameter-summary" title="System Parameter Summary" class="md-nav__link">
+    System Parameter Summary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#command-summary" title="Command Summary" class="md-nav__link">
+    Command Summary
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+    
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      SDK
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        SDK
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../sdk/c_cpp/" title="C/C++" class="md-nav__link">
+      C/C++
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../sdk/NET/" title=".NET" class="md-nav__link">
+      .NET
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../sdk/android/" title="Android" class="md-nav__link">
+      Android
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../sdk/python/" title="python" class="md-nav__link">
+      python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../sdk/sdk-license-agreement/" title="SDK License Agreement" class="md-nav__link">
+      SDK License Agreement
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+    
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Tutorials
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Tutorials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/pysfm/tutorial/" title="pysfm" class="md-nav__link">
+      pysfm
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+ 
+    </ul>
+</nav>
+                                    </div>
+                                </div>
+                            </div>
+                             
+                            <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                                <div class="md-sidebar__scrollwrap">
+                                    <div class="md-sidebar__inner">
+                                        
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#packet-protocol" title="Packet Protocol" class="md-nav__link">
+    Packet Protocol
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#network-packet-protocol" title="Network Packet Protocol" class="md-nav__link">
+    Network Packet Protocol
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#broadcast-packet-protocol" title="Broadcast Packet Protocol" class="md-nav__link">
+    Broadcast Packet Protocol
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-parameter-summary" title="System Parameter Summary" class="md-nav__link">
+    System Parameter Summary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#command-summary" title="Command Summary" class="md-nav__link">
+    Command Summary
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                                    </div>
+                                </div>
+                            </div>
+                             
+                            <div class="md-content">
+                                <article class="md-content__inner md-typeset">
+                                     
+                                    <a href="https://github.com/supremainc/sfmdev/tree/master/docs/documents/UF_Protocol_Manual.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>   <h1 id="uf-protocol-manual">UF Protocol Manual<a class="headerlink" href="#uf-protocol-manual" title="Permanent link">&para;</a></h1>
+<h3 id="packet-protocol">Packet Protocol<a class="headerlink" href="#packet-protocol" title="Permanent link">&para;</a></h3>
+<p>In the packet protocol of UniFinger, 1 packet is <code>13 bytes</code> long and its structure is as follows.</p>
+<table>
+<thead>
+<tr>
+<th align="center">Start code</th>
+<th align="center">Command</th>
+<th align="center">Param</th>
+<th align="center">Size</th>
+<th align="center">Flag/Error</th>
+<th align="center">Checksum</th>
+<th align="center">End code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">1byte</td>
+<td align="center">1byte</td>
+<td align="center">4bytes</td>
+<td align="center">4bytes</td>
+<td align="center">1byte</td>
+<td align="center">1byte</td>
+<td align="center">1byte</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li><code>Start code</code>: 1 byte. Indicates the beginning of a packet. It always should be 0x40.  </li>
+<li><code>Command</code>: 1 byte. Refer to the "Command Summary" on page 66.  </li>
+<li><code>Param</code>: 4 bytes. Indicates user ID or system parameters.  </li>
+<li><code>Size</code>: 4 bytes. Indicates the size of binary data following the command packet such as fingerprint templates or images.  </li>
+<li><code>Flag/Error</code>: 1 byte. Indicates flag data in the request command sent to the module, and error code in the response command received from the module, respectively.  </li>
+<li><code>Checksum</code>: 1 byte. Checks the validity of a packet. Checksum is a remainder of the sum of each field, from the Start code to Flag/Error, divided by 256 (0x100).  </li>
+<li><code>End code</code>: 1 byte. Indicates the end of a packet. It always should be 0x0A. It is also used as a code indicating the end of a binary data such as fingerprint templates.  </li>
+</ol>
+<hr />
+<ul>
+<li>The packet transmitted between the host and the module has the same structures. The commands transmitting from the host to the module are called <code>request command</code>, and the response transmitting from the module to the hosts, <code>response command</code>.  </li>
+<li>In general, the host receives one response command for one request command. However, it may receive two response commands for some commands such as Enroll by Scan. The first command comes in the intermediate stage, notifying image scanning completed and the other command notifies process result. If you do not want to receive the intermediate command, you can disable it by changing a system parameter.  </li>
+<li>The fingerprint templates vary in size by sensor and firmware version.  </li>
+<li>In the following document, <code>#</code> indicates numbers and the <code>number of #</code> specifies the number of digits. <code>N/A</code> indicates that any value can be applied to the field and <code>Null</code> indicates 0x00.  </li>
+<li>In the transmission of actual data, the byte order is little endian, the lowest byte is transmitted first. For instance, when transmitting data of 400 (0x190) in the Size field, which is 4 bytes long, the data transmission order is as follows: 0x90, 0x01, 0x00, 0x00. The rule also holds for the data received from the module.  </li>
+<li>Take <code>ES</code> command (0x05) as an example, the following is the data transmission order and computation of the checksum of the command:
+When enrolling a new fingerprint with an ID,‘0x9929’:  </li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">Start code</th>
+<th align="center">Command</th>
+<th align="center">Param</th>
+<th align="center">Size</th>
+<th align="center">Flag/Error</th>
+<th align="center">Checksum</th>
+<th align="center">End code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">0x40</td>
+<td align="center">0x05</td>
+<td align="center">0x9929</td>
+<td align="center">0x00</td>
+<td align="center">0x00</td>
+<td align="center">0x07</td>
+<td align="center">0x0A</td>
+</tr>
+</tbody>
+</table>
+<p>Actual values input in the Param:</p>
+<table>
+<thead>
+<tr>
+<th align="center">1<sup>st</sup>place</th>
+<th align="center">2<sup>nd</sup> place</th>
+<th align="center">3<sup>rd</sup> place</th>
+<th align="center">4<sup>th</sup> place</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">0x29</td>
+<td align="center">0x99</td>
+<td align="center">0x00</td>
+<td align="center">0x00</td>
+</tr>
+</tbody>
+</table>
+<p>Byte transmission order:</p>
+<p>0x40, 0x05, 0x29, 0x99, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x07, 0x0A</p>
+<p>To compute the checksum, first compute the sum of each byte of the packet (from start code to flag/error) as demonstrated below:<br />
+<div class="highlight"><pre><span></span><code>0x40 + 0x05 + 0x29 + 0x99 + 0x00 + 0x00 + 0x00 + 0x00 + 0x00 + 0x00 = 0x107
+</code></pre></div>
+Divide the above value by 0x100(256). The remainder of this division is 0x07 and this value is the checksum.</p>
+<hr />
+<h3 id="network-packet-protocol">Network Packet Protocol<a class="headerlink" href="#network-packet-protocol" title="Permanent link">&para;</a></h3>
+<p>In order to support RS422 or RS485 network interfaces, UniFinger modules support network packet protocols. Network packet is composed of <code>15 bytes</code>, whose start code is different from the standard packet, and includes 2 bytes for terminal ID. The terminal ID is correspondent to the lower 2 bytes of Module ID of system parameter.</p>
+<p><img alt="" src="../doc_images/network_packet_protocol.png" /></p>
+<p>The contents of the network packet, including command, param, size, and flag are same as those of standard packet. Checksum field is the checksum value of preceding 13 bytes.<br />
+Until firmware V1.3, SFM3000/3500 modules respond both standard and network packets regardless of Network Mode system parameter. However, since firmware V1.4, the modules only respond to 15 byte network packets if Network Mode system parameter is on. See Network Mode system parameter for details.</p>
+<hr />
+<h3 id="broadcast-packet-protocol">Broadcast Packet Protocol<a class="headerlink" href="#broadcast-packet-protocol" title="Permanent link">&para;</a></h3>
+<p>In RS422 or RS485 network environments, a host can send broadcast packets to all the modules in the network. The only difference between network packets and broadcast packets is that the Terminal ID field of the latter should be 0x00.</p>
+<p><img alt="" src="../doc_images/broadcast_packet_protocol.png" /></p>
+<p>All the modules in the network process the broadcast packet, but do not send response packet to prevent packet collisions. Therefore, if the host wants to confirm that the broadcast request is handled correctly, it should send another request packet to each module using Network Packet Protocol. There is only one exception to this rule. See ID command for details.<br />
+Broadcast Packet Protocol is provided for SFM3000/3500/4000/5000/5500/6020/6030/6050 series only. The 13 byte broadcast packet protocol introduced in V1.3 firmware is not supported any longer.<br />
+Three types of packet protocol can be summarized as follows:  </p>
+<p><img alt="" src="../doc_images/packet_protocol_summary.png" /></p>
+<h3 id="system-parameter-summary">System Parameter Summary<a class="headerlink" href="#system-parameter-summary" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th align="center">Name</th>
+<th align="center">Code</th>
+<th align="center">Description</th>
+<th align="left">Value (*denotes default value)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Timeout</td>
+<td align="center">0x62</td>
+<td align="center">Timeout period</td>
+<td align="left">0x30 : infinite <br> 0x31 : 1 second <br> ... <br> *0x3A : 10 seconds <br> ... <br> 0x44 : 20 seconds</td>
+</tr>
+<tr>
+<td align="center">Template Size <sup id="fnref24:1"><a class="footnote-ref" href="#fn:1">1</a></sup></td>
+<td align="center">0x64</td>
+<td align="center">Template size. When the Encryption Mode is on, it should be a multiple of 32.</td>
+<td align="left">Integer between 256 and *384<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup></td>
+</tr>
+<tr>
+<td align="center">Enroll Mode</td>
+<td align="center">0x65</td>
+<td align="center">Enroll mode</td>
+<td align="left">0x30 : 1 time <br> 0x31 : 2 times ( 1 request command &amp; 2 response commands ) <br> 0x32 : 2 times II ( 2 request commands &amp; 2 response commands ) <br> *0x41 : 2 templates ( 1 request command &amp; 2 response commands ) <sup id="fnref22:1"><a class="footnote-ref" href="#fn:1">1</a></sup> <br> 0x42 : 2 templates II ( 2 request commands &amp; 2 response commands ) <sup id="fnref23:1"><a class="footnote-ref" href="#fn:1">1</a></sup> <br></td>
+</tr>
+<tr>
+<td align="center">Security Level</td>
+<td align="center">0x66</td>
+<td align="center">Security Level</td>
+<td align="left">0x30 : 1/10 FAR( False Acceptance Rate ) <sup id="fnref9:1"><a class="footnote-ref" href="#fn:1">1</a></sup><sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup> <br> 0x31 : 1/100(5) <br>  0x32 : 1/1,000(5) <br> 0x33 : 1/10,000 <br> 0x34 : 1/100,000 <br> 0x35 : 1/1,000,000 <br> 0x36 : 1/10,000,000 <sup id="fnref10:1"><a class="footnote-ref" href="#fn:1">1</a></sup> <br> 0x37 : 1/100,000,000 <sup id="fnref11:1"><a class="footnote-ref" href="#fn:1">1</a></sup> <br> 0x40 : 3/100 <sup id="fnref12:1"><a class="footnote-ref" href="#fn:1">1</a></sup><sup id="fnref2:5"><a class="footnote-ref" href="#fn:5">5</a></sup> <br> 0x41 : 3/1,000 <sup id="fnref13:1"><a class="footnote-ref" href="#fn:1">1</a></sup><sup id="fnref3:5"><a class="footnote-ref" href="#fn:5">5</a></sup> <br> 0x42 : 3/10,000 <sup id="fnref14:1"><a class="footnote-ref" href="#fn:1">1</a></sup><sup id="fnref4:5"><a class="footnote-ref" href="#fn:5">5</a></sup> <br> 0x43 : 3/100,000 <sup id="fnref15:1"><a class="footnote-ref" href="#fn:1">1</a></sup> <br> 0x44 : 3/1,000,000 <sup id="fnref16:1"><a class="footnote-ref" href="#fn:1">1</a></sup> <br> 0x45 : 3/10,000,000 <sup id="fnref17:1"><a class="footnote-ref" href="#fn:1">1</a></sup> <br> 0x46 : 3/100,000,000 <sup id="fnref18:1"><a class="footnote-ref" href="#fn:1">1</a></sup> <br> *0x50 : Automatic Normal<sup id="fnref19:1"><a class="footnote-ref" href="#fn:1">1</a></sup> <br> 0x51 : Automatic Secure<sup id="fnref20:1"><a class="footnote-ref" href="#fn:1">1</a></sup> <br> 0x52 : Automatic More Secure<sup id="fnref21:1"><a class="footnote-ref" href="#fn:1">1</a></sup></td>
+</tr>
+<tr>
+<td align="center">Encryption Mode</td>
+<td align="center">0x67</td>
+<td align="center">Encryption mode</td>
+<td align="left">*0x30 : Encryption off <br> 0x31 : Encryption on</td>
+</tr>
+<tr>
+<td align="center">Sensor Type</td>
+<td align="center">0x68</td>
+<td align="center">Sensor Type</td>
+<td align="left">0x31: FC <br> 0x33 : OP / OP2 / OP3 / OP4 / OP5 <br> 0x34 : TC1 / TC2 / TC1S / TC2S <br> 0x38 : OC2 / OD/ OC4 / OH <br> 0x39 : OL <br> 0x3C: TS4</td>
+</tr>
+<tr>
+<td align="center">Image Format</td>
+<td align="center">0x6C</td>
+<td align="center">Image format</td>
+<td align="left">0x30 : Gray image <br> *0x31 : Binary image <br> 0x32 : 4 bit gray image <br> 0x33 : WSQ image<sup id="fnref:9"><a class="footnote-ref" href="#fn:9">9</a></sup></td>
+</tr>
+<tr>
+<td align="center">Module ID</td>
+<td align="center">0x6D</td>
+<td align="center">Module ID</td>
+<td align="left">Integer 0 ~ 65535</td>
+</tr>
+<tr>
+<td align="center">Firmware Version</td>
+<td align="center">0x6E</td>
+<td align="center">Firmware version</td>
+<td align="left">4bytes character</td>
+</tr>
+<tr>
+<td align="center">Serial Number</td>
+<td align="center">0x6F</td>
+<td align="center">Serial number</td>
+<td align="left">Integer (4bytes)</td>
+</tr>
+<tr>
+<td align="center">Baudrate</td>
+<td align="center">0x71</td>
+<td align="center">Host baudrate setting</td>
+<td align="left">0x31 : 9600 bps <br> 0x32 : 19200 bps <br> 0x33 : 38400 bps <br> 0x34 : 57600 bps <br> *0x35 : 115200 bps <br> 0x36 : 230400 bps <br> 0x37 : 460800 bps <br> 0x38 : 921600 bps</td>
+</tr>
+<tr>
+<td align="center">Baudrate2<sup id="fnref4:2"><a class="footnote-ref" href="#fn:2">2</a></sup></td>
+<td align="center">0x72</td>
+<td align="center">Auxiliary baudrate setting</td>
+<td align="left">0x31 : 9600 bps <br> 0x32 : 19200 bps <br> 0x33 : 38400 bps <br> 0x34 : 57600 bps <br> *0x35 : 115200 bps</td>
+</tr>
+<tr>
+<td align="center">Enrolled Finger</td>
+<td align="center">0x73</td>
+<td align="center">Current number of fingerprints enrolled</td>
+<td align="left">Integer (4bytes)</td>
+</tr>
+<tr>
+<td align="center">Available Finger</td>
+<td align="center">0x74</td>
+<td align="center">The available number of fingerprints that can be enrolled</td>
+<td align="left">Integer (4bytes)</td>
+</tr>
+<tr>
+<td align="center">Send Scan Success</td>
+<td align="center">0x75</td>
+<td align="center">Enable sending SCAN_SUCCESS response</td>
+<td align="left">0x30 : No SCAN_SUCCESS message <br> *0x31 : Send SCAN_SUCCESS message</td>
+</tr>
+<tr>
+<td align="center">ASCII Packet</td>
+<td align="center">0x76</td>
+<td align="center">Flag for packet exchange though HEX-ASCII format</td>
+<td align="left">*0x30 : Hexadecimal packet <br> 0x31 : ASCII packet</td>
+</tr>
+<tr>
+<td align="center">Rotate Image</td>
+<td align="center">0x77</td>
+<td align="center">Flag for rotating sensor image in capture</td>
+<td align="left">*0x30 : Upright image <br> 0x31 : Upside down image</td>
+</tr>
+<tr>
+<td align="center">Rotation<sup id="fnref8:1"><a class="footnote-ref" href="#fn:1">1</a></sup></td>
+<td align="center">0x78</td>
+<td align="center">Maximum allowable rotation for matching</td>
+<td align="left">0x31: 15 degree <br> * 0x32: 30 degree <br> 0x33: 45 degree <br> 0x34: 60 degree <br> 0x35: 75 degree <br> 0x36: 90 degree</td>
+</tr>
+<tr>
+<td align="center">Sensitivity</td>
+<td align="center">0x80</td>
+<td align="center">Parameter for sensor sensitivity</td>
+<td align="left">0x30 : Least sensitive <br> … <br> *0x37 : Most sensitive</td>
+</tr>
+<tr>
+<td align="center">Image Quality</td>
+<td align="center">0x81</td>
+<td align="center">Parameter for qualifying scanned image</td>
+<td align="left">0x30 : Weak qualification <br> *0x31 : Moderate qualification <br> 0x32 : Strong qualification <br> 0x33 : Strongest qualification</td>
+</tr>
+<tr>
+<td align="center">Auto Response</td>
+<td align="center">0x82</td>
+<td align="center">Flag for sending automatic response as the result of GPIO input or FreeScan</td>
+<td align="left">*0x30 : No response command <br> 0x31 : Send response command ( host ) <br> 0x32 : Send response command ( aux ) <sup id="fnref2:2"><a class="footnote-ref" href="#fn:2">2</a></sup> <br> 0x33 : Send response command ( both ) <sup id="fnref3:2"><a class="footnote-ref" href="#fn:2">2</a></sup></td>
+</tr>
+<tr>
+<td align="center">Network Mode</td>
+<td align="center">0x83</td>
+<td align="center">Flag for default operation mode</td>
+<td align="left">*0x30 : Single mode <br> 0x31 : Network mode ( half duplex ) <br> 0x32 : Network mode ( full duplex )<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></td>
+</tr>
+<tr>
+<td align="center">Free Scan</td>
+<td align="center">0x84</td>
+<td align="center">Scan always fingerprint images for identification on idle state</td>
+<td align="left">*0x30 : Normal mode <br> 0x31 : Free scan mode</td>
+</tr>
+<tr>
+<td align="center">Provisional Enroll</td>
+<td align="center">0x85</td>
+<td align="center">Save enrolled templates at flash memory permanently or not</td>
+<td align="left">*0x30 : Permanent enrollment <br> 0x31 : Provisional enrollment</td>
+</tr>
+<tr>
+<td align="center">Pass When Empty</td>
+<td align="center">0x86</td>
+<td align="center">Pass or fail when fingerprint DB is empty</td>
+<td align="left">*0x30 : Fail when DB is empty <br> 0x31 : Pass when DB is empty</td>
+</tr>
+<tr>
+<td align="center">Response Delay</td>
+<td align="center">0x87</td>
+<td align="center">Delay for response command</td>
+<td align="left">*0x30 : No delay <br> 0x31 : 20 msec <br> … <br> 0x35 : 100 msec <br> … <br> 0x3A : 200 msec</td>
+</tr>
+<tr>
+<td align="center">Matching Timeout</td>
+<td align="center">0x88</td>
+<td align="center">Timeout period for matching in identification</td>
+<td align="left">0x30 : infinite <br> 0x31 : 1 second <br> … <br> *0x33: 3 seconds <br> … <br> 0x3A : 10 seconds <br> … <br> 0x44 : 20 seconds</td>
+</tr>
+<tr>
+<td align="center">Build Number</td>
+<td align="center">0x89</td>
+<td align="center">Build number</td>
+<td align="left">4bytes character</td>
+</tr>
+<tr>
+<td align="center">Enroll Displacement<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup></td>
+<td align="center">0x8A</td>
+<td align="center">Displacement between two fingerprints for enrollment in case EnrollMode parameter is 2 times or 2 templates</td>
+<td align="left">*0x30 : No check <br> 0x31 : Above 1 mm away <br> … <br> 0x35 : Above 5 mm away <br> … <br> 0x3A : Above 10 mm away</td>
+</tr>
+<tr>
+<td align="center">Lighting Condition<sup id="fnref7:1"><a class="footnote-ref" href="#fn:1">1</a></sup></td>
+<td align="center">0x90</td>
+<td align="center">Tune optical sensors based on lighting conditions</td>
+<td align="left">*0x30: Outdoor <br> 0x31: Indoor<br></td>
+</tr>
+<tr>
+<td align="center">Free Scan Delay<sup id="fnref6:1"><a class="footnote-ref" href="#fn:1">1</a></sup></td>
+<td align="center">0x91</td>
+<td align="center">Delay between consecutive identification processes in Free Scan Mode.</td>
+<td align="left">0x30: No delay <br> *0x31: 1 second <br> … <br>0x40: 10 seconds</td>
+</tr>
+<tr>
+<td align="center">Fast Mode<sup id="fnref5:1"><a class="footnote-ref" href="#fn:1">1</a></sup></td>
+<td align="center">0x93</td>
+<td align="center">Fast mode for 1:N matching</td>
+<td align="left">0x30: Normal <br> 0x31: Fast mode 1 <br> … <br> 0x35: Fast mode 5(Fastest) <br> *0x36: Automatic</td>
+</tr>
+<tr>
+<td align="center">Watchdog<sup id="fnref4:1"><a class="footnote-ref" href="#fn:1">1</a></sup></td>
+<td align="center">0x94</td>
+<td align="center">Watchdog timer</td>
+<td align="left">0x30: Don’t use Watchdog timer <br> *0x31: Use Watchdog timer</td>
+</tr>
+<tr>
+<td align="center">Template Type<sup id="fnref3:1"><a class="footnote-ref" href="#fn:1">1</a></sup></td>
+<td align="center">0x96</td>
+<td align="center">Template type</td>
+<td align="left">*0x30: Suprema <br> 0x31: ISO 19794-2 <br> 0x32: ANSI 378</td>
+</tr>
+<tr>
+<td align="center">Enhanced Privacy<sup id="fnref2:1"><a class="footnote-ref" href="#fn:1">1</a></sup></td>
+<td align="center">0x97</td>
+<td align="center">Enhanced privacy mode</td>
+<td align="left">*0x30: Enhanced mode off <br> 0x31: Enhanced mode on</td>
+</tr>
+<tr>
+<td align="center">Fake Finger Detection<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></td>
+<td align="center">0x98</td>
+<td align="center">Fake finger detection option</td>
+<td align="left">*0x30: Fake detection off <br> 0x31: Fake detection on ( Weak<sup id="fnref:8"><a class="footnote-ref" href="#fn:8">8</a></sup>) <br> 0x32: Normal<sup id="fnref2:8"><a class="footnote-ref" href="#fn:8">8</a></sup> <br> 0x33: Strong<sup id="fnref3:8"><a class="footnote-ref" href="#fn:8">8</a></sup></td>
+</tr>
+<tr>
+<td align="center">Check Latent Fingerprint<sup id="fnref:6"><a class="footnote-ref" href="#fn:6">6</a></sup></td>
+<td align="center">0x9A</td>
+<td align="center">Latent fingerprint detection option</td>
+<td align="left">*0x30: Don’t check latent fingerprints when enrolling <br> 0x31: Don’t check latent fingerprints <br> 0x32: Check latent fingerprints always</td>
+</tr>
+<tr>
+<td align="center">Voltage Warning<sup id="fnref2:7"><a class="footnote-ref" href="#fn:7">7</a></sup></td>
+<td align="center">0x9B</td>
+<td align="center">Voltage warning threshold</td>
+<td align="left">*0: Don’t check voltage <br> 1 ~ 12000: Threshold voltage in mV</td>
+</tr>
+<tr>
+<td align="center">PowerOff</td>
+<td align="center">0x9C</td>
+<td align="center">Timeout for automatic power off</td>
+<td align="left">*0: No timeout</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="command-summary">Command Summary<a class="headerlink" href="#command-summary" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th align="center">Category</th>
+<th align="center">Name</th>
+<th align="center">Code</th>
+<th align="center">Description</th>
+<th align="center">3000 / 4000 / 5000</th>
+<th align="center">3500 / 5500</th>
+<th align="center">6000</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">System Configuration</td>
+<td align="center">SW</td>
+<td align="center">0x01</td>
+<td align="center">Write system parameter</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">SF</td>
+<td align="center">0x02</td>
+<td align="center">Save system parameter</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">SR</td>
+<td align="center">0x03</td>
+<td align="center">Read system parameter</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">CS</td>
+<td align="center">0x1A</td>
+<td align="center">Calibrate sensor</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">SS</td>
+<td align="center">0x04</td>
+<td align="center">Check system status</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">CA</td>
+<td align="center">0x60</td>
+<td align="center">Cancel</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">ID</td>
+<td align="center">0x85</td>
+<td align="center">Get the module ID</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">UG</td>
+<td align="center">0x62</td>
+<td align="center">Upgrade firmware</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">RS</td>
+<td align="center">0xD0</td>
+<td align="center">Reset the module</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">LM</td>
+<td align="center">0xB1</td>
+<td align="center">Lock the module</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">UM</td>
+<td align="center">0xB0</td>
+<td align="center">Unlock the module</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">MP</td>
+<td align="center">0xB2</td>
+<td align="center">Change the master password</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">OFF</td>
+<td align="center">0xD2</td>
+<td align="center">Turn off the module</td>
+<td align="center">O<sup id="fnref:7"><a class="footnote-ref" href="#fn:7">7</a></sup></td>
+<td align="center">X</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center">Enroll</td>
+<td align="center">ES</td>
+<td align="center">0x05</td>
+<td align="center">Enroll by scan</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">ESA</td>
+<td align="center">0x70</td>
+<td align="center">ES with administrator’s verification</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">EI</td>
+<td align="center">0x06</td>
+<td align="center">Enroll by image</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">EIX</td>
+<td align="center">0x80</td>
+<td align="center">EI with extended data transfer protocol</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">ET</td>
+<td align="center">0x07</td>
+<td align="center">Enroll by template</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">ETX</td>
+<td align="center">0x87</td>
+<td align="center">ET with extended data transfer protocol</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">EW</td>
+<td align="center">0x1C</td>
+<td align="center">Enroll by Wiegand ID</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">EWA</td>
+<td align="center">0x71</td>
+<td align="center">EW with administrator’s verification</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center">Verify</td>
+<td align="center">VS</td>
+<td align="center">0x08</td>
+<td align="center">Verify by scan</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">VI</td>
+<td align="center">0x09</td>
+<td align="center">Verify by image</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">VIX</td>
+<td align="center">0x82</td>
+<td align="center">VI with extended data transfer protocol</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">VT</td>
+<td align="center">0x10</td>
+<td align="center">Verify by template</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">VW</td>
+<td align="center">0x1D</td>
+<td align="center">Verify by Wiegand ID</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">VH</td>
+<td align="center">0x22</td>
+<td align="center">Verify host template by scan</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">WSL</td>
+<td align="center">0x6B</td>
+<td align="center">Write security level of a user</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">RSL</td>
+<td align="center">0x6C</td>
+<td align="center">Read security level of a user</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center">Identify</td>
+<td align="center">IS</td>
+<td align="center">0x11</td>
+<td align="center">Identify by scan</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">II</td>
+<td align="center">0x12</td>
+<td align="center">Identify by image</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">IIX</td>
+<td align="center">0x81</td>
+<td align="center">II with extended data transfer protocol</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">IT</td>
+<td align="center">0x13</td>
+<td align="center">Identify by template</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center">Delete</td>
+<td align="center">DA</td>
+<td align="center">0x17</td>
+<td align="center">Delete all templates</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">DAA</td>
+<td align="center">0x74</td>
+<td align="center">DA with administrator’s verification</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">DT</td>
+<td align="center">0x16</td>
+<td align="center">Delete template</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">DS</td>
+<td align="center">0x1E</td>
+<td align="center">Delete by scan</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">DSA</td>
+<td align="center">0x72</td>
+<td align="center">DS with administrator’s verification</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">DW</td>
+<td align="center">0x1F</td>
+<td align="center">Delete by Wiegand ID</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">DWA</td>
+<td align="center">0x73</td>
+<td align="center">DW with administrator’s verification</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center">Template management</td>
+<td align="center">LT</td>
+<td align="center">0x18</td>
+<td align="center">List user ID</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">LTX</td>
+<td align="center">0x86</td>
+<td align="center">List user ID with extended data transfer protocol</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">CT</td>
+<td align="center">0x19</td>
+<td align="center">Check user ID</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">FP</td>
+<td align="center">0x23</td>
+<td align="center">Fix all provisional templates</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">DP</td>
+<td align="center">0x24</td>
+<td align="center">Delete all provisional templates</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center">Get image and template</td>
+<td align="center">RI</td>
+<td align="center">0x20</td>
+<td align="center">Read image</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">RIX</td>
+<td align="center">0x84</td>
+<td align="center">RI with extended data transfer protocol</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">SI</td>
+<td align="center">0x15</td>
+<td align="center">Scan image</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">SIX</td>
+<td align="center">0x83</td>
+<td align="center">SI with extended data transfer protocol</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">RT</td>
+<td align="center">0x14</td>
+<td align="center">Read template</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">RTX</td>
+<td align="center">0x89</td>
+<td align="center">RT with extended data transfer protocol</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">ST</td>
+<td align="center">0x21</td>
+<td align="center">Scan template</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">KS</td>
+<td align="center">0x35</td>
+<td align="center">Scan template with challenge data</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">KW</td>
+<td align="center">0x34</td>
+<td align="center">Write encryption key</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center">User memory management</td>
+<td align="center">ML</td>
+<td align="center">0x31</td>
+<td align="center">Get size of user memory</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">MW</td>
+<td align="center">0x32</td>
+<td align="center">Write to user memory</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">MR</td>
+<td align="center">0x33</td>
+<td align="center">Read from user memory</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center">Time and log management</td>
+<td align="center">TW</td>
+<td align="center">0x3A</td>
+<td align="center">Write current time</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">TR</td>
+<td align="center">0x3B</td>
+<td align="center">Read current time</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">LN</td>
+<td align="center">0x3C</td>
+<td align="center">Get number of log data</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">LR</td>
+<td align="center">0x3D</td>
+<td align="center">Read log data</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">LD</td>
+<td align="center">0x3E</td>
+<td align="center">Delete log data</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">LC</td>
+<td align="center">0x3F</td>
+<td align="center">Set / Get the custom log field</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">RCL</td>
+<td align="center">0xEC</td>
+<td align="center">Read log cache</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">CCL</td>
+<td align="center">0xEB</td>
+<td align="center">Clear log cache</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center">Wiegand configuration</td>
+<td align="center">WW</td>
+<td align="center">0x41</td>
+<td align="center">Write Wiegand configuration</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">WR</td>
+<td align="center">0x42</td>
+<td align="center">Read Wiegand configuration</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">WG</td>
+<td align="center">0x43</td>
+<td align="center">Get Wiegand input</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">WS</td>
+<td align="center">0x44</td>
+<td align="center">Set Wiegand output</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">WM</td>
+<td align="center">0x68</td>
+<td align="center">Map Wiegand ID to input function</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">WL</td>
+<td align="center">0x69</td>
+<td align="center">List Wiegand ID mapping</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">WC</td>
+<td align="center">0x6A</td>
+<td align="center">Clear Wiegand ID mapping</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center">Extended Wiegand configuration</td>
+<td align="center">WWX</td>
+<td align="center">0xC0</td>
+<td align="center">Write Wiegand configuration</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">WRX</td>
+<td align="center">0xC1</td>
+<td align="center">Read Wiegand configuration</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">WGX</td>
+<td align="center">0xC2</td>
+<td align="center">Get Wiegand input</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">WSX</td>
+<td align="center">0xC3</td>
+<td align="center">Set Wiegand output</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">WFW</td>
+<td align="center">0xC4</td>
+<td align="center">Set alternative value of a field</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">WFR</td>
+<td align="center">0xC5</td>
+<td align="center">Get alternative value of a filed</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">WPW</td>
+<td align="center">0xC6</td>
+<td align="center">Write Wiegand I/O settings</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">WPR</td>
+<td align="center">0xC7</td>
+<td align="center">Read Wiegand I/O settings</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center">Input configuration</td>
+<td align="center">IW</td>
+<td align="center">0x47</td>
+<td align="center">Write input configuration</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">IR</td>
+<td align="center">0x48</td>
+<td align="center">Read input configuration</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">IG</td>
+<td align="center">0x49</td>
+<td align="center">Get input state</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center">Output configuration</td>
+<td align="center">OW</td>
+<td align="center">0x4A</td>
+<td align="center">Write output configuration</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">OR</td>
+<td align="center">0x4B</td>
+<td align="center">Read output configuration</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">OL</td>
+<td align="center">0x4C</td>
+<td align="center">Read output configuration list</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">OS</td>
+<td align="center">0x4D</td>
+<td align="center">Set output state</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center">GPIO configuration</td>
+<td align="center">GW</td>
+<td align="center">0x37</td>
+<td align="center">Write GPIO configuration</td>
+<td align="center">O</td>
+<td align="center">X</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">GR</td>
+<td align="center">0x36</td>
+<td align="center">Read GPIO configuration</td>
+<td align="center">O</td>
+<td align="center">X</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">GC</td>
+<td align="center">0x38</td>
+<td align="center">Clear GPIO configuration</td>
+<td align="center">O</td>
+<td align="center">X</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">GD</td>
+<td align="center">0x39</td>
+<td align="center">Set default GPIO configuration</td>
+<td align="center">O</td>
+<td align="center">X</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center">Admin level configuration</td>
+<td align="center">AW</td>
+<td align="center">0x65</td>
+<td align="center">Write administration level</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">AR</td>
+<td align="center">0x66</td>
+<td align="center">Read administration level</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">AC</td>
+<td align="center">0x67</td>
+<td align="center">Clear administration level</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center">Auth. mode configuration</td>
+<td align="center">UW</td>
+<td align="center">0xA3</td>
+<td align="center">Write authentication mode</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">UR</td>
+<td align="center">0xA4</td>
+<td align="center">Read authentication mode</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">UC</td>
+<td align="center">0xA5</td>
+<td align="center">Reset authentication mode to default</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">UL</td>
+<td align="center">0xA6</td>
+<td align="center">List user IDs grouped by authentication mode</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center">Blacklist configuration</td>
+<td align="center">ABL</td>
+<td align="center">0xF3</td>
+<td align="center">Add an ID to blacklist</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">DBL</td>
+<td align="center">0xF4</td>
+<td align="center">Delete an ID from blacklist</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">RBL</td>
+<td align="center">0xF5</td>
+<td align="center">Read blacklist</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">CBL</td>
+<td align="center">0xF6</td>
+<td align="center">Clear blacklist</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center">Entrance limit configuration</td>
+<td align="center">WME</td>
+<td align="center">0xF0</td>
+<td align="center">Write entrance limit</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">RME</td>
+<td align="center">0xF1</td>
+<td align="center">Read entrance limit</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">CME</td>
+<td align="center">0xF2</td>
+<td align="center">Clear entrance limit</td>
+<td align="center">X</td>
+<td align="center">O</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center">System Parameter</td>
+<td align="center">FR</td>
+<td align="center">0xFA</td>
+<td align="center">Factory reset by erasing system parameter</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center">File System</td>
+<td align="center">FF</td>
+<td align="center">0xFF</td>
+<td align="center">Raw format userdb partition</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">O</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Contact us</p>
+<p>If you need more detail information about this document (UF_Protocol_Manual), please contact at <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#97;&#108;&#101;&#115;&#95;&#115;&#111;&#108;&#64;&#115;&#117;&#112;&#114;&#101;&#109;&#97;&#46;&#99;&#111;&#46;&#107;&#114;">&#115;&#97;&#108;&#101;&#115;&#95;&#115;&#111;&#108;&#64;&#115;&#117;&#112;&#114;&#101;&#109;&#97;&#46;&#99;&#111;&#46;&#107;&#114;</a></p>
+</div>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>SFM3000/3500/4000/5000 only&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref4:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref5:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref6:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref7:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref8:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref9:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref10:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref11:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref12:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref13:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref14:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref15:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref16:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref17:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref18:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref19:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref20:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref21:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref22:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref23:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref24:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>SFM3500 only&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:2" title="Jump back to footnote 2 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:2" title="Jump back to footnote 2 in the text">&#8617;</a><a class="footnote-backref" href="#fnref4:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>SFM3000/3500/4000/5000 only&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:4">
+<p>Reducing template size might affect authentication performance.&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="fn:5">
+<p>Since firmware V1.3, the minimum security level of SFM3000/3500 series is changed to 1/10,000.&#160;<a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:5" title="Jump back to footnote 5 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:5" title="Jump back to footnote 5 in the text">&#8617;</a><a class="footnote-backref" href="#fnref4:5" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+</li>
+<li id="fn:6">
+<p>SFM3020-OP, SFM3520-OP, SFM4020-OP, SFM5020-OP only&#160;<a class="footnote-backref" href="#fnref:6" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+</li>
+<li id="fn:7">
+<p>SFM4000 only&#160;<a class="footnote-backref" href="#fnref:7" title="Jump back to footnote 7 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:7" title="Jump back to footnote 7 in the text">&#8617;</a></p>
+</li>
+<li id="fn:8">
+<p>SFM5060-OH only&#160;<a class="footnote-backref" href="#fnref:8" title="Jump back to footnote 8 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:8" title="Jump back to footnote 8 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:8" title="Jump back to footnote 8 in the text">&#8617;</a></p>
+</li>
+<li id="fn:9">
+<p>SFM5500 only&#160;<a class="footnote-backref" href="#fnref:9" title="Jump back to footnote 9 in the text">&#8617;</a></p>
+</li>
+<li id="fn:10">
+<p>SFM60x0 only&#160;<a class="footnote-backref" href="#fnref:10" title="Jump back to footnote 10 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>       
+                                </article>
+                            </div>
+                        </div>
+                    </main>
+                     
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../API_Specification/" title="API Specification" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                API Specification
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../sdk/c_cpp/" title="C/C++" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                C/C++
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2020 Suprema Inc.
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://www.facebook.com/supremaglobal/" class="md-footer-social__link fa fa-facebook"></a>
+    
+      <a href="http://www.supremainc.com" class="md-footer-social__link fa fa-globe"></a>
+    
+      <a href="https://github.com/supremainc" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://sfmdev.slack.com" class="md-footer-social__link fa fa-slack"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer> 
+                </div>
+                
+                <script src="../../assets/javascripts/application-84693e5e49.js"></script>
+                
+                <script>
+                    app.initialize({
+                        version: "0.17.3",
+                        url: {
+                            base: "../.."
+                        }
+                    })
+                </script>
+                
+                <script src="../../javascripts/extra.js"></script>
+                   
+                <script>
+                    ! function(e, t, a, n, o, c, i) {
+                        e.GoogleAnalyticsObject = o, e[o] = e[o] || function() {
+                            (e[o].q = e[o].q || []).push(arguments)
+                        }, e[o].l = 1 * new Date, c = t.createElement(a), i = t.getElementsByTagName(a)[0], c.async = 1, c.src = n, i.parentNode.insertBefore(c, i)
+                    }(window, document, "script", "https://www.google-analytics.com/analytics.js", "ga"), ga("create", "UA-99598070-1", "auto"), ga("set", "anonymizeIp", !0), ga("send", "pageview");
+                    var links = document.getElementsByTagName("a");
+                    Array.prototype.map.call(links, function(e) {
+                        e.host != document.location.host && e.addEventListener("click", function() {
+                            var t = e.getAttribute("data-md-action") || "follow";
+                            ga("send", "event", "outbound", t, e.href)
+                        })
+                    });
+                    var query = document.forms.search.query;
+                    query.addEventListener("blur", function() {
+                        if (this.value) {
+                            var e = document.location.pathname;
+                            ga("send", "pageview", e + "?q=" + this.value)
+                        }
+                    })
+                </script>
+                 
+                <!--Start of Tawk.to Script-->
+                <script type="text/javascript">
+                    var Tawk_API = Tawk_API || {},
+                        Tawk_LoadStart = new Date();
+                    (function() {
+                        var s1 = document.createElement("script"),
+                            s0 = document.getElementsByTagName("script")[0];
+                        s1.async = true;
+                        s1.src = 'https://embed.tawk.to/59f828224854b82732ff90e3/default';
+                        s1.charset = 'UTF-8';
+                        s1.setAttribute('crossorigin', '*');
+                        s0.parentNode.insertBefore(s1, s0);
+                    })();
+                </script>
+                <!--End of Tawk.to Script-->
+            </body>
+
+</html>
