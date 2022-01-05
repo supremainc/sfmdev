@@ -116,6 +116,8 @@ pages:
       - SFM5000 Series: products/SFM5000.md
       - SFM4000 Series: products/SFM4000.md
       - SFM3000 Series: products/SFM3000.md
+      - Hardware Privacy Notice: products/hardware-privacy-notice.md
+      - Product Disclaimer: products/product-disclaimer.md
 
   - Technical Documents:
     - SFM SDK Manual : 
@@ -130,14 +132,15 @@ pages:
     - .NET : sdk/NET.md
     - Android : sdk/android.md
     - python : sdk/python.md
+    - SDK License Agreement : sdk/sdk-license-agreement.md
   
   - Tutorials : 
     - pysfm : tutorials/pysfm/tutorial.md
-    - Training : tutorials/training.md
+    # - Training : tutorials/training.md
   
-  - Community : community/community.md
-  - Open Source Projects:
-    - SFM Open EVK : projects/SFM_OPEN_EVK.md
+  # - Community : community/community.md
+      
+  
 
 #Customization
 extra_css:
