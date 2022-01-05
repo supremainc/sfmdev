@@ -2,7 +2,7 @@
 ### Hardware Privacy Notice
 
 This Hardware Privacy Notice applies to anyone using this product, “[OEM Biometric Modules]”. 
-Please be reminded that WE, Suprema Inc DO NOT COLLECT ANY DATA stored in or collected through this product. 
+Please be reminded that WE, Suprema Inc., DO NOT COLLECT ANY DATA stored in or collected through this product. 
 You will be collecting and/or using the data independently of us and thus, you should bear in mind that the following data may be stored in this product. 
 
 
@@ -20,7 +20,7 @@ This HW Privacy Notice may be updated from time to time. We suggest that you rev
 ### Hardware Privacy Notice (한국어)
 
 본 Hardware Privacy Notice는 본 제품, “[OEM Biometric Modules]”을 사용하는 모든 이에게 적용됩니다. 
-[슈프리마]은 귀하와 귀하의 고객에 대한 어떠한 정보도 수집하지 않는다는 점을 명심해주시기 바랍니다. 
+[슈프리마]는 귀하와 귀하의 고객에 대한 어떠한 정보도 수집하지 않는다는 점을 명심해주시기 바랍니다. 
 귀하는 당사와 독립적으로 정보를 수집 및/또는 사용하게 되므로 이 제품에 저장될 수 있는 다음 정보들을 반드시 확인해야 합니다. 
 
 
